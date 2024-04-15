@@ -1,0 +1,1047 @@
+
+<!--передаем уникальный io-->
+<!--Для добавления мобильной версии картинки добавляем вторым параметром true-->
+<!--Например +picture('image.jpg', 'true')-->
+<!--Миксин будет искать картинку с названием image-mob.jpg (тоесть вторая картинка должна иметь такое же название как и основная, только с добавлением -mob.png/jpg и тд)--><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
+    <script type="module" crossorigin src="assets/index-0edc9c68.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="modal-block">
+      </div>
+      <header class="header">
+        <div class="header__inner"> 
+          <div class="container"> 
+            <div class="header__desktop">
+              <div class="header__top">
+                <div class="header__row"> 
+                  <div class="header__col">
+                    <div class="header__top-item">
+                      <div class="header__info">
+                        <div class="header__info-col">
+                          <div class="header__info-item">USD</div>
+                          <div class="header__info-item">91 RUB</div>
+                        </div>
+                        <div class="header__info-col">
+                          <div class="header__text">
+                             24.03.2024, 21:00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__top-item">
+                      <div class="header__nav">
+                        <div class="header__nav-item"> <a class="header__text" href="#">
+                             Сотрудничество</a></div>
+                        <div class="header__nav-item"> 
+                          <div class="header__text">
+                             Пресс-центр</div>
+                          <div class="header__nav-icon"> 
+                            <svg class="header__nav-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="header__nav-item"> 
+                          <div class="header__text">
+                             О компании</div>
+                          <div class="header__nav-icon"> 
+                            <svg class="header__nav-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__col">
+                    <div class="header__phones">
+                      <div class="header__phones-item"> <a class="header__text" href="tel:+78003331074">+7 800 333-10-74</a></div>
+                      <div class="header__phones-item"> <a class="header__text" href="tel:+74997033523">+7 499 703-35-23</a></div>
+                    </div>
+                    <div class="header__login"><a class="header__login-link" href="#">
+                        <div class="header__login-icon"> 
+                          <svg class="header__login-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.1832 6.96835C11.8895 6.67619 11.4147 6.67737 11.1225 6.97099C10.8304 7.26462 10.8315 7.73949 11.1252 8.03165L12.1832 6.96835ZM13.6377 10.5317C13.9313 10.8238 14.4062 10.8226 14.6983 10.529C14.9905 10.2354 14.9893 9.76051 14.6957 9.46835L13.6377 10.5317ZM14.6957 10.5317C14.9893 10.2395 14.9905 9.76462 14.6983 9.47099C14.4062 9.17737 13.9313 9.17619 13.6377 9.46835L14.6957 10.5317ZM11.1252 11.9683C10.8315 12.2605 10.8304 12.7354 11.1225 13.029C11.4147 13.3226 11.8895 13.3238 12.1832 13.0317L11.1252 11.9683ZM14.1667 10.75C14.5809 10.75 14.9167 10.4142 14.9167 10C14.9167 9.58579 14.5809 9.25 14.1667 9.25V10.75ZM2.5 9.25C2.08579 9.25 1.75 9.58579 1.75 10C1.75 10.4142 2.08579 10.75 2.5 10.75V9.25ZM11.1252 8.03165L13.6377 10.5317L14.6957 9.46835L12.1832 6.96835L11.1252 8.03165ZM13.6377 9.46835L11.1252 11.9683L12.1832 13.0317L14.6957 10.5317L13.6377 9.46835ZM14.1667 9.25H2.5V10.75H14.1667V9.25Z" fill="#0B1226"></path>
+                            <path d="M6.25 13.214C6.25 15.581 8.11548 17.4998 10.4167 17.4998H14.5833C16.8845 17.4998 18.75 15.581 18.75 13.214V6.78547C18.75 4.41854 16.8845 2.49976 14.5833 2.49976H10.4167C8.11548 2.49976 6.25 4.41854 6.25 6.78547" stroke="#0B1226" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.9138 6.70028C11.6202 6.40812 11.1454 6.4093 10.8532 6.70293C10.561 6.99655 10.5622 7.47142 10.8558 7.76358L11.9138 6.70028ZM13.6375 10.5314C13.9312 10.8236 14.406 10.8224 14.6982 10.5288C14.9904 10.2352 14.9892 9.7603 14.6955 9.46814L13.6375 10.5314ZM14.6955 10.5314C14.9892 10.2393 14.9904 9.76441 14.6982 9.47078C14.406 9.17716 13.9312 9.17598 13.6375 9.46814L14.6955 10.5314ZM10.8558 12.236C10.5622 12.5282 10.561 13.003 10.8532 13.2967C11.1454 13.5903 11.6202 13.5915 11.9138 13.2993L10.8558 12.236ZM14.1667 10.7496C14.5809 10.7496 14.9167 10.4138 14.9167 9.99957C14.9167 9.58535 14.5809 9.24957 14.1667 9.24957V10.7496ZM1.25 9.24957C0.835786 9.24957 0.5 9.58535 0.5 9.99957C0.5 10.4138 0.835786 10.7496 1.25 10.7496V9.24957ZM10.8558 7.76358L13.6375 10.5314L14.6955 9.46814L11.9138 6.70028L10.8558 7.76358ZM13.6375 9.46814L10.8558 12.236L11.9138 13.2993L14.6955 10.5314L13.6375 9.46814ZM14.1667 9.24957H1.25V10.7496H14.1667V9.24957Z" fill="#0B1226"></path>
+                          </svg>
+                        </div>
+                        <div class="header__text">
+                           Личный кабинет</div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__bot">
+                <div class="header__row"> 
+                  <div class="header__col">
+                    <div class="header__logo"><a class="header__logo-link" href="#"> 
+                        <svg class="header__logo-svg" width="187" height="48" viewBox="0 0 187 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M48 0H34.7854V2.57489C31.5303 0.923071 27.8866 0 24 0C10.834 0 0.097166 10.6397 0 23.8056V48H13.2146V45.4251C16.4696 47.0769 20.1134 48 24 48C37.2632 48 48 37.2631 48 24C48 23.5627 48 23.1255 47.9514 22.7368H48V0ZM36.3401 32.0162H14.5263V37.0688C14.3806 38.7692 12.9716 40.0809 11.2227 40.0809C9.52225 40.0809 8.11335 38.7692 7.91902 37.0688V23.6599C8.06477 14.915 15.2065 7.91902 24 7.91902C29.3441 7.91902 34.0567 10.5425 36.9716 14.5263C37.3603 15.0607 37.6032 15.7409 37.6032 16.4696C37.6032 18.2672 36.1457 19.7733 34.2996 19.7733C33.2793 19.7733 32.3563 19.2874 31.7247 18.5587C30.0243 16.1295 27.2065 14.4777 24 14.4777C18.753 14.4777 14.5263 18.7045 14.5263 23.9514V24C14.5263 24.2915 14.5263 24.6316 14.5749 24.9231H14.5263V25.4089H36.3401C38.1376 25.4089 39.5951 26.915 39.5951 28.7125C39.5951 30.5587 38.1376 32.0162 36.3401 32.0162Z" fill="#0070B8"></path>
+                          <path d="M77.0525 11.9028C80.4533 11.9028 83.4655 14.7207 84.8258 18.8502H98.5262C96.2914 8.50205 87.4007 0.72876 76.8096 0.72876C64.5181 0.72876 54.5586 11.2227 54.5586 24.0486C54.5586 36.8745 64.5181 47.3198 76.8096 47.3198C87.4007 47.3198 96.2428 39.5951 98.5262 29.247H84.9716C83.6112 33.4737 80.5505 36.4858 77.0525 36.4858C72.34 36.4858 68.4533 30.9474 68.4533 24.1944C68.4533 17.3927 72.3885 11.9028 77.0525 11.9028Z" fill="#0B1226"></path>
+                          <path d="M182.769 6.12151C180.291 3.64378 176.502 2.38062 171.401 2.38062H167.563H148.129V46.0081H162.218V31.9191H167.611H169.846C175.433 31.9191 179.66 30.6559 182.38 27.9353C185.15 25.2632 186.51 21.5223 186.51 16.7612C186.559 12.1944 185.295 8.64783 182.769 6.12151ZM171.303 20.9879C170.526 21.6681 169.312 22.1539 167.611 22.2996C167.028 22.3968 166.348 22.3968 165.619 22.3968H162.218V11.9515H166.202C166.688 11.9515 167.125 11.9515 167.563 12C169.409 12.1458 170.72 12.6802 171.498 13.4575C172.421 14.5264 172.907 15.7409 172.907 17.247C173.004 18.8017 172.421 20.0162 171.303 20.9879Z" fill="#0B1226"></path>
+                          <path d="M129.62 26.429L115.579 2.52612H102.122V46.2508H115.579V20.5504L129.717 46.2508H143.077V2.52612H129.62V26.429Z" fill="#0B1226"></path>
+                        </svg></a>
+                      <div class="header__logo-sep"> 
+                        <svg class="header__logo-cross" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.3">
+                            <path d="M4.82467 10.9799C4.62941 11.1751 4.62941 11.4917 4.82467 11.687C5.01993 11.8822 5.33651 11.8822 5.53178 11.687L4.82467 10.9799ZM8.86511 8.35363C9.06037 8.15837 9.06037 7.84179 8.86511 7.64653C8.66985 7.45127 8.35326 7.45127 8.158 7.64653L8.86511 8.35363ZM8.158 7.64653C7.96274 7.84179 7.96274 8.15837 8.158 8.35363C8.35326 8.5489 8.66985 8.5489 8.86511 8.35363L8.158 7.64653ZM12.1984 5.0203C12.3937 4.82504 12.3937 4.50846 12.1984 4.31319C12.0032 4.11793 11.6866 4.11793 11.4913 4.31319L12.1984 5.0203ZM8.86511 7.64653C8.66985 7.45127 8.35326 7.45127 8.158 7.64653C7.96274 7.84179 7.96274 8.15837 8.158 8.35363L8.86511 7.64653ZM11.4913 11.687C11.6866 11.8822 12.0032 11.8822 12.1984 11.687C12.3937 11.4917 12.3937 11.1751 12.1984 10.9799L11.4913 11.687ZM8.158 8.35363C8.35326 8.5489 8.66985 8.5489 8.86511 8.35363C9.06037 8.15837 9.06037 7.84179 8.86511 7.64653L8.158 8.35363ZM5.53178 4.31319C5.33651 4.11793 5.01993 4.11793 4.82467 4.31319C4.62941 4.50846 4.62941 4.82504 4.82467 5.0203L5.53178 4.31319ZM5.53178 11.687L8.86511 8.35363L8.158 7.64653L4.82467 10.9799L5.53178 11.687ZM8.86511 8.35363L12.1984 5.0203L11.4913 4.31319L8.158 7.64653L8.86511 8.35363ZM8.158 8.35363L11.4913 11.687L12.1984 10.9799L8.86511 7.64653L8.158 8.35363ZM8.86511 7.64653L5.53178 4.31319L4.82467 5.0203L8.158 8.35363L8.86511 7.64653Z" fill="#0B1226"></path>
+                          </g>
+                        </svg>
+                      </div><a class="header__logo-link" href="#"> 
+                        <svg class="header__logo-aikon" width="166" height="60" viewBox="0 0 166 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_2003_3807)">
+                            <mask id="mask0_2003_3807" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="166" height="60">
+                              <path d="M165.654 0H0.511475V60H165.654V0Z" fill="white"></path>
+                            </mask>
+                            <g mask="url(#mask0_2003_3807)">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M44.8652 53.1479C32.0226 61.0851 15.3225 57.1425 7.38546 44.2999C-0.50301 31.5359 3.43951 14.8358 16.2335 6.8199C29.046 -0.989598 45.7463 2.9529 53.7135 15.668C61.5717 28.5593 57.6292 45.2596 44.8652 53.1479L46.326 55.5116C60.3506 46.8439 64.7146 28.3591 55.9983 14.2558C47.3309 0.231413 28.8458 -4.13238 14.8214 4.5351C0.71812 13.2512 -3.64569 31.7362 5.02168 45.7608C13.7379 59.8639 32.2229 64.2276 46.326 55.5116L44.8652 53.1479Z" fill="#157FB1"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8693 34.0516C20.7246 41.3865 27.8969 46.4036 35.5686 45.3996L55.8052 42.7513L56.5917 39.9396L35.2203 42.7365C28.9815 43.5527 23.1101 39.5227 21.5255 33.5925C20.9054 31.2716 18.4275 32.3027 18.8693 34.0516ZM15.2949 43.4319C19.6657 50.1679 28.0127 53.7679 36.5183 52.6547L50.4497 50.8785L51.5517 48.0365L36.1695 49.9916C28.5154 50.9933 21.2054 47.5705 17.2685 41.5582C15.5976 39.0059 14.1059 41.5996 15.2949 43.4319Z" fill="#157FB1"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2694 38.5876C44.9086 33.5428 46.0283 24.8621 41.582 18.5301L29.8534 1.82764L26.9976 2.43452L39.384 20.0737C42.9997 25.2228 42.1512 32.2936 37.6314 36.4468C35.8623 38.0725 37.9252 39.7896 39.2694 38.5876ZM49.238 37.4056C53.18 30.4096 52.4997 21.3452 47.57 14.3251L39.5374 2.80502L36.5083 3.14599L45.372 15.8688C49.8083 22.1862 50.1649 30.2499 46.6629 36.5256C45.1763 39.1894 48.1657 39.3085 49.238 37.4056Z" fill="#157FB1"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M33.8809 17.8554C26.6513 15.6233 18.6352 19.1378 15.5008 26.2116L6.97992 45.3944L8.97178 47.529L17.9565 27.2999C20.5054 21.5474 27.0019 18.6303 32.8906 20.3626C35.1954 21.0407 35.604 18.388 33.8809 17.8554ZM27.7298 9.92222C19.7032 10.15 12.286 15.405 8.81104 23.2476L2.56763 37.2755L4.42115 39.6955L11.2667 24.3355C14.3939 17.2779 21.1203 12.8162 28.303 12.5827C31.352 12.4837 29.9134 9.86028 27.7298 9.92222Z" fill="#157FB1"></path>
+                              <path d="M78.4383 39.232C78.9763 39.232 79.5957 39.1203 80.2974 38.8957C80.9994 38.6717 81.7163 38.3883 82.448 38.0445C83.1797 37.7011 83.8817 37.35 84.5537 36.9914C85.226 36.6328 85.8006 36.3194 86.2786 36.0505V32.152H77.9008C77.4231 32.152 76.9748 32.2491 76.5566 32.4431C76.1388 32.6374 75.7806 32.8911 75.4814 33.2048C75.1828 33.5183 74.944 33.892 74.7646 34.3251C74.5857 34.7585 74.496 35.1988 74.496 35.6471C74.496 36.1845 74.6077 36.6705 74.832 37.1034C75.0557 37.5365 75.3546 37.91 75.7277 38.2237C76.1011 38.5374 76.5194 38.7837 76.9826 38.9634C77.4451 39.1423 77.9308 39.232 78.4383 39.232ZM81.082 18.8881C82.336 18.8881 83.5083 19.0677 84.5983 19.4261C85.6886 19.7841 86.6448 20.3071 87.466 20.9942C88.2874 21.6813 88.9371 22.5329 89.4146 23.5484C89.8928 24.5641 90.1317 25.7443 90.1317 27.0884V36.8568C90.1317 37.9028 90.2288 38.7988 90.4228 39.5457C90.6168 40.2925 90.9528 41.1143 91.4311 42.0103H87.3091C87.0703 41.6817 86.8837 41.2631 86.7488 40.7557C86.6148 40.2477 86.5323 39.7845 86.5023 39.366C85.278 40.2625 83.9266 41.0165 82.448 41.6294C80.97 42.2417 79.4688 42.5477 77.946 42.5477C76.93 42.5477 75.982 42.3837 75.1008 42.0548C74.22 41.7265 73.4506 41.256 72.7934 40.6434C72.1363 40.0311 71.6211 39.2991 71.248 38.448C70.8746 37.5965 70.688 36.648 70.688 35.6023C70.688 34.6165 70.8817 33.7128 71.27 32.8911C71.6583 32.0697 72.1814 31.3603 72.8383 30.7631C73.4954 30.1651 74.2571 29.7025 75.1229 29.374C75.9894 29.0448 76.9 28.8808 77.8563 28.8808H86.2786V26.8196C86.2786 25.2062 85.7934 24.0338 84.8228 23.3018C83.8517 22.57 82.6046 22.1893 81.082 22.1593C79.708 22.1593 78.528 22.3234 77.5426 22.652C76.5566 22.9811 75.4814 23.4887 74.3168 24.1756L72.6588 21.3077C73.3757 20.8894 74.0554 20.5309 74.6974 20.2323C75.3394 19.9336 75.9968 19.6799 76.6691 19.4705C77.3411 19.2616 78.0351 19.112 78.752 19.0227C79.4688 18.933 80.2454 18.8881 81.082 18.8881ZM95.06 42.0103V19.4261H98.9128V42.0103H95.06ZM96.942 10.3293C97.5391 10.3293 98.0466 10.5311 98.4648 10.9344C98.8831 11.3378 99.092 11.8381 99.092 12.4355C99.092 13.0327 98.8831 13.5336 98.4648 13.9364C98.0466 14.3398 97.5391 14.5415 96.942 14.5415C96.3443 14.5415 95.8368 14.3398 95.4186 13.9364C95.0003 13.5336 94.7914 13.0327 94.7914 12.4355C94.7914 11.8381 95.0003 11.3378 95.4186 10.9344C95.8368 10.5311 96.3443 10.3293 96.942 10.3293ZM107.829 10.3293V29.1045H110.158L117.057 19.4262H121L113.384 30.4045L118.939 38.0668C119.238 38.4851 119.641 38.7837 120.149 38.9634C120.657 39.1423 121.194 39.232 121.761 39.232V42.0103C121.045 42.3685 120.417 42.5477 119.88 42.5477C119.133 42.5477 118.446 42.264 117.819 41.6965C117.192 41.1285 116.609 40.4714 116.072 39.7245L110.113 31.6588H107.829V42.0103H103.975V11.4049L107.829 10.3293ZM139.861 30.718V29.8217C139.861 27.6408 139.294 25.8634 138.159 24.4893C137.562 23.7723 136.815 23.2121 135.919 22.8088C135.023 22.4059 133.992 22.2043 132.827 22.2043C131.692 22.2043 130.692 22.391 129.826 22.7643C128.96 23.1379 128.228 23.6681 127.631 24.3552C126.436 25.7293 125.839 27.5666 125.839 29.8665V30.8971C125.839 32.152 125.973 33.3168 126.242 34.3923C126.511 35.4677 126.973 36.394 127.631 37.1708C128.168 37.828 128.863 38.3354 129.713 38.694C130.565 39.0525 131.603 39.232 132.827 39.232C133.963 39.232 134.933 39.0674 135.739 38.7388C136.546 38.4103 137.233 37.9471 137.8 37.35C138.577 36.5731 139.114 35.6023 139.413 34.4371C139.712 33.2725 139.861 32.0323 139.861 30.718ZM140.578 39.3217C139.533 40.4265 138.353 41.2411 137.039 41.7637C135.725 42.2865 134.306 42.5477 132.783 42.5477C131.319 42.5477 129.915 42.2788 128.571 41.7414C127.227 41.2034 126.032 40.3971 124.987 39.3217C123.852 38.1865 123.113 36.8717 122.769 35.3785C122.426 33.8845 122.254 32.3311 122.254 30.718V29.8665C122.284 28.3135 122.478 26.9238 122.837 25.6993C123.195 24.4743 123.957 23.2498 125.122 22.0248C126.167 20.9493 127.332 20.1575 128.616 19.6499C129.9 19.1419 131.289 18.8881 132.783 18.8881C134.276 18.8881 135.658 19.1347 136.927 19.6273C138.196 20.1205 139.354 20.8894 140.399 21.9349C141.474 23.0403 142.251 24.2355 142.728 25.5199C143.207 26.8047 143.445 28.2236 143.445 29.7768V30.718C143.445 32.3311 143.266 33.8545 142.908 35.2885C142.549 36.7225 141.773 38.0668 140.578 39.3217ZM156.886 22.2043C155.542 22.2043 154.355 22.4653 153.324 22.9883C152.294 23.5113 151.569 23.9967 151.151 24.4443V42.0103H147.298V24.9824C147.298 23.3988 146.955 21.92 146.268 20.5459L149.807 18.8881C150.046 19.3064 150.255 19.7247 150.434 20.1426C150.613 20.5609 150.763 21.0241 150.882 21.5321H151.151C151.779 20.7553 152.652 20.1205 153.772 19.6273C154.892 19.1347 155.96 18.8881 156.975 18.8881C158.349 18.8881 159.581 19.1048 160.671 19.5381C161.761 19.9709 162.68 20.5687 163.427 21.3305C164.173 22.0924 164.741 22.9883 165.129 24.0189C165.517 25.0495 165.711 26.1626 165.711 27.3571V42.0103H161.859V27.3123C161.859 25.7592 161.388 24.5191 160.447 23.5933C159.506 22.6669 158.319 22.2043 156.886 22.2043Z" fill="#157FB1"></path>
+                            </g>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_2003_3807">
+                              <rect width="165.143" height="60" fill="white" transform="translate(0.511475)"></rect>
+                            </clippath>
+                          </defs>
+                        </svg></a>
+                    </div>
+                    <div class="header__buttons">
+                      <div class="header__buttons-item"> 
+                        <button class="header__button blue">
+                          <svg class="header__button-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.3333C0.447715 11.3333 0 11.7811 0 12.3333C0 12.8856 0.447715 13.3333 1 13.3333V11.3333ZM22.3333 13.3333C22.8856 13.3333 23.3333 12.8856 23.3333 12.3333C23.3333 11.7811 22.8856 11.3333 22.3333 11.3333V13.3333ZM4.55657 18.6667C4.00429 18.6667 3.55657 19.1144 3.55657 19.6667C3.55657 20.219 4.00429 20.6667 4.55657 20.6667V18.6667ZM18.7783 20.6667C19.3306 20.6667 19.7783 20.219 19.7783 19.6667C19.7783 19.1144 19.3306 18.6667 18.7783 18.6667V20.6667ZM4.55657 4C4.00429 4 3.55657 4.44772 3.55657 5C3.55657 5.55228 4.00429 6 4.55657 6V4ZM18.7783 6C19.3306 6 19.7783 5.55228 19.7783 5C19.7783 4.44772 19.3306 4 18.7783 4V6ZM1 13.3333H22.3333V11.3333H1V13.3333ZM4.55657 20.6667H18.7783V18.6667H4.55657V20.6667ZM4.55657 6H18.7783V4H4.55657V6Z" fill="white"></path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="header__buttons-item">
+                        <button class="header__button big">
+                          <div class="header__button-text">
+                             Продукция</div>
+                          <svg class="header__button-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10Z" stroke="#0B1226" stroke-width="2"></path>
+                            <path d="M4 10C5.10457 10 6 10.8954 6 12C6 13.1046 5.10457 14 4 14C2.89543 14 2 13.1046 2 12C2 10.8954 2.89543 10 4 10Z" stroke="#0B1226" stroke-width="2"></path>
+                            <path d="M20 10C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10Z" stroke="#0B1226" stroke-width="2"></path>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="header__buttons-item">
+                        <button class="header__button">
+                          <svg class="header__button-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#0B1226"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__col">
+                    <div class="header__nav">
+                      <div class="header__nav-item big"> 
+                        <div class="header__nav-text">Сервис</div>
+                        <div class="header__nav-icon"> 
+                          <svg class="header__nav-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="header__nav-item big"> 
+                        <div class="header__nav-text">Склад и поставки</div>
+                        <div class="header__nav-icon"> 
+                          <svg class="header__nav-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="header__nav-item big"><a class="header__nav-text" href="#"> Документация</a></div>
+                      <div class="header__nav-item big"><a class="header__nav-text" href="#"> Прайс</a></div>
+                      <div class="header__nav-item big"><a class="header__nav-text" href="#"> Где купить</a></div>
+                      <div class="header__nav-item big"><a class="header__nav-text" href="#"> Программа подбора</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__mobile">
+               HEADER MOBILE</div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="main-page__intro">
+          <div class="main-page__intro-slider"> 
+            <div class="swiper-container swiper-container--slide-height-max" data-slider-id="intro" data-slider-prev="1" data-slider-next="2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="main-page__intro-slide"> 
+                    <div class="main-page__intro-img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__intro-content">
+                      <h1 class="main-page__intro-title">
+                         CDM, CDMF</h1>
+                      <div class="main-page__intro-text">
+                         Вертикальные многоступенчатые насосы с идеальным сочетанием качества и высокой эффективности</div>
+                    </div>
+                    <div class="main-page__intro-btn"> <a class="button button--blue" href="#">
+                        <div class="button__text"> Подробнее</div>
+                        <div class="button__icon"> 
+                          <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-page__intro-slide"> 
+                    <div class="main-page__intro-img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__intro-content">
+                      <h1 class="main-page__intro-title">
+                         CDM, CDMF</h1>
+                      <div class="main-page__intro-text">
+                         Вертикальные многоступенчатые насосы с идеальным сочетанием качества и высокой эффективности</div>
+                    </div>
+                    <div class="main-page__intro-btn"> <a class="button button--blue" href="#">
+                        <div class="button__text"> Подробнее</div>
+                        <div class="button__icon"> 
+                          <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-page__intro-slide"> 
+                    <div class="main-page__intro-img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__intro-content">
+                      <h1 class="main-page__intro-title">
+                         CDM, CDMF</h1>
+                      <div class="main-page__intro-text">
+                         Вертикальные многоступенчатые насосы с идеальным сочетанием качества и высокой эффективности</div>
+                    </div>
+                    <div class="main-page__intro-btn"> <a class="button button--blue" href="#">
+                        <div class="button__text"> Подробнее</div>
+                        <div class="button__icon"> 
+                          <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-page__intro-slide"> 
+                    <div class="main-page__intro-img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__intro-content">
+                      <h1 class="main-page__intro-title">
+                         CDM, CDMF</h1>
+                      <div class="main-page__intro-text">
+                         Вертикальные многоступенчатые насосы с идеальным сочетанием качества и высокой эффективности</div>
+                    </div>
+                    <div class="main-page__intro-btn"> <a class="button button--blue" href="#">
+                        <div class="button__text"> Подробнее</div>
+                        <div class="button__icon"> 
+                          <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-page__intro-slide"> 
+                    <div class="main-page__intro-img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__intro-content">
+                      <h1 class="main-page__intro-title">
+                         CDM, CDMF</h1>
+                      <div class="main-page__intro-text">
+                         Вертикальные многоступенчатые насосы с идеальным сочетанием качества и высокой эффективности</div>
+                    </div>
+                    <div class="main-page__intro-btn"> <a class="button button--blue" href="#">
+                        <div class="button__text"> Подробнее</div>
+                        <div class="button__icon"> 
+                          <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-page__intro-bot">
+            <div class="main-page__intro-buttons"> 
+              <div class="slider-buttons slider-buttons--faded" data-slider-buttons="">
+                <div class="slider-buttons__item"> 
+                  <button class="slider-buttons__button" data-slider-button="1">
+                    <svg class="slider-buttons__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5 21L5.5 12L14.5 3" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="slider-buttons__item"> 
+                  <button class="slider-buttons__button" data-slider-button="2">
+                    <svg class="slider-buttons__svg right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5 21L5.5 12L14.5 3" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__intro-pagin"> 
+              <div class="swiper-pagination swiper-pagination--bullets" data-intro-pagin=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="main-page__features">
+          <div class="container"> 
+            <div class="main-page__features-grid"> 
+              <div class="main-page__features-item">
+                <div class="main-page__features-top"> 
+                  <div class="main-page__features-icon"> 
+                    <svg class="main-page__features-svg" width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99951 30.4139C8.99962 20.1978 16.2164 11.4046 26.2362 9.41194C36.2561 7.41929 46.2881 12.7822 50.197 22.2209C54.1058 31.6596 50.8027 42.545 42.3079 48.2199C33.813 53.8948 22.4923 52.7785 15.2694 45.5537C11.2547 41.538 8.99945 36.0922 8.99951 30.4139Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M48.5 48.501L61 61.001" stroke="url(#paint0_linear_201_4432)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <rect x="9" y="78" width="53" height="53" rx="11" stroke="#0B1226" stroke-width="2"></rect>
+                      <rect x="78" y="9" width="53" height="53" rx="11" stroke="#0B1226" stroke-width="2"></rect>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M119.744 81.0811L114.489 93.6908H124.998L119.744 81.0811Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M127.076 101.282C127.289 101.792 127.874 102.033 128.384 101.821C128.894 101.608 129.135 101.023 128.923 100.513L127.076 101.282ZM125.92 93.3064C125.708 92.7965 125.123 92.5554 124.613 92.7678C124.103 92.9802 123.862 93.5657 124.074 94.0755L125.92 93.3064ZM110.563 100.513C110.351 101.023 110.592 101.608 111.102 101.821C111.612 102.033 112.197 101.792 112.41 101.282L110.563 100.513ZM115.412 94.0755C115.624 93.5657 115.383 92.9802 114.873 92.7678C114.363 92.5554 113.778 92.7965 113.566 93.3064L115.412 94.0755ZM111.486 109.806C110.934 109.806 110.486 110.254 110.486 110.806C110.486 111.358 110.934 111.806 111.486 111.806V109.806ZM128 110.806L128.707 111.513C128.993 111.227 129.079 110.797 128.924 110.423C128.769 110.05 128.404 109.806 128 109.806V110.806ZM111.486 127.32L110.779 126.612C110.493 126.898 110.408 127.329 110.562 127.702C110.717 128.076 111.082 128.32 111.486 128.32V127.32ZM128 128.32C128.552 128.32 129 127.872 129 127.32C129 126.767 128.552 126.32 128 126.32V128.32ZM128.923 100.513L125.92 93.3064L124.074 94.0755L127.076 101.282L128.923 100.513ZM112.41 101.282L115.412 94.0755L113.566 93.3064L110.563 100.513L112.41 101.282ZM111.486 111.806H128V109.806H111.486V111.806ZM127.293 110.099L110.779 126.612L112.193 128.027L128.707 111.513L127.293 110.099ZM111.486 128.32H128V126.32H111.486V128.32Z" fill="white"></path>
+                      <path d="M90.3276 127.319V81.0811M90.3276 127.319L99.5 115M90.3276 127.319L81 115" stroke="url(#paint1_linear_201_4432)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <defs>
+                        <lineargradient id="paint0_linear_201_4432" x1="48" y1="48.5" x2="61" y2="61.5" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="white"></stop>
+                          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="paint1_linear_201_4432" x1="90" y1="127" x2="90" y2="81" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="white"></stop>
+                          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                        </lineargradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h4 class="main-page__features-title">
+                     Программа подбора оборудования</h4>
+                </div>
+                <div class="main-page__features-bot"> <a class="button button--wide" href="#">
+                    <div class="button__text"> Программа подбора</div>
+                    <div class="button__icon"> 
+                      <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="main-page__features-item">
+                <div class="main-page__features-top"> 
+                  <div class="main-page__features-icon"> 
+                    <svg class="main-page__features-svg" width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="90.152" cy="90.152" r="40.8478" stroke="white" stroke-width="2"></circle>
+                      <path d="M90.6955 111.348L90.6955 90.152L111.348 90.152" stroke="url(#paint0_linear_37_1394)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M90.6953 124.391L90.6953 118.956" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M119.5 90.1519L124.935 90.1519" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <circle cx="48.8478" cy="48.8478" r="40.8478" fill="#0070B8" stroke="white" stroke-width="2"></circle>
+                      <path d="M34.1738 50.3797L43.6847 60.2611L64.6086 38.522" stroke="url(#paint1_linear_37_1394)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <defs>
+                        <lineargradient id="paint0_linear_37_1394" x1="111.348" y1="90.6955" x2="87.9396" y2="102.875" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0B1226"></stop>
+                          <stop offset="1" stop-color="#0B1226" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="paint1_linear_37_1394" x1="43.9564" y1="60.8046" x2="33.6303" y2="50.4785" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0B1226"></stop>
+                          <stop offset="1" stop-color="#0B1226" stop-opacity="0"></stop>
+                        </lineargradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h4 class="main-page__features-title">
+                     Всегда актуальное наличие товара и сроки ожидаемой поставки</h4>
+                </div>
+                <div class="main-page__features-bot"> <a class="button button--wide" href="#">
+                    <div class="button__text"> Склад и поставки</div>
+                    <div class="button__icon"> 
+                      <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="main-page__features-item">
+                <div class="main-page__features-top"> 
+                  <div class="main-page__features-icon"> 
+                    <svg class="main-page__features-svg" width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M98.9655 8.68945H42.4924C35.6585 8.68945 32.2415 8.68945 29.6407 10.0405C27.449 11.179 25.6619 12.966 24.5234 15.1578C23.1724 17.7586 23.1724 21.1756 23.1724 28.0095V111.99C23.1724 118.824 23.1724 122.241 24.5234 124.842C25.6619 127.034 27.449 128.821 29.6407 129.959C32.2415 131.31 35.6585 131.31 42.4923 131.31H97.5076C104.341 131.31 107.758 131.31 110.359 129.959C112.551 128.821 114.338 127.034 115.477 124.842C116.828 122.241 116.828 118.824 116.828 111.99V26.3906M98.9655 8.68945L116.828 26.3906M98.9655 8.68945V19.9506C98.9655 22.2286 98.9655 23.3675 99.4158 24.2345C99.7953 24.9651 100.391 25.5607 101.122 25.9402C101.989 26.3906 103.128 26.3906 105.405 26.3906H116.828" stroke="white" stroke-width="2" stroke-linejoin="round"></path>
+                      <path d="M49.4833 100.305H38.6206V119.937L49.4833 113.501M49.4833 100.305V113.501M49.4833 100.305H60.5057V119.937L49.4833 113.501" stroke="white" stroke-width="2" stroke-linejoin="round"></path>
+                      <circle cx="49.5633" cy="92.5809" r="15.7356" fill="#00CBF1" stroke="white" stroke-width="2"></circle>
+                      <line x1="106.172" y1="43.1606" x2="33.8275" y2="43.1606" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></line>
+                      <line x1="106.172" y1="51.5283" x2="33.8275" y2="51.5283" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></line>
+                      <line x1="106.172" y1="59.8965" x2="33.8275" y2="59.8965" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></line>
+                      <line x1="1" y1="-1" x2="32.4713" y2="-1" transform="matrix(1 0 0 -1 32.8276 25.7471)" stroke="url(#paint0_linear_201_4337)" stroke-width="2" stroke-linecap="round"></line>
+                      <line x1="65.2988" y1="18.3789" x2="33.8275" y2="18.3789" stroke="url(#paint1_linear_201_4337)" stroke-width="2" stroke-linecap="round"></line>
+                      <line x1="1" y1="-1" x2="32.4713" y2="-1" transform="matrix(1 0 0 -1 73.8276 119.747)" stroke="url(#paint2_linear_201_4337)" stroke-width="2" stroke-linecap="round"></line>
+                      <line x1="106.299" y1="112.379" x2="74.8275" y2="112.379" stroke="url(#paint3_linear_201_4337)" stroke-width="2" stroke-linecap="round"></line>
+                      <defs>
+                        <lineargradient id="paint0_linear_201_4337" x1="33.6322" y1="-1.65517" x2="0.187751" y2="-1.65517" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0B1226"></stop>
+                          <stop offset="1" stop-color="#0B1226" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="paint1_linear_201_4337" x1="32.6666" y1="19.0341" x2="66.1111" y2="19.0341" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0B1226"></stop>
+                          <stop offset="1" stop-color="#0B1226" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="paint2_linear_201_4337" x1="33.6322" y1="-1.65517" x2="0.187751" y2="-1.65517" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0B1226"></stop>
+                          <stop offset="1" stop-color="#0B1226" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="paint3_linear_201_4337" x1="73.6666" y1="113.034" x2="107.111" y2="113.034" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0B1226"></stop>
+                          <stop offset="1" stop-color="#0B1226" stop-opacity="0"></stop>
+                        </lineargradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h4 class="main-page__features-title">
+                     Обязательная гарантия и сертификаты на всю продукцию</h4>
+                </div>
+                <div class="main-page__features-bot"> <a class="button button--wide" href="#">
+                    <div class="button__text"> Гарантия</div>
+                    <div class="button__icon"> 
+                      <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="main-page__features-item">
+                <div class="main-page__features-top"> 
+                  <div class="main-page__features-icon"> 
+                    <svg class="main-page__features-svg" width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="21" cy="21" r="17" stroke="white" stroke-width="2"></circle>
+                      <path d="M23.0856 26.6509C24.8179 24.4418 27 21.2324 27 19.082C27 15.5162 24.3137 12.6255 21 12.6255C17.6863 12.6255 15 15.5162 15 19.082C15 21.2324 17.1821 24.4418 18.9144 26.6509C19.8182 27.8033 20.2701 28.3796 21 28.3796C21.7299 28.3796 22.1818 27.8033 23.0856 26.6509Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                      <circle cx="119" cy="21" r="17" stroke="white" stroke-width="2"></circle>
+                      <path d="M121.086 26.6509C122.818 24.4418 125 21.2324 125 19.082C125 15.5162 122.314 12.6255 119 12.6255C115.686 12.6255 113 15.5162 113 19.082C113 21.2324 115.182 24.4418 116.914 26.6509C117.818 27.8033 118.27 28.3796 119 28.3796C119.73 28.3796 120.182 27.8033 121.086 26.6509Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                      <circle cx="21" cy="119" r="17" stroke="white" stroke-width="2"></circle>
+                      <path d="M23.0856 124.651C24.8179 122.442 27 119.232 27 117.082C27 113.516 24.3137 110.625 21 110.625C17.6863 110.625 15 113.516 15 117.082C15 119.232 17.1821 122.442 18.9144 124.651C19.8182 125.803 20.2701 126.38 21 126.38C21.7299 126.38 22.1818 125.803 23.0856 124.651Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                      <circle cx="70" cy="70" r="36" stroke="url(#paint0_linear_37_1505)" stroke-width="2"></circle>
+                      <path d="M74.8664 83.9399C78.9085 78.7517 84 71.2142 84 66.1637C84 57.789 77.732 51 70 51C62.268 51 56 57.789 56 66.1637C56 71.2142 61.0915 78.7517 65.1336 83.9399C67.2424 86.6466 68.2968 88 70 88C71.7032 88 72.7576 86.6466 74.8664 83.9399Z" stroke="#0070B8" stroke-width="2" stroke-linecap="round"></path>
+                      <circle cx="119" cy="119" r="17" stroke="white" stroke-width="2"></circle>
+                      <path d="M121.086 124.651C122.818 122.442 125 119.232 125 117.082C125 113.516 122.314 110.625 119 110.625C115.686 110.625 113 113.516 113 117.082C113 119.232 115.182 122.442 116.914 124.651C117.818 125.803 118.27 126.38 119 126.38C119.73 126.38 120.182 125.803 121.086 124.651Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                      <defs>
+                        <lineargradient id="paint0_linear_37_1505" x1="70" y1="33" x2="70" y2="107" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0070B8"></stop>
+                          <stop offset="1" stop-color="#0070B8" stop-opacity="0"></stop>
+                        </lineargradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h4 class="main-page__features-title">
+                     Более 300 дилеров в России и странах СНГ</h4>
+                </div>
+                <div class="main-page__features-bot"> <a class="button button--wide" href="#">
+                    <div class="button__text"> Где купить</div>
+                    <div class="button__icon"> 
+                      <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--regular main-page__cooperation">
+          <div class="main-page__cooperation-bg"> 
+            <picture class="picture">
+              <source class="lazyload" type="image/webp" srcset="webp/cooperation-bg.webp 1x" alt="cooperation-bg.jpg"/>
+              <source class="lazyload" srcset="images/cooperation-bg.jpg 1x" alt="cooperation-bg.jpg"/>
+              <source class="lazyload" srcset="images/cooperation-bg.png 1x" alt="cooperation-bg.jpg"/><img class="picture__img lazyload" data-src="images/cooperation-bg.jpg" alt="cooperation-bg.jpg"/>
+            </picture>
+          </div>
+          <div class="container"> 
+            <div class="main-page__inner faded"> 
+              <div class="main-page__cooperation-row"> 
+                <div class="main-page__cooperation-col"> 
+                  <div class="main-page__label white">Сотрудничество</div>
+                  <div class="main-page__cooperation-btn"> <a class="button" href="#">
+                      <div class="button__text"> Подробнее</div>
+                      <div class="button__icon"> 
+                        <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div></a>
+                  </div>
+                </div>
+                <div class="main-page__cooperation-col">
+                  <h2 class="main-page__cooperation-title">
+                     Мы открыты к сотрудничеству с торговыми, монтажными и проектными организациями во всех регионах России и СНГ</h2>
+                  <div class="main-page__cooperation-inner"> 
+                    <div class="main-page__cooperation-item"> 
+                      <div class="main-page__cooperation-heading">
+                         Цетральный офис и склад</div>
+                      <div class="main-page__cooperation-city">
+                         Москва</div>
+                    </div>
+                    <div class="main-page__cooperation-item"> 
+                      <div class="main-page__cooperation-heading">
+                         2 склада</div>
+                      <div class="main-page__cooperation-city">
+                         Челябинск</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-page__objects">
+          <div class="container"> 
+            <div class="main-page__inner faded">
+              <div class="main-page__top small">
+                <h5 class="main-page__label">
+                   Продукция на объектах</h5>
+                <div class="main-page__link"> <a class="link" href="#">
+                    <div class="link__text"> Все объекты
+                    </div>
+                    <div class="link__icon">
+                      <svg class="link__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="main-page__objects-slider">
+                <div class="swiper-container swiper-container--slide-width-auto swiper-container--slide-height-max" data-slider-id="objects" data-slider-prev="3" data-slider-next="4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a class="main-page__objects-slide" href="#">
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-container"> 
+                            <div class="main-page__objects-item">
+                              <h4 class="main-page__objects-title">
+                                 Строительство нового цеха завода КБХА</h4>
+                            </div>
+                            <div class="main-page__objects-item">
+                              <div class="main-page__objects-content"> 
+                                <div class="main-page__objects-heading">
+                                   Завод КБХА</div>
+                                <div class="main-page__objects-city">
+                                   Воронеж</div>
+                              </div>
+                              <div class="main-page__icon static"> 
+                                <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-img"> 
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                            </picture>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide"><a class="main-page__objects-slide white" href="#">
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-container"> 
+                            <div class="main-page__objects-item">
+                              <h4 class="main-page__objects-title">
+                                 Строительство нового цеха завода КБХА</h4>
+                            </div>
+                            <div class="main-page__objects-item">
+                              <div class="main-page__objects-content"> 
+                                <div class="main-page__objects-heading">
+                                   Завод КБХА</div>
+                                <div class="main-page__objects-city">
+                                   Воронеж</div>
+                              </div>
+                              <div class="main-page__icon static"> 
+                                <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-img"> 
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                            </picture>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide"><a class="main-page__objects-slide" href="#">
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-container"> 
+                            <div class="main-page__objects-item">
+                              <h4 class="main-page__objects-title">
+                                 Строительство нового цеха завода КБХА</h4>
+                            </div>
+                            <div class="main-page__objects-item">
+                              <div class="main-page__objects-content"> 
+                                <div class="main-page__objects-heading">
+                                   Завод КБХА</div>
+                                <div class="main-page__objects-city">
+                                   Воронеж</div>
+                              </div>
+                              <div class="main-page__icon static"> 
+                                <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-img"> 
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                            </picture>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide"><a class="main-page__objects-slide white" href="#">
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-container"> 
+                            <div class="main-page__objects-item">
+                              <h4 class="main-page__objects-title">
+                                 Строительство нового цеха завода КБХА</h4>
+                            </div>
+                            <div class="main-page__objects-item">
+                              <div class="main-page__objects-content"> 
+                                <div class="main-page__objects-heading">
+                                   Завод КБХА</div>
+                                <div class="main-page__objects-city">
+                                   Воронеж</div>
+                              </div>
+                              <div class="main-page__icon static"> 
+                                <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-img"> 
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                            </picture>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide"><a class="main-page__objects-slide" href="#">
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-container"> 
+                            <div class="main-page__objects-item">
+                              <h4 class="main-page__objects-title">
+                                 Строительство нового цеха завода КБХА</h4>
+                            </div>
+                            <div class="main-page__objects-item">
+                              <div class="main-page__objects-content"> 
+                                <div class="main-page__objects-heading">
+                                   Завод КБХА</div>
+                                <div class="main-page__objects-city">
+                                   Воронеж</div>
+                              </div>
+                              <div class="main-page__icon static"> 
+                                <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-page__objects-col">
+                          <div class="main-page__objects-img"> 
+                            <picture class="picture">
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                            </picture>
+                          </div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-page__objects-bot">
+                <div class="main-page__objects-pagin"> 
+                  <div class="swiper-pagination swiper-pagination--bullets" data-objects-pagin=""></div>
+                </div>
+                <div class="main-page__objects-btns"> 
+                  <div class="slider-buttons" data-slider-buttons="">
+                    <div class="slider-buttons__item"> 
+                      <button class="slider-buttons__button" data-slider-button="3">
+                        <svg class="slider-buttons__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.5 21L5.5 12L14.5 3" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="slider-buttons__item"> 
+                      <button class="slider-buttons__button" data-slider-button="4">
+                        <svg class="slider-buttons__svg right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.5 21L5.5 12L14.5 3" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--regular">
+          <div class="container"> 
+            <div class="main-page__inner main-page__clients">
+              <div class="main-page__top"> 
+                <h5 class="main-page__label">
+                   Новости и события </h5>
+              </div>
+              <div class="main-page__clients-container"> 
+                <div class="main-page__clients-item"> 
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,UklGRgQHAABXRUJQVlA4IPgGAABQHwCdASqFAEIAPpFAm0ilpCKhJzZtALASCWgA0uAFP7/AeZ3ZOw91B5XHQ/oR/tnqd/z26S8x3lRft77l/QA/tfo5+p9/YvVc8ub2bf7xkvTMOgh9Nez+Uf/N8NssL9B/qvQ769+Zbxw9AT9H+i7o3T5Tm5vyt1p75uVgDqvPnQe/WtjJdHQJYCUA0LdC2wjx96URPNfiQY0uCW47yxeQRwNzC4usrOL2iPf9f1kBeGUJVS0YpOWJDuQZYNwxweA5jiwFwD6M9eIiFnYaqA9xbRK0+inMCmgX/M3yf+LaTGdcke5Pf5J0D93VWvO6uQVKULcrAyeWPSV2OpShgiRYwt+gAP79OhR3M9Qs1mJytfcMIdtM7Wzphij1q9QPnsHxVXgfH8TN3ece8zX3d5yZyKLorOPAnc4cG8LVXl579G555RvayUcf8Tv96M7unVYu6NTE4MPW7jRfMmuva8jmRNA/RjQ2VbTnRQ3jn288QYpWwBw6tYBx1MZ6tMcV57F9P98IisDFXoFUhCzU4XCmk301ZXaDS/vuI7f87hXfg9u95W/8SEz0wJc8ah0akhEOY8F0ImiTLh9mR+3CChzmdfIqp+2LeRIbcj3JUPCCVxobvJ/9irHZ9myBYZGY3Ov+lTKItqXvBLO1HFgwAwFZybfmv+ij/3L3bvNoSCWPqIBTvDCgB618o6r3uJcUeh1PXV2OWMxWJSYB1vi0DElhmXeiRj4AXTUIBj6jUGvnS+ms4kcHc4ZXfzwL+NExZ3jY03qkc3zHFdqRs3JMZdBPS2M5Pk8LA7XYdPGejDqepa6VplMA4xkDk1p+orPQTBTezWDHRv38c/2AE3HI72zjDCrrC3sQCbsrfwe4utItSQi4VQP91DHe+vHCPhIpThFC37BO8u9so2zJ+TkVxdL7reskJsdWYpXMXeBUJ6uicETcELSt9Q7/S/rbTE5Q/tHgOhyhuY4UHM2JYZq/q4CvVNXjHimxFeFbx+j+dl5+BB+Gnrn0a8YfXE3G+5CVK+Po41gr10tWMtjEfq1de8JBERp7GOnP/GWya6TMu0Q5q9dnwtHUXl4BsOj0O0Bti/9Wr1P86ZBRRs4+J4jE6v24SZIIYb5l8FFVao0BejZD0Ux40+KDq+EHAc3j010Jz1YbjbNMwWTLRj/8KICOlRCEdXxqD3IFNWCEd9brO4KsVSiBaYbrCvgsYfdqn5PhpJMJhz2SnaAKFvtL+rfMiNemyoJ4Nt4GjWOQc2tBNPKMRbmyH638xrIninlyRbWadag6ES2Yd12IkQTodwr7cMToLOay27mGgw7NIMLfW9TYXxaCwYZy05qsVDH+ClIA4AGnFI/ZZvwtkWnRbrODCUertNbk/Vv6Z3cT6VpY4MfgDnAq/cjCuIgM15bPQgotCxtbY1FGLTASZPreFec/05AwY8wjn9MjlORtTqiYN8NqY/6K/5f1lnE2+bk+wRLWdCJS+R8BIjRFOX0Qwuoewehd6719xrNX/uoNJKOLCgXMAU+Oyvj7YSyTshsxOeP7S74TnJy2mRWR6Q8cA021yT+wsMxGEEEFWEFfi/htgcr5DXz1d+Oq89HwvRoK5hJOuDbouMniB/hxSjuU1I7KMneuQmfVkan+KR0LVIgZ9EqkQRRHMMtspvuHiPH0C7VkzSJbdNYSvXsynlyO5SFnY8y2YqTdGs4cxfPaI56vTDc8VH9NEPr5qgMic1v5PIaY5s5mUjaIfJVyJ1b38CdKjvcQYWGfzf15JjnyK7fvyD+qw61RGZOWgytGv9dRRd9HPCKTrGC/mlftoRq0zUqBQrB83CD8EHmizu4muJUp4nhFsSBYX8qxlUZRYv/2JL4ncChMhOzSeM8JXPnhNUmrlQwUOjy7lxy8aWV+k4Kuodd+OMgBpnm8deDS5NOhSUQsPCRfJq1gWapqL/IxXyvRHj0U7RTWVNtaXfwx44z/T/D/c7n8E4mqomxuZiYfY0VPzVTFQqa9A7UaQeAeL+Xy/UGTM79l6sjkDsmyQAIqbhcv+2sa/7ZdiCAj91wgn63S80OBRDNUHQU8r2jIcZ67v5h5575R2iO7w/glqKJiOYoUUPxU+bw25imbQ1TnQHQeBHlBZJAAJ5oWjI1uktKnGBdeLBldD4KW/tE7qLePRgj8i3OONrZ4i/sFOwZf30KXbxb+CSI0ce7rxBSWC7lgJ89zHjX3cmiDKr9m6s3vDUOyb83+o5leEsOlV3CaieW8K9gpQvoYhNWEFIFmUN1V/F1skvnx9xBWEtIRQCZGH8tuO9548Nnr5uz180875jxBY1faZ5X6r/Nfq3XppYXf9oRqeSXAasJPpv0RDOJwWGfJbb4fuWAncxqlnpmWfpG98BqCFimRO1KAAA== 1x" alt="gazprom.jpg"/>
+                    <source class="lazyload" srcset="images/gazprom.jpg 1x" alt="gazprom.jpg"/>
+                    <source class="lazyload" srcset="images/gazprom.png 1x" alt="gazprom.jpg"/><img class="picture__img lazyload" data-src="images/gazprom.jpg" alt="gazprom.jpg"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--regular section--last"> 
+          <div class="container"> 
+            <div class="main-page__inner main-page__news">
+              <div class="main-page__top"> 
+                <h5 class="main-page__label">
+                   Наши клиенты</h5>
+                <div class="main-page__link"> <a class="link" href="#">
+                    <div class="link__text"> Все новости и события 
+                    </div>
+                    <div class="link__icon">
+                      <svg class="link__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+              <div class="main-page__news-grid"> <a class="main-page__news-item" href="#"> 
+                  <div class="main-page__news-top">
+                    <div class="main-page__news-img">
+                      <div class="main-page__news-date">
+                         10 ноября 2023</div>
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.png 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="main-page__news-container">
+                    <div class="main-page__news-heading">
+                       Насосы серии NIS вошли в складскую программу CNP Насосы серии NIS вошли в складскую программу CNP Насосы серии NIS вошли в складскую программу CNP</div>
+                    <div class="main-page__news-tags"> 
+                      <div class="main-page__news-tag">
+                         #NISO</div>
+                      <div class="main-page__news-tag">
+                         #NISO</div>
+                      <div class="main-page__news-tag">
+                         #NISO</div>
+                      <div class="main-page__news-tag">
+                         #NISO</div>
+                    </div>
+                  </div>
+                  <div class="main-page__icon"> 
+                    <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div></a><a class="main-page__news-item" href="#"> 
+                  <div class="main-page__news-top">
+                    <div class="main-page__news-img">
+                      <div class="main-page__news-date">
+                         10 ноября 2023</div>
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.png 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="main-page__news-container">
+                    <div class="main-page__news-heading">
+                       Итоги выставки EcwaTech</div>
+                    <div class="main-page__news-tags"> 
+                      <div class="main-page__news-tag">
+                         #выставки </div>
+                    </div>
+                  </div>
+                  <div class="main-page__icon">
+                    <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div></a><a class="main-page__news-item" href="#"> 
+                  <div class="main-page__news-top">
+                    <div class="main-page__news-img">
+                      <div class="main-page__news-date">
+                         10 ноября 2023</div>
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.png 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="main-page__news-container">
+                    <div class="main-page__news-heading">
+                       Итоги выставки EcwaTech</div>
+                    <div class="main-page__news-tags"> 
+                      <div class="main-page__news-tag">
+                         #выставки </div>
+                    </div>
+                  </div>
+                  <div class="main-page__icon">
+                    <svg class="main-page__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="footer-wrapper">
+        <div class="footer-products">
+          <div class="footer-products__block"> 
+            <div class="footer-products__logo"> 
+              <svg class="footer-products__svg" width="187" height="48" viewBox="0 0 187 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 0H34.7854V2.57489C31.5303 0.923071 27.8866 0 24 0C10.834 0 0.097166 10.6397 0 23.8056V48H13.2146V45.4251C16.4696 47.0769 20.1134 48 24 48C37.2632 48 48 37.2631 48 24C48 23.5627 48 23.1255 47.9514 22.7368H48V0ZM36.3401 32.0162H14.5263V37.0688C14.3806 38.7692 12.9716 40.0809 11.2227 40.0809C9.52225 40.0809 8.11335 38.7692 7.91902 37.0688V23.6599C8.06477 14.915 15.2065 7.91902 24 7.91902C29.3441 7.91902 34.0567 10.5425 36.9716 14.5263C37.3603 15.0607 37.6032 15.7409 37.6032 16.4696C37.6032 18.2672 36.1457 19.7733 34.2996 19.7733C33.2793 19.7733 32.3563 19.2874 31.7247 18.5587C30.0243 16.1295 27.2065 14.4777 24 14.4777C18.753 14.4777 14.5263 18.7045 14.5263 23.9514V24C14.5263 24.2915 14.5263 24.6316 14.5749 24.9231H14.5263V25.4089H36.3401C38.1376 25.4089 39.5951 26.915 39.5951 28.7125C39.5951 30.5587 38.1376 32.0162 36.3401 32.0162Z" fill="#0070B8"></path>
+                <path d="M77.0525 11.9028C80.4533 11.9028 83.4655 14.7207 84.8258 18.8502H98.5262C96.2914 8.50205 87.4007 0.72876 76.8096 0.72876C64.5181 0.72876 54.5586 11.2227 54.5586 24.0486C54.5586 36.8745 64.5181 47.3198 76.8096 47.3198C87.4007 47.3198 96.2428 39.5951 98.5262 29.247H84.9716C83.6112 33.4737 80.5505 36.4858 77.0525 36.4858C72.34 36.4858 68.4533 30.9474 68.4533 24.1944C68.4533 17.3927 72.3885 11.9028 77.0525 11.9028Z" fill="#0B1226"></path>
+                <path d="M182.769 6.12151C180.291 3.64378 176.502 2.38062 171.401 2.38062H167.563H148.129V46.0081H162.218V31.9191H167.611H169.846C175.433 31.9191 179.66 30.6559 182.38 27.9353C185.15 25.2632 186.51 21.5223 186.51 16.7612C186.559 12.1944 185.295 8.64783 182.769 6.12151ZM171.303 20.9879C170.526 21.6681 169.312 22.1539 167.611 22.2996C167.028 22.3968 166.348 22.3968 165.619 22.3968H162.218V11.9515H166.202C166.688 11.9515 167.125 11.9515 167.563 12C169.409 12.1458 170.72 12.6802 171.498 13.4575C172.421 14.5264 172.907 15.7409 172.907 17.247C173.004 18.8017 172.421 20.0162 171.303 20.9879Z" fill="#0B1226"></path>
+                <path d="M129.62 26.429L115.579 2.52612H102.122V46.2508H115.579V20.5504L129.717 46.2508H143.077V2.52612H129.62V26.429Z" fill="#0B1226"></path>
+              </svg>
+            </div>
+            <div class="footer-products__row"> 
+              <div class="footer-products__col">
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Многоступенчатые насосы «in-line»</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Консольно-моноблочные многоступенчатые насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Насосы двухстороннего всасывания</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Консольные и консольно- моноблочные одноступенчатые насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Дозирующие насосы</a></div>
+              </div>
+              <div class="footer-products__col">
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Сточно-массные и дренажные насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Полупогружные насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Погружные скважинные насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Самовсасывающие насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Циркуляционные насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Другое</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-products__block"> 
+            <div class="footer-products__logo"> 
+              <svg class="footer-products__aikon" width="166" height="60" viewBox="0 0 166 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2003_3807)">
+                  <mask id="mask0_2003_3807" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="166" height="60">
+                    <path d="M165.654 0H0.511475V60H165.654V0Z" fill="white"></path>
+                  </mask>
+                  <g mask="url(#mask0_2003_3807)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.8652 53.1479C32.0226 61.0851 15.3225 57.1425 7.38546 44.2999C-0.50301 31.5359 3.43951 14.8358 16.2335 6.8199C29.046 -0.989598 45.7463 2.9529 53.7135 15.668C61.5717 28.5593 57.6292 45.2596 44.8652 53.1479L46.326 55.5116C60.3506 46.8439 64.7146 28.3591 55.9983 14.2558C47.3309 0.231413 28.8458 -4.13238 14.8214 4.5351C0.71812 13.2512 -3.64569 31.7362 5.02168 45.7608C13.7379 59.8639 32.2229 64.2276 46.326 55.5116L44.8652 53.1479Z" fill="#157FB1"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8693 34.0516C20.7246 41.3865 27.8969 46.4036 35.5686 45.3996L55.8052 42.7513L56.5917 39.9396L35.2203 42.7365C28.9815 43.5527 23.1101 39.5227 21.5255 33.5925C20.9054 31.2716 18.4275 32.3027 18.8693 34.0516ZM15.2949 43.4319C19.6657 50.1679 28.0127 53.7679 36.5183 52.6547L50.4497 50.8785L51.5517 48.0365L36.1695 49.9916C28.5154 50.9933 21.2054 47.5705 17.2685 41.5582C15.5976 39.0059 14.1059 41.5996 15.2949 43.4319Z" fill="#157FB1"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2694 38.5876C44.9086 33.5428 46.0283 24.8621 41.582 18.5301L29.8534 1.82764L26.9976 2.43452L39.384 20.0737C42.9997 25.2228 42.1512 32.2936 37.6314 36.4468C35.8623 38.0725 37.9252 39.7896 39.2694 38.5876ZM49.238 37.4056C53.18 30.4096 52.4997 21.3452 47.57 14.3251L39.5374 2.80502L36.5083 3.14599L45.372 15.8688C49.8083 22.1862 50.1649 30.2499 46.6629 36.5256C45.1763 39.1894 48.1657 39.3085 49.238 37.4056Z" fill="#157FB1"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.8809 17.8554C26.6513 15.6233 18.6352 19.1378 15.5008 26.2116L6.97992 45.3944L8.97178 47.529L17.9565 27.2999C20.5054 21.5474 27.0019 18.6303 32.8906 20.3626C35.1954 21.0407 35.604 18.388 33.8809 17.8554ZM27.7298 9.92222C19.7032 10.15 12.286 15.405 8.81104 23.2476L2.56763 37.2755L4.42115 39.6955L11.2667 24.3355C14.3939 17.2779 21.1203 12.8162 28.303 12.5827C31.352 12.4837 29.9134 9.86028 27.7298 9.92222Z" fill="#157FB1"></path>
+                    <path d="M78.4383 39.232C78.9763 39.232 79.5957 39.1203 80.2974 38.8957C80.9994 38.6717 81.7163 38.3883 82.448 38.0445C83.1797 37.7011 83.8817 37.35 84.5537 36.9914C85.226 36.6328 85.8006 36.3194 86.2786 36.0505V32.152H77.9008C77.4231 32.152 76.9748 32.2491 76.5566 32.4431C76.1388 32.6374 75.7806 32.8911 75.4814 33.2048C75.1828 33.5183 74.944 33.892 74.7646 34.3251C74.5857 34.7585 74.496 35.1988 74.496 35.6471C74.496 36.1845 74.6077 36.6705 74.832 37.1034C75.0557 37.5365 75.3546 37.91 75.7277 38.2237C76.1011 38.5374 76.5194 38.7837 76.9826 38.9634C77.4451 39.1423 77.9308 39.232 78.4383 39.232ZM81.082 18.8881C82.336 18.8881 83.5083 19.0677 84.5983 19.4261C85.6886 19.7841 86.6448 20.3071 87.466 20.9942C88.2874 21.6813 88.9371 22.5329 89.4146 23.5484C89.8928 24.5641 90.1317 25.7443 90.1317 27.0884V36.8568C90.1317 37.9028 90.2288 38.7988 90.4228 39.5457C90.6168 40.2925 90.9528 41.1143 91.4311 42.0103H87.3091C87.0703 41.6817 86.8837 41.2631 86.7488 40.7557C86.6148 40.2477 86.5323 39.7845 86.5023 39.366C85.278 40.2625 83.9266 41.0165 82.448 41.6294C80.97 42.2417 79.4688 42.5477 77.946 42.5477C76.93 42.5477 75.982 42.3837 75.1008 42.0548C74.22 41.7265 73.4506 41.256 72.7934 40.6434C72.1363 40.0311 71.6211 39.2991 71.248 38.448C70.8746 37.5965 70.688 36.648 70.688 35.6023C70.688 34.6165 70.8817 33.7128 71.27 32.8911C71.6583 32.0697 72.1814 31.3603 72.8383 30.7631C73.4954 30.1651 74.2571 29.7025 75.1229 29.374C75.9894 29.0448 76.9 28.8808 77.8563 28.8808H86.2786V26.8196C86.2786 25.2062 85.7934 24.0338 84.8228 23.3018C83.8517 22.57 82.6046 22.1893 81.082 22.1593C79.708 22.1593 78.528 22.3234 77.5426 22.652C76.5566 22.9811 75.4814 23.4887 74.3168 24.1756L72.6588 21.3077C73.3757 20.8894 74.0554 20.5309 74.6974 20.2323C75.3394 19.9336 75.9968 19.6799 76.6691 19.4705C77.3411 19.2616 78.0351 19.112 78.752 19.0227C79.4688 18.933 80.2454 18.8881 81.082 18.8881ZM95.06 42.0103V19.4261H98.9128V42.0103H95.06ZM96.942 10.3293C97.5391 10.3293 98.0466 10.5311 98.4648 10.9344C98.8831 11.3378 99.092 11.8381 99.092 12.4355C99.092 13.0327 98.8831 13.5336 98.4648 13.9364C98.0466 14.3398 97.5391 14.5415 96.942 14.5415C96.3443 14.5415 95.8368 14.3398 95.4186 13.9364C95.0003 13.5336 94.7914 13.0327 94.7914 12.4355C94.7914 11.8381 95.0003 11.3378 95.4186 10.9344C95.8368 10.5311 96.3443 10.3293 96.942 10.3293ZM107.829 10.3293V29.1045H110.158L117.057 19.4262H121L113.384 30.4045L118.939 38.0668C119.238 38.4851 119.641 38.7837 120.149 38.9634C120.657 39.1423 121.194 39.232 121.761 39.232V42.0103C121.045 42.3685 120.417 42.5477 119.88 42.5477C119.133 42.5477 118.446 42.264 117.819 41.6965C117.192 41.1285 116.609 40.4714 116.072 39.7245L110.113 31.6588H107.829V42.0103H103.975V11.4049L107.829 10.3293ZM139.861 30.718V29.8217C139.861 27.6408 139.294 25.8634 138.159 24.4893C137.562 23.7723 136.815 23.2121 135.919 22.8088C135.023 22.4059 133.992 22.2043 132.827 22.2043C131.692 22.2043 130.692 22.391 129.826 22.7643C128.96 23.1379 128.228 23.6681 127.631 24.3552C126.436 25.7293 125.839 27.5666 125.839 29.8665V30.8971C125.839 32.152 125.973 33.3168 126.242 34.3923C126.511 35.4677 126.973 36.394 127.631 37.1708C128.168 37.828 128.863 38.3354 129.713 38.694C130.565 39.0525 131.603 39.232 132.827 39.232C133.963 39.232 134.933 39.0674 135.739 38.7388C136.546 38.4103 137.233 37.9471 137.8 37.35C138.577 36.5731 139.114 35.6023 139.413 34.4371C139.712 33.2725 139.861 32.0323 139.861 30.718ZM140.578 39.3217C139.533 40.4265 138.353 41.2411 137.039 41.7637C135.725 42.2865 134.306 42.5477 132.783 42.5477C131.319 42.5477 129.915 42.2788 128.571 41.7414C127.227 41.2034 126.032 40.3971 124.987 39.3217C123.852 38.1865 123.113 36.8717 122.769 35.3785C122.426 33.8845 122.254 32.3311 122.254 30.718V29.8665C122.284 28.3135 122.478 26.9238 122.837 25.6993C123.195 24.4743 123.957 23.2498 125.122 22.0248C126.167 20.9493 127.332 20.1575 128.616 19.6499C129.9 19.1419 131.289 18.8881 132.783 18.8881C134.276 18.8881 135.658 19.1347 136.927 19.6273C138.196 20.1205 139.354 20.8894 140.399 21.9349C141.474 23.0403 142.251 24.2355 142.728 25.5199C143.207 26.8047 143.445 28.2236 143.445 29.7768V30.718C143.445 32.3311 143.266 33.8545 142.908 35.2885C142.549 36.7225 141.773 38.0668 140.578 39.3217ZM156.886 22.2043C155.542 22.2043 154.355 22.4653 153.324 22.9883C152.294 23.5113 151.569 23.9967 151.151 24.4443V42.0103H147.298V24.9824C147.298 23.3988 146.955 21.92 146.268 20.5459L149.807 18.8881C150.046 19.3064 150.255 19.7247 150.434 20.1426C150.613 20.5609 150.763 21.0241 150.882 21.5321H151.151C151.779 20.7553 152.652 20.1205 153.772 19.6273C154.892 19.1347 155.96 18.8881 156.975 18.8881C158.349 18.8881 159.581 19.1048 160.671 19.5381C161.761 19.9709 162.68 20.5687 163.427 21.3305C164.173 22.0924 164.741 22.9883 165.129 24.0189C165.517 25.0495 165.711 26.1626 165.711 27.3571V42.0103H161.859V27.3123C161.859 25.7592 161.388 24.5191 160.447 23.5933C159.506 22.6669 158.319 22.2043 156.886 22.2043Z" fill="#157FB1"></path>
+                  </g>
+                </g>
+                <defs>
+                  <clippath id="clip0_2003_3807">
+                    <rect width="165.143" height="60" fill="white" transform="translate(0.511475)"></rect>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <div class="footer-products__row"> 
+              <div class="footer-products__col">
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Преобразователи частоты</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Высоковольтные устройства</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Визуализация и диспетчеризация</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Щиты управления</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Устройства плавного пуска</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Установки повышения давления</a></div>
+              </div>
+              <div class="footer-products__col">
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Низковольтные и взывозащитные электродвигатели</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Аксессуары для насосных станций</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Циркуляционные насосы</a></div>
+                <div class="footer-products__item"><a class="footer-products__link" href="#"> Горизонтальные многоступенчатые центробежные насосы</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__inner"> 
+            <div class="container"> 
+              <div class="footer__desktop">
+                <div class="footer__top">
+                  <div class="footer__row"> 
+                    <div class="footer__col">
+                      <div class="footer__grid"> 
+                        <div class="footer__grid-item"> 
+                          <div class="footer__nav"><a class="footer__heading" href="#"> CNP Aikon</a>
+                            <div class="footer__list"> 
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> О компании</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Производство</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Новости</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Проекты</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Команда</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Карьера</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Медиа-материалы</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Контакты</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="footer__grid-item"> 
+                          <div class="footer__nav"><a class="footer__heading" href="#"> Склад и поставки</a>
+                            <div class="footer__list"> 
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Складская программа</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Наличие на складе</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Будущие поставки</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Срок поставки</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Распродажа</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Габариты упаковки</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="footer__grid-item"> 
+                          <div class="footer__nav"><a class="footer__heading" href="#">
+                               Сервис</a>
+                            <div class="footer__list"> 
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Сервисные центры</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Гарантия</a></div>
+                            </div>
+                          </div>
+                          <div class="footer__nav"><a class="footer__heading" href="#">
+                               Сотрудничество</a>
+                            <div class="footer__list"> 
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Дилерам</a></div>
+                              <div class="footer__list-item"> <a class="footer__link" href="#"> Сервисным партнерам</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer__col">
+                      <div class="footer__list"> 
+                        <div class="footer__list-item"> <a class="footer__heading" href="#"> Где купить</a></div>
+                        <div class="footer__list-item"> <a class="footer__heading" href="#"> Прайс</a></div>
+                        <div class="footer__list-item"> <a class="footer__heading" href="#"> История курса</a></div>
+                        <div class="footer__list-item"> <a class="footer__heading" href="#"> Документация</a></div>
+                      </div>
+                      <div class="footer__content">
+                        <div class="footer__contacts"> 
+                          <div class="footer__phones">
+                            <div class="footer__phones-item"><a class="footer__phones-link" href="tel:+78003331074">
+                                 +7 800 333-10-74</a></div>
+                            <div class="footer__phones-item"><a class="footer__phones-link" href="tel:+74997033523">
+                                 +7 499 703-35-23</a></div>
+                          </div>
+                          <div class="footer__emails">
+                            <div class="footer__emails-item"> <a class="footer__email" href="mailto:cnp@cnprussia.ru">cnp@cnprussia.ru</a></div>
+                            <div class="footer__emails-item"> <a class="footer__email" href="mailto:info@aikoncontrol.ru">info@aikoncontrol.ru</a></div>
+                            <div class="footer__emails-item"> <a class="footer__email" href="mailto:aikon@aikonrussia.ru">aikon@aikonrussia.ru</a></div>
+                          </div>
+                        </div>
+                        <div class="footer__socials"> 
+                          <div class="footer__socials-item"> <a class="footer__socials-link" href="#"> 
+                              <svg class="footer__socials-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0718 20C4.87188 20 0.194878 13.994 0 4H4.10743C4.24235 11.3353 7.27038 14.4424 9.66888 15.0831V4H13.5366V10.3263C15.9051 10.0541 18.3933 7.17117 19.2328 4H23.1004C22.4558 7.90791 19.7575 10.7908 17.8387 11.976C19.7575 12.9369 22.8307 15.4515 24 20H19.7425C18.8281 16.957 16.5497 14.6026 13.5366 14.2823V20H13.0718Z" fill="white"></path>
+                              </svg></a></div>
+                          <div class="footer__socials-item"> <a class="footer__socials-link" href="#"> 
+                              <svg class="footer__socials-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.0253 5.61879C20.1114 4.07537 15.8582 4 12 4C8.14177 4 3.88861 4.07537 1.97468 5.61879C0.0607595 7.16221 0 10.5063 0 12.4999C0 14.4935 0.0607595 17.8375 1.97468 19.381C3.88861 20.9244 8.14177 21 12 21V20.9997C15.8582 20.9997 20.1114 20.9244 22.0253 19.381C23.9392 17.8375 24 14.4935 24 12.4999C24 10.5063 23.9392 7.16221 22.0253 5.61879ZM15.8026 12.9495L15.8033 12.9506L9.28356 16.628C9.24857 16.6548 9.21041 16.6761 9.16934 16.6926L9.16132 16.6972L9.16083 16.6954C9.10809 16.7155 9.05195 16.7283 8.99265 16.7283C8.71583 16.7283 8.4915 16.4906 8.4915 16.1979V8.78589C8.4915 8.4929 8.71607 8.25547 8.99265 8.25547C9.07066 8.25547 9.14382 8.27604 9.20968 8.30974L9.20992 8.30949L15.8033 12.0502L15.8031 12.0507C15.9452 12.1444 16.0407 12.31 16.0407 12.5001C16.0405 12.6902 15.9447 12.8559 15.8026 12.9495Z" fill="white"></path>
+                              </svg></a></div>
+                          <div class="footer__socials-item"> <a class="footer__socials-link" href="#"> 
+                              <svg class="footer__socials-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.34876 10.8391L15.4534 5.49635C16.747 4.93981 21.134 3.15891 21.134 3.15891C21.134 3.15891 23.1587 2.37976 22.99 4.27197C22.9338 5.05112 22.4838 7.77813 22.0339 10.7277L20.6278 19.4653C20.6278 19.4653 20.5153 20.7453 19.5592 20.9679C18.603 21.1906 17.0282 20.1888 16.747 19.9662C16.522 19.7992 12.5288 17.2948 11.0665 16.0705C10.6728 15.7365 10.2228 15.0687 11.1227 14.2896C13.1475 12.453 15.5659 10.1712 17.0282 8.72423C17.7032 8.05639 18.3781 6.4981 15.5659 8.39031L7.63562 13.6774C7.63562 13.6774 6.73573 14.2339 5.04844 13.733C3.36114 13.2321 1.39263 12.5643 1.39263 12.5643C1.39263 12.5643 0.0427937 11.7295 2.34876 10.8391Z" fill="white"></path>
+                              </svg></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__bot">
+                  <div class="footer__row"> 
+                    <div class="footer__col">
+                      <div class="footer__copy">
+                         © 2015–2024 CNP Russia</div>
+                    </div>
+                    <div class="footer__col">
+                      <div class="footer__policy"> <a class="footer__policy-link" href="#">Политика конфиденциальности</a></div>
+                      <div class="footer__made"><a class="footer__made-link" href="https://cloudmill.ru/" target="_blank"><span>Сделано в</span>
+                          <svg class="footer__made-svg" width="92" height="11" viewBox="0 0 92 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5163 1.65071C12.5163 4.29299 11.9711 6.17375 10.8922 7.24394C10.0701 8.06028 9.17882 8.14393 8.83555 8.13816L8.26152 8.16124L6.7038 6.28914C7.22879 5.91126 7.5432 5.28818 7.84608 4.68242C7.94704 4.48338 8.04514 4.28723 8.15764 4.08819L10.0009 0.502643H7.11057L6.0173 2.64877L5.80961 3.06128C5.55288 3.57473 5.16343 4.35357 4.9067 4.35357H2.74325V0.502643H0V10.4949H2.74325V6.64394H3.70096L6.9519 10.4949H10.1278H10.2663C10.4538 10.4949 14.8355 10.4055 15.2336 2.79012H18.297V10.4949H21.0402V0.499756H12.5192V1.65071H12.5163Z" fill="white"></path>
+                            <path d="M83.2172 1.65031C83.2172 8.01373 80.7711 8.20988 80.7451 8.20988L80.7451 8.22719L80.7451 10.5002H80.9643C81.1518 10.5002 85.5335 10.4108 85.9316 2.7955H88.9979V10.5002H91.7412V0.505127H83.2201V1.65031H83.2172Z" fill="white"></path>
+                            <path d="M52.8375 0.505127H44.0049V1.65031C44.0049 7.9993 41.3107 8.20988 41.2818 8.20988L40.9414 8.22719L41.4434 10.5002H53.9106V8.20988H52.8404V0.505127H52.8375ZM50.0943 8.20988H45.1991C46.0385 6.88874 46.5202 5.07144 46.6414 2.7955H50.0943V8.20988Z" fill="white"></path>
+                            <path d="M61.6984 6.09258L59.6012 0.505127H55.4272V10.4974H58.1705V4.03299L60.5935 10.4974H62.8002L65.2262 4.03299V10.4974H67.9695V0.505127H63.7955L61.6984 6.09258Z" fill="white"></path>
+                            <path d="M72.484 6.13586V0.505127H69.7407V10.4974H71.3619L76.9926 4.86663V10.4974H79.7359V0.505127H78.1176L72.484 6.13586Z" fill="white"></path>
+                            <path d="M42.574 0.505127H39.649L37.1683 7.27816L34.6472 0.505127H31.6934L34.3645 7.50027H37.0875L36.1385 10.0935L35.9366 10.4974H38.8731L38.9423 10.307C39.7356 8.1493 42.1471 1.58109 42.4183 0.897436L42.574 0.505127Z" fill="white"></path>
+                            <path d="M29.5615 0.779167L29.4548 0.505127H25.2145L21.7039 10.0935L21.502 10.4974H24.4385L25.0125 8.9368H29.6625L30.2365 10.4974H32.7057H33.173L32.9711 10.0935L29.5615 0.779167ZM27.3346 2.62531C27.6375 3.44165 28.0183 4.47144 28.425 5.57913H28.4221L28.8144 6.64643H25.8548L26.2471 5.57913H26.2442C26.6538 4.47144 27.0346 3.43876 27.3346 2.62531Z" fill="white"></path>
+                          </svg></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__mobile"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+  </body>
+</html>
