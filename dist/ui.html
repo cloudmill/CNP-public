@@ -1,8 +1,5 @@
 
-<!--передаем уникальный io-->
-<!--Для добавления мобильной версии картинки добавляем вторым параметром true-->
-<!--Например +picture('image.jpg', 'true')-->
-<!--Миксин будет искать картинку с названием image-mob.jpg (тоесть вторая картинка должна иметь такое же название как и основная, только с добавлением -mob.png/jpg и тд)--><!DOCTYPE html>
+<!--передаем уникальный io--><!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -10,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-0edc9c68.js"></script>
+    <script type="module" crossorigin src="assets/index-8cfe779a.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -18,7 +15,18 @@
       <div class="modal-block">
       </div>
       <main>
-        <div class="inner"><br><br>
+        <div class="inner">
+          <h1 class="title-150">H1 класс title-150</h1>
+          <h2 class="title-90">H2 класс title-90</h2><br>
+          <h3 class="title-60">H3 класс title-60</h3><br>
+          <h4 class="title-48">H4 класс title-48</h4><br>
+          <h5 class="title-32">H5 класс title-32</h5><br>
+          <h6 class="title-24">H6 класс title-24</h6><br>
+          <h6 class="title-20">H6 класс title-20</h6><br><br>
+          <p class="text-32"> text-32</p><br><br>
+          <p class="text-24"> text-24</p><br><br>
+          <p class="text-20"> text-20</p><br><br>
+          <p class="text-16"> text-16</p><br><br>
           <div class="breadcrumbs"> 
             <ul class="breadcrumbs__list"> 
               <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
@@ -80,7 +88,29 @@
               <svg class="link__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
-            </div></a>
+            </div></a><br><br>
+          <div class="tabs" items='["Новости","Публикации в СМИ","Новости","Новости"]'>
+            <div class="tabs__list"> 
+              <div class="tabs__item active"> Новости</div>
+              <div class="tabs__item"> Публикации в СМИ</div>
+              <div class="tabs__item"> Новости</div>
+              <div class="tabs__item"> Новости</div>
+            </div>
+          </div><br><br>
+          <div class="tabs tabs--small" items='["Предстоящие","Прошедшие"]'>
+            <div class="tabs__list"> 
+              <div class="tabs__item active"> Предстоящие</div>
+              <div class="tabs__item"> Прошедшие</div>
+            </div>
+          </div><br><br>
+          <div class="input-wrapper">
+            <input class="input" required="required" autocomplete="off" type="text" placeholder="Фамилия"/>
+          </div><br><br>
+          <div class="ui-page__wrapper">
+            <div class="input-wrapper">
+              <input class="input input--dark" required="required" autocomplete="off" type="text" placeholder="Фамилия"/>
+            </div>
+          </div><br><br><br><br>
         </div>
       </main>
     </div>
