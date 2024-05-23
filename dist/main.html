@@ -1,5 +1,8 @@
 
-<!--передаем уникальный io--><!DOCTYPE html>
+<!--передаем уникальный io-->
+<!--Для добавления мобильной версии картинки добавляем вторым параметром true-->
+<!--Например +picture('image.jpg', 'true')-->
+<!--Миксин будет искать картинку с названием image-mob.jpg (тоесть вторая картинка должна иметь такое же название как и основная, только с добавлением -mob.png/jpg и тд)--><!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -7,7 +10,7 @@
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-5f38262e.js"></script>
+    <script type="module" crossorigin src="assets/index.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -236,10 +239,12 @@
                   <div class="main-page__intro-slide"> 
                     <div class="main-page__intro-img"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1-mob.jpg 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.jpg " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.png " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png " alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                       </picture>
                     </div>
                     <div class="main-page__intro-content">
@@ -262,10 +267,12 @@
                   <div class="main-page__intro-slide"> 
                     <div class="main-page__intro-img"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1-mob.jpg 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.jpg " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.png " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png " alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                       </picture>
                     </div>
                     <div class="main-page__intro-content">
@@ -288,10 +295,12 @@
                   <div class="main-page__intro-slide"> 
                     <div class="main-page__intro-img"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1-mob.jpg 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.jpg " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.png " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png " alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                       </picture>
                     </div>
                     <div class="main-page__intro-content">
@@ -314,10 +323,12 @@
                   <div class="main-page__intro-slide"> 
                     <div class="main-page__intro-img"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1-mob.jpg 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.jpg " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.png " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png " alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                       </picture>
                     </div>
                     <div class="main-page__intro-content">
@@ -340,10 +351,12 @@
                   <div class="main-page__intro-slide"> 
                     <div class="main-page__intro-img"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg" media="(min-width: 1280px)"/>
-                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1-mob.jpg 1x" alt="main-slide-1.jpg" media="(max-width: 1279px)"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1-mob.webp " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.jpg " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" srcset="images/main-slide-1-mob.png " alt="main-slide-1.jpg" media="(max-width: 768px)"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.jpg " alt="main-slide-1.jpg"/>
+                        <source class="lazyload" srcset="images/main-slide-1.png " alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                       </picture>
                     </div>
                     <div class="main-page__intro-content">
@@ -626,8 +639,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-1.webp 1x" alt="card-1.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-1.jpg 1x" alt="card-1.jpg"/><img class="picture__img lazyload" data-src="images/card-1.jpg" alt="card-1.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-1.webp " alt="card-1.jpg"/>
+                            <source class="lazyload" srcset="images/card-1.jpg " alt="card-1.jpg"/>
+                            <source class="lazyload" srcset="images/card-1.png " alt="card-1.jpg"/><img class="picture__img lazyload" data-src="images/card-1.jpg" alt="card-1.jpg"/>
                           </picture>
                         </div>
                       </div></a><a class="main-page__products-card" href="#"> 
@@ -637,8 +651,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-2.webp 1x" alt="card-2.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-2.jpg 1x" alt="card-2.jpg"/><img class="picture__img lazyload" data-src="images/card-2.jpg" alt="card-2.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-2.webp " alt="card-2.jpg"/>
+                            <source class="lazyload" srcset="images/card-2.jpg " alt="card-2.jpg"/>
+                            <source class="lazyload" srcset="images/card-2.png " alt="card-2.jpg"/><img class="picture__img lazyload" data-src="images/card-2.jpg" alt="card-2.jpg"/>
                           </picture>
                         </div>
                       </div></a><a class="main-page__products-card" href="#"> 
@@ -648,8 +663,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-3.webp 1x" alt="card-3.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-3.jpg 1x" alt="card-3.jpg"/><img class="picture__img lazyload" data-src="images/card-3.jpg" alt="card-3.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-3.webp " alt="card-3.jpg"/>
+                            <source class="lazyload" srcset="images/card-3.jpg " alt="card-3.jpg"/>
+                            <source class="lazyload" srcset="images/card-3.png " alt="card-3.jpg"/><img class="picture__img lazyload" data-src="images/card-3.jpg" alt="card-3.jpg"/>
                           </picture>
                         </div>
                       </div></a><a class="main-page__products-card" href="#"> 
@@ -659,8 +675,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-4.webp 1x" alt="card-4.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-4.jpg 1x" alt="card-4.jpg"/><img class="picture__img lazyload" data-src="images/card-4.jpg" alt="card-4.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-4.webp " alt="card-4.jpg"/>
+                            <source class="lazyload" srcset="images/card-4.jpg " alt="card-4.jpg"/>
+                            <source class="lazyload" srcset="images/card-4.png " alt="card-4.jpg"/><img class="picture__img lazyload" data-src="images/card-4.jpg" alt="card-4.jpg"/>
                           </picture>
                         </div>
                       </div></a>
@@ -669,10 +686,12 @@
                 <div class="main-page__products-col">
                   <div class="main-page__products-img"> 
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/main-product.webp 1x" alt="main-product.jpg" media="(min-width: 1280px)"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/main-product.jpg 1x" alt="main-product.jpg" media="(min-width: 1280px)"/>
-                      <source class="lazyload" type="image/webp" srcset="webp/main-product-mob.webp 1x" alt="main-product.jpg" media="(max-width: 1279px)"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/main-product-mob.jpg 1x" alt="main-product.jpg" media="(max-width: 1279px)"/><img class="picture__img lazyload" data-src="images/main-product.jpg" alt="main-product.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/main-product-mob.webp " alt="main-product.jpg" media="(max-width: 768px)"/>
+                      <source class="lazyload" srcset="images/main-product-mob.jpg " alt="main-product.jpg" media="(max-width: 768px)"/>
+                      <source class="lazyload" srcset="images/main-product-mob.png " alt="main-product.jpg" media="(max-width: 768px)"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/main-product.webp " alt="main-product.jpg"/>
+                      <source class="lazyload" srcset="images/main-product.jpg " alt="main-product.jpg"/>
+                      <source class="lazyload" srcset="images/main-product.png " alt="main-product.jpg"/><img class="picture__img lazyload" data-src="images/main-product.jpg" alt="main-product.jpg"/>
                     </picture>
                   </div>
                   <div class="main-page__products-grid devices"><a class="main-page__products-card" href="#"> 
@@ -682,8 +701,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-1.webp 1x" alt="card-1.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-1.jpg 1x" alt="card-1.jpg"/><img class="picture__img lazyload" data-src="images/card-1.jpg" alt="card-1.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-1.webp " alt="card-1.jpg"/>
+                            <source class="lazyload" srcset="images/card-1.jpg " alt="card-1.jpg"/>
+                            <source class="lazyload" srcset="images/card-1.png " alt="card-1.jpg"/><img class="picture__img lazyload" data-src="images/card-1.jpg" alt="card-1.jpg"/>
                           </picture>
                         </div>
                       </div></a><a class="main-page__products-card" href="#"> 
@@ -693,8 +713,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-2.webp 1x" alt="card-2.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-2.jpg 1x" alt="card-2.jpg"/><img class="picture__img lazyload" data-src="images/card-2.jpg" alt="card-2.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-2.webp " alt="card-2.jpg"/>
+                            <source class="lazyload" srcset="images/card-2.jpg " alt="card-2.jpg"/>
+                            <source class="lazyload" srcset="images/card-2.png " alt="card-2.jpg"/><img class="picture__img lazyload" data-src="images/card-2.jpg" alt="card-2.jpg"/>
                           </picture>
                         </div>
                       </div></a><a class="main-page__products-card" href="#"> 
@@ -704,8 +725,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-3.webp 1x" alt="card-3.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-3.jpg 1x" alt="card-3.jpg"/><img class="picture__img lazyload" data-src="images/card-3.jpg" alt="card-3.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-3.webp " alt="card-3.jpg"/>
+                            <source class="lazyload" srcset="images/card-3.jpg " alt="card-3.jpg"/>
+                            <source class="lazyload" srcset="images/card-3.png " alt="card-3.jpg"/><img class="picture__img lazyload" data-src="images/card-3.jpg" alt="card-3.jpg"/>
                           </picture>
                         </div>
                       </div></a><a class="main-page__products-card" href="#"> 
@@ -715,8 +737,9 @@
                       <div class="main-page__products-bot">
                         <div class="main-page__products-image">
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/card-4.webp 1x" alt="card-4.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/card-4.jpg 1x" alt="card-4.jpg"/><img class="picture__img lazyload" data-src="images/card-4.jpg" alt="card-4.jpg"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/card-4.webp " alt="card-4.jpg"/>
+                            <source class="lazyload" srcset="images/card-4.jpg " alt="card-4.jpg"/>
+                            <source class="lazyload" srcset="images/card-4.png " alt="card-4.jpg"/><img class="picture__img lazyload" data-src="images/card-4.jpg" alt="card-4.jpg"/>
                           </picture>
                         </div>
                       </div></a>
@@ -733,8 +756,9 @@
                 <div class="main-page__company-frame"> 
                   <div class="main-page__company-image"> 
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/cnp-main.webp 1x" alt="cnp-main.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/cnp-main.jpg 1x" alt="cnp-main.jpg"/><img class="picture__img lazyload" data-src="images/cnp-main.jpg" alt="cnp-main.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/cnp-main.webp " alt="cnp-main.jpg"/>
+                      <source class="lazyload" srcset="images/cnp-main.jpg " alt="cnp-main.jpg"/>
+                      <source class="lazyload" srcset="images/cnp-main.png " alt="cnp-main.jpg"/><img class="picture__img lazyload" data-src="images/cnp-main.jpg" alt="cnp-main.jpg"/>
                     </picture>
                   </div>
                 </div>
@@ -758,8 +782,9 @@
                 <div class="main-page__company-frame"> 
                   <div class="main-page__company-image"> 
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/aikon-main.webp 1x" alt="aikon-main.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/aikon-main.jpg 1x" alt="aikon-main.jpg"/><img class="picture__img lazyload" data-src="images/aikon-main.jpg" alt="aikon-main.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/aikon-main.webp " alt="aikon-main.jpg"/>
+                      <source class="lazyload" srcset="images/aikon-main.jpg " alt="aikon-main.jpg"/>
+                      <source class="lazyload" srcset="images/aikon-main.png " alt="aikon-main.jpg"/><img class="picture__img lazyload" data-src="images/aikon-main.jpg" alt="aikon-main.jpg"/>
                     </picture>
                   </div>
                 </div>
@@ -788,8 +813,9 @@
         <section class="section section--regular main-page__cooperation">
           <div class="main-page__cooperation-bg"> 
             <picture class="picture">
-              <source class="lazyload" type="image/webp" srcset="webp/cooperation-bg.webp 1x" alt="cooperation-bg.jpg"/>
-              <source class="lazyload" type="image/jpeg" srcset="images/cooperation-bg.jpg 1x" alt="cooperation-bg.jpg"/><img class="picture__img lazyload" data-src="images/cooperation-bg.jpg" alt="cooperation-bg.jpg"/>
+              <source class="lazyload" type="image/webp" srcset="webp/cooperation-bg.webp " alt="cooperation-bg.jpg"/>
+              <source class="lazyload" srcset="images/cooperation-bg.jpg " alt="cooperation-bg.jpg"/>
+              <source class="lazyload" srcset="images/cooperation-bg.png " alt="cooperation-bg.jpg"/><img class="picture__img lazyload" data-src="images/cooperation-bg.jpg" alt="cooperation-bg.jpg"/>
             </picture>
           </div>
           <div class="container"> 
@@ -880,8 +906,9 @@
                         <div class="main-page__objects-col">
                           <div class="main-page__objects-img"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png " alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
                             </picture>
                           </div>
                         </div></a></div>
@@ -910,8 +937,9 @@
                         <div class="main-page__objects-col">
                           <div class="main-page__objects-img"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png " alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
                             </picture>
                           </div>
                         </div></a></div>
@@ -940,8 +968,9 @@
                         <div class="main-page__objects-col">
                           <div class="main-page__objects-img"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png " alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
                             </picture>
                           </div>
                         </div></a></div>
@@ -970,8 +999,9 @@
                         <div class="main-page__objects-col">
                           <div class="main-page__objects-img"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png " alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
                             </picture>
                           </div>
                         </div></a></div>
@@ -1000,8 +1030,9 @@
                         <div class="main-page__objects-col">
                           <div class="main-page__objects-img"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp 1x" alt="object-1.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/object-1.jpg 1x" alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/object-1.webp " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.jpg " alt="object-1.jpg"/>
+                              <source class="lazyload" srcset="images/object-1.png " alt="object-1.jpg"/><img class="picture__img lazyload" data-src="images/object-1.jpg" alt="object-1.jpg"/>
                             </picture>
                           </div>
                         </div></a></div>
@@ -1054,26 +1085,30 @@
                 <div class="main-page__clients-container">
                   <div class="main-page__clients-item"> 
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="gazprom.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/gazprom.jpg 1x" alt="gazprom.jpg"/><img class="picture__img lazyload" data-src="images/gazprom.jpg" alt="gazprom.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 " alt="gazprom.jpg"/>
+                      <source class="lazyload" srcset="images/gazprom.jpg " alt="gazprom.jpg"/>
+                      <source class="lazyload" srcset="images/gazprom.png " alt="gazprom.jpg"/><img class="picture__img lazyload" data-src="images/gazprom.jpg" alt="gazprom.jpg"/>
                     </picture>
                   </div>
                   <div class="main-page__clients-item"> 
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="rosneft.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/rosneft.jpg 1x" alt="rosneft.jpg"/><img class="picture__img lazyload" data-src="images/rosneft.jpg" alt="rosneft.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 " alt="rosneft.jpg"/>
+                      <source class="lazyload" srcset="images/rosneft.jpg " alt="rosneft.jpg"/>
+                      <source class="lazyload" srcset="images/rosneft.png " alt="rosneft.jpg"/><img class="picture__img lazyload" data-src="images/rosneft.jpg" alt="rosneft.jpg"/>
                     </picture>
                   </div>
                   <div class="main-page__clients-item"> 
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="tatneft.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/tatneft.jpg 1x" alt="tatneft.jpg"/><img class="picture__img lazyload" data-src="images/tatneft.jpg" alt="tatneft.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 " alt="tatneft.jpg"/>
+                      <source class="lazyload" srcset="images/tatneft.jpg " alt="tatneft.jpg"/>
+                      <source class="lazyload" srcset="images/tatneft.png " alt="tatneft.jpg"/><img class="picture__img lazyload" data-src="images/tatneft.jpg" alt="tatneft.jpg"/>
                     </picture>
                   </div>
                   <div class="main-page__clients-item"> 
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="rocatom.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/rocatom.jpg 1x" alt="rocatom.jpg"/><img class="picture__img lazyload" data-src="images/rocatom.jpg" alt="rocatom.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 " alt="rocatom.jpg"/>
+                      <source class="lazyload" srcset="images/rocatom.jpg " alt="rocatom.jpg"/>
+                      <source class="lazyload" srcset="images/rocatom.png " alt="rocatom.jpg"/><img class="picture__img lazyload" data-src="images/rocatom.jpg" alt="rocatom.jpg"/>
                     </picture>
                   </div>
                 </div>
@@ -1103,8 +1138,9 @@
                       <div class="main-page__news-date">
                          10 ноября 2023</div>
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp " alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.jpg " alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.png " alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
                       </picture>
                     </div>
                   </div>
@@ -1132,8 +1168,9 @@
                       <div class="main-page__news-date">
                          10 ноября 2023</div>
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp " alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.jpg " alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.png " alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
                       </picture>
                     </div>
                   </div>
@@ -1155,8 +1192,9 @@
                       <div class="main-page__news-date">
                          10 ноября 2023</div>
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/news-1.webp " alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.jpg " alt="news-1.jpg"/>
+                        <source class="lazyload" srcset="images/news-1.png " alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
                       </picture>
                     </div>
                   </div>

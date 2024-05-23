@@ -1,5 +1,8 @@
 
-<!--передаем уникальный io--><!DOCTYPE html>
+<!--передаем уникальный io-->
+<!--Для добавления мобильной версии картинки добавляем вторым параметром true-->
+<!--Например +picture('image.jpg', 'true')-->
+<!--Миксин будет искать картинку с названием image-mob.jpg (тоесть вторая картинка должна иметь такое же название как и основная, только с добавлением -mob.png/jpg и тд)--><!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -7,7 +10,7 @@
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-5f38262e.js"></script>
+    <script type="module" crossorigin src="assets/index.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -111,6 +114,42 @@
               <input class="input input--dark" required="required" autocomplete="off" type="text" placeholder="Фамилия"/>
             </div>
           </div><br><br><br><br>
+          <div class="product-thumbs__documents">
+            <div class="hover-component">
+              <div class="hover-component__gradient"></div>
+              <div class="hover-component__content"> <a class="hover-card br-20-grey" href="#" download="download"> 
+                  <div class="hover-card__bg"></div>
+                  <div class="card card-simple hover-card__content"> 
+                    <div class="card-simple__content">
+                      <div class="card-simple__content-top">
+                        <div class="card-simple__file"> 
+                          <div class="card-simple__file-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" fill="none">
+                              <path d="M48 57H12C10.3432 57 9.00001 55.6568 9 54L9 6C9 4.34315 10.3431 3 12 3L34.6893 3C35.5249 3 36.3228 3.34858 36.8905 3.96178L50.2013 18.3374C50.7148 18.8919 51 19.6198 51 20.3756L51 54C51 55.6568 49.6569 57 48 57Z" stroke="#8ECCEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M51 21L36 21C34.3431 21 33 19.6569 33 18L33 3" stroke="#8ECCEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </div>
+                          <p class="card-simple__file-text text-16 grey-text">1,55 МБ</p>
+                        </div>
+                        <div class="card-simple__arrow">
+                          <div class="hover-icon"> 
+                            <div class="hover-icon__bg"></div>
+                            <div class="product-hero__docs-icon hover-icon__content"> 
+                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 21.0005H18" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12 3.00049L12 17.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M17 12.0005L12 17.0005L7 12.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h3 class="card-simple__title title-20">Каталог</h3>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+          </div><br><br><br><br><br>
         </div>
       </main>
     </div>
