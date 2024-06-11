@@ -106,12 +106,14 @@
               <div class="tabs__item"> Прошедшие</div>
             </div>
           </div><br><br>
-          <div class="input-wrapper">
-            <input class="input" required="required" autocomplete="off" type="text" placeholder="Фамилия"/>
+          <div class="input-ui custom-placeholder" data-input-parent="">
+            <input data-input="" required="required" name="" type="text" placeholder="Фамилия"/>
+            <div class="custom-placeholder__service"><span>Фамилия</span></div>
           </div><br><br>
           <div class="ui-page__wrapper">
-            <div class="input-wrapper">
-              <input class="input input--dark" required="required" autocomplete="off" type="text" placeholder="Фамилия"/>
+            <div class="input-ui custom-placeholder input--dark" data-input-parent="">
+              <input class="input--dark" data-input="" required="required" name="" type="text" placeholder="Фамилия"/>
+              <div class="custom-placeholder__service"><span>Фамилия</span></div>
             </div>
           </div><br><br><br><br>
           <div class="product-thumbs__documents">
@@ -150,6 +152,35 @@
               </div>
             </div>
           </div><br><br><br><br><br>
+          <div class="hover-component">
+            <div class="hover-component__gradient"></div>
+            <div class="hover-component__content">
+              <div class="select select-wrapper">
+                <div class="select__button">
+                  <div class="input-ui custom-placeholder" data-input-parent="">
+                    <input data-input="" required="required" readonly="readonly" type="text" value="" placeholder="Страна"/>
+                    <div class="custom-placeholder__service"><span>Страна</span></div>
+                  </div>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="select__list" data-lenis-prevent="true">
+                  <ul>
+                    <li>
+                      <p>Россия</p>
+                    </li>
+                    <li>
+                      <p>Беларусь</p>
+                    </li>
+                    <li>
+                      <p>Казахстан</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
       </main>
     </div>
