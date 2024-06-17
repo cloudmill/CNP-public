@@ -6,7 +6,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>catalog</title>
+    <title>media-photos</title>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -17,7 +17,7 @@
     <div class="wrapper">
       <div class="modal-block">
       </div>
-      <header class="header header--white" data-header="">
+      <header class="header" data-header="">
         <div class="header__inner"> 
           <div class="container"> 
             <div class="header__desktop">
@@ -230,7 +230,7 @@
           </div>
         </div>
       </header>
-      <main class="catalog">
+      <main class="media">
         <div class="base-components">
           <div class="overlay" data-overlay="data-overlay"></div>
           <div class="modal-send" data-modal-wrapper="modal-send"> 
@@ -269,657 +269,242 @@
             </div>
           </div>
         </div>
-        <section class="container preview-section catalog-hero">
-          <div class="catalog-breadcrumbs breadcrumbs-preview">
-            <div class="breadcrumbs breadcrumbs_white"> 
+        <section class="container product top-section">
+          <div class="product-breadcrumbs">
+            <div class="breadcrumbs white"> 
               <ul class="breadcrumbs__list"> 
                 <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
                      Главная</a></li>
                 <li class="breadcrumbs__item"> 
-                  <div class="breadcrumbs__text"> Продукция CNP Aikon</div>
+                  <div class="breadcrumbs__text"> Медиаматериалы</div>
                 </li>
               </ul>
             </div>
           </div>
-          <h1 class="catalog-hero__title title-90">Продукция <br>CNP Aikon </h1>
-          <div class="catalog-hero__bg"> 
-            <picture class="picture">
-              <source class="lazyload" type="image/webp" srcset="webp/catalog-hero-bg-mob.webp " alt="catalog-hero-bg.png" media="(max-width: 768px)"/>
-              <source class="lazyload" srcset="images/catalog-hero-bg-mob.jpg " alt="catalog-hero-bg.png" media="(max-width: 768px)"/>
-              <source class="lazyload" srcset="images/catalog-hero-bg-mob.png " alt="catalog-hero-bg.png" media="(max-width: 768px)"/>
-              <source class="lazyload" type="image/webp" srcset="webp/catalog-hero-bg.webp " alt="catalog-hero-bg.png"/>
-              <source class="lazyload" srcset="images/catalog-hero-bg.jpg " alt="catalog-hero-bg.png"/>
-              <source class="lazyload" srcset="images/catalog-hero-bg.png " alt="catalog-hero-bg.png"/><img class="picture__img lazyload" data-src="images/catalog-hero-bg.png" alt="catalog-hero-bg.png"/>
-            </picture>
-          </div>
-        </section>
-        <section class="catalog-listing container">
-          <div class="catalog-listing__links"> <a class="catalog-listing__links-item text-48" href="#">CNP</a><a class="catalog-listing__links-item text-48 active-aikon" href="#">Aikon</a></div>
-          <div class="catalog-listing__row">
-            <div class="catalog-listing__open devices" data-open-filters data-modal-btn="filters-modal">
-              <div class="catalog-listing__open-icon"> 
-                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.834 3.33301H4.16732C3.70708 3.33301 3.33398 3.7061 3.33398 4.16634V5.48783C3.33398 5.70884 3.42178 5.9208 3.57806 6.07709L8.08991 10.5889C8.24619 10.7452 8.33398 10.9572 8.33398 11.1782V16.1513C8.33398 16.7708 8.98591 17.1737 9.54 16.8967L11.2067 16.0633C11.489 15.9222 11.6673 15.6336 11.6673 15.318V11.1782C11.6673 10.9572 11.7551 10.7452 11.9114 10.5889L16.4232 6.07709C16.5795 5.92081 16.6673 5.70884 16.6673 5.48783V4.16634C16.6673 3.7061 16.2942 3.33301 15.834 3.33301Z" stroke="#0070B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </div>
-              <p class="catalog-listing__open-text">Фильтры</p>
+          <h1 class="media__title title-90">Медиаматериалы</h1>
+          <div class="tabs" items='["Все","Производство","Выставки"]'>
+            <div class="tabs__list"> 
+              <div class="tabs__item active"> Все</div>
+              <div class="tabs__item"> Производство</div>
+              <div class="tabs__item"> Выставки</div>
             </div>
-            <aside class="catalog-listing__filter catalog-filter" data-modal-filters data-modal-wrapper="filters-modal"> 
-              <div class="catalog-filter__block"> 
-                <div class="catalog-filter__top devices"> 
-                  <p class="catalog-filter__title">Фильтры</p>
-                  <div class="catalog-filter__close" data-modal-close="filters-modal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                      <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
+          </div>
+          <div class="media__tabs">
+            <div class="small-button__wrapper active">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <button class="small-button active">
+                    <p class="small-button__text text-24">Фото</p>
+                  </button>
                 </div>
-                <div class="catalog-filter__filters accordion-container">
-                  <div class="ac catalog-filter__ac">
-                    <div class="catalog-filter__ac-gradient"></div>
-                    <div class="ac-header ac-trigger">
-                      <div class="catalog-filter__ac-top"> 
-                        <div class="catalog-filter__ac-title text-20">Насосы</div>
-                        <div class="catalog-filter__ac-icon"></div>
-                      </div>
+              </div>
+            </div>
+            <div class="small-button__wrapper">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <button class="small-button">
+                    <p class="small-button__text text-24">Видео</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media__content"> <a class="photo-card__wrapper" href="images/photo-card-0.jpg" data-fancybox="data-fancybox">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <div class="photo-card"> 
+                    <div class="photo-card__pic"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-0.webp " alt="photo-card-0.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-0.jpg " alt="photo-card-0.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-0.png " alt="photo-card-0.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-0.jpg" alt="photo-card-0.jpg"/>
+                      </picture>
                     </div>
-                    <div class="ac-panel">
-                      <div class="catalog-filter__ac-panel">
-                        <div class="radio-group">
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Циркуляционные насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Консольные и консольно-моноблочные насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Вертикальные многоступенчатые насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Полупогружные насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Скважинные насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Шламовые насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Погружные канализационные насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Дренажные насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Мешалки</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Канализационные насосные установки	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Насосы двухстороннего всасывания	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Секционные насосы	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Насосы с диагональным рабочим колесом	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Нефтяные насосы по стандарту API610	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Насосные установки	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Комплектующие</p>
-                          </label>
-                        </div>
+                    <div class="photo-card__desc">
+                      <div class="photo-card__title">
+                        <h4 class="title-32">Производство насосов серии CDM, CDMF</h4>
                       </div>
-                    </div>
-                  </div>
-                  <div class="ac catalog-filter__ac">
-                    <div class="catalog-filter__ac-gradient"></div>
-                    <div class="ac-header ac-trigger">
-                      <div class="catalog-filter__ac-top"> 
-                        <div class="catalog-filter__ac-title text-20">Автоматика</div>
-                        <div class="catalog-filter__ac-icon"></div>
-                      </div>
-                    </div>
-                    <div class="ac-panel">
-                      <div class="catalog-filter__ac-panel">
-                        <div class="radio-group">
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="automatics"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Электродвигатели</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="automatics"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Преобразователи частоты	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="automatics"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Устройства плавного пуска</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="automatics"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Щиты управления насосами</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="automatics"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Системы автоматизации</p>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="ac catalog-filter__ac">
-                    <div class="catalog-filter__ac-gradient"></div>
-                    <div class="ac-header ac-trigger">
-                      <div class="catalog-filter__ac-top"> 
-                        <div class="catalog-filter__ac-title text-20">Область применения</div>
-                        <div class="catalog-filter__ac-icon"></div>
-                      </div>
-                    </div>
-                    <div class="ac-panel">
-                      <div class="catalog-filter__ac-panel">
-                        <div class="radio-group">
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Водоснабжение и повышение давления</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Орошение</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Системы фильтрации</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Пожаротушение</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Системы охлаждения и кондиционирования</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Промышленное водоснабжение</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Химическая промышленность</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Транспортировка и переработка нефти</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="zones"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Фармакологическая промышленность</p>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="ac catalog-filter__ac">
-                    <div class="catalog-filter__ac-gradient"></div>
-                    <div class="ac-header ac-trigger">
-                      <div class="catalog-filter__ac-top"> 
-                        <div class="catalog-filter__ac-title text-20">Возможные материалы</div>
-                        <div class="catalog-filter__ac-icon"></div>
-                      </div>
-                    </div>
-                    <div class="ac-panel">
-                      <div class="catalog-filter__ac-panel">
-                        <div class="radio-group">
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Чугун</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Нержавеющая сталь	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Дуплексная нержавеющая сталь	</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Титан</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Бронза</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Пластик</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Фторопласт</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">PP</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">PVC</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="materials"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">PVDF</p>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="ac catalog-filter__ac">
-                    <div class="catalog-filter__ac-gradient"></div>
-                    <div class="ac-header ac-trigger">
-                      <div class="catalog-filter__ac-top"> 
-                        <div class="catalog-filter__ac-title text-20">Тип уплотнения	</div>
-                        <div class="catalog-filter__ac-icon"></div>
-                      </div>
-                    </div>
-                    <div class="ac-panel">
-                      <div class="catalog-filter__ac-panel">
-                        <div class="radio-group">
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type-plot"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Торцевое</p>
-                          </label>
-                          <label class="radio-button">
-                            <input class="radio-button__input" type="radio" name="type-plot"/>
-                            <div class="radio-button__circle"></div>
-                            <p class="radio-button__text text-16">Сальниковое</p>
-                          </label>
+                      <div class="button pseudo-button">
+                        <div class="button-gradient desktop"></div>
+                        <div class="button-border"></div>
+                        <div class="button-content">
+                          <div class="button__text">Открыть галерею</div>
+                          <div class="button__icon">
+                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="catalog-filter__block">
-                <button class="catalog-filter__submit devices">Применить</button>
-                <button class="catalog-filter__reset">
-                  <div class="catalog-filter__reset-icon"> 
-                    <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                  <p class="catalog-filter__reset-text text-20 fw-600">Сбросить</p>
-                </button>
-              </div>
-            </aside>
-            <div class="catalog-listing__content">
-              <div class="catalog-listing__cards"> <a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner blue">
-                        <div class="card-banner__svg"> 
-                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.2L3 6.6L7.5 4.8L12 3L21 6.6L16.5 8.4L12 10.2Z" stroke="#0070B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M11.7215 21.696C12.106 21.8498 12.5425 21.6627 12.6964 21.2782C12.8502 20.8936 12.6631 20.4571 12.2785 20.3033L11.7215 21.696ZM3 17.3996H2.25C2.25 17.7063 2.43671 17.9821 2.72146 18.096L3 17.3996ZM3.75 6.59961C3.75 6.1854 3.41421 5.84961 3 5.84961C2.58579 5.84961 2.25 6.1854 2.25 6.59961H3.75ZM11.7215 20.3033C11.3369 20.4571 11.1498 20.8936 11.3036 21.2782C11.4575 21.6627 11.894 21.8498 12.2785 21.696L11.7215 20.3033ZM21 17.3996L21.2785 18.096C21.5633 17.9821 21.75 17.7063 21.75 17.3996H21ZM21.75 6.59961C21.75 6.1854 21.4142 5.84961 21 5.84961C20.5858 5.84961 20.25 6.1854 20.25 6.59961H21.75ZM11.25 21C11.25 21.4142 11.5858 21.75 12 21.75C12.4142 21.75 12.75 21.4142 12.75 21H11.25ZM12.75 10.2C12.75 9.78577 12.4142 9.44999 12 9.44999C11.5858 9.44999 11.25 9.78577 11.25 10.2H12.75ZM7.77854 4.10338C7.39396 3.94954 6.95748 4.1366 6.80364 4.52119C6.64981 4.90578 6.83687 5.34226 7.22146 5.49609L7.77854 4.10338ZM16.5 8.39973H17.25C17.25 8.09306 17.0633 7.81728 16.7785 7.70338L16.5 8.39973ZM15.75 11.3569C15.75 11.7711 16.0858 12.1069 16.5 12.1069C16.9142 12.1069 17.25 11.7711 17.25 11.3569H15.75ZM12.2785 20.3033L3.27854 16.7033L2.72146 18.096L11.7215 21.696L12.2785 20.3033ZM3.75 17.3996V6.59961H2.25V17.3996H3.75ZM12.2785 21.696L21.2785 18.096L20.7215 16.7033L11.7215 20.3033L12.2785 21.696ZM21.75 17.3996V6.59961H20.25V17.3996H21.75ZM12.75 21V10.2H11.25V21H12.75ZM7.22146 5.49609L16.2215 9.09609L16.7785 7.70338L7.77854 4.10338L7.22146 5.49609ZM15.75 8.39973V11.3569H17.25V8.39973H15.75Z" fill="#0070B8"></path>
-                          </svg>
-                        </div>
-                        <div class="card-banner__text">Складская позиция</div>
-                      </div>
-                    </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
+              </div></a><a class="photo-card__wrapper" href="images/photo-card-1.jpg" data-fancybox="data-fancybox">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <div class="photo-card"> 
+                    <div class="photo-card__pic"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-1.webp " alt="photo-card-1.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-1.jpg " alt="photo-card-1.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-1.png " alt="photo-card-1.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-1.jpg" alt="photo-card-1.jpg"/>
                       </picture>
                     </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">TD</p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner grey">
-                        <div class="card-banner__svg"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1 21C10.6287 21 10.2266 20.6589 10.1499 20.1938C10.0792 19.8176 9.80834 19.5102 9.444 19.3928C9.14713 19.2909 8.85686 19.1707 8.57486 19.0328C8.23931 18.8612 7.83677 18.8869 7.52572 19.0997C7.1493 19.3704 6.63221 19.3285 6.30429 19.0007L5.02887 17.7253C4.68562 17.382 4.64102 16.8408 4.92344 16.446C5.14125 16.1278 5.17262 15.7175 5.00572 15.3698C4.89576 15.1283 4.79876 14.8811 4.71515 14.6293C4.59541 14.2324 4.26487 13.9351 3.85758 13.8578C3.36642 13.7794 3.00383 13.3575 3.00001 12.8601V11.2646C2.9974 10.6912 3.41149 10.2009 3.97715 10.1074C4.40628 10.0258 4.76461 9.73187 4.92858 9.32699C4.97744 9.21299 5.02887 9.09985 5.08287 8.98756C5.30095 8.56771 5.27083 8.06199 5.00444 7.67099C4.67129 7.20798 4.72245 6.57183 5.1253 6.168L6.06258 5.23071C6.52486 4.76827 7.25393 4.70842 7.78544 5.08928L7.81501 5.10985C8.21189 5.37698 8.71692 5.42535 9.15729 5.23843C9.6284 5.06886 9.97562 4.66402 10.0714 4.17257L10.0843 4.12886C10.1902 3.47825 10.752 3.00027 11.4111 3H12.5426C13.2195 2.99969 13.7973 3.48931 13.908 4.15714L13.9286 4.24714C14.0194 4.71794 14.3487 5.10756 14.7977 5.27571C15.2305 5.46146 15.7281 5.41295 16.1169 5.14714L16.1811 5.10085C16.7264 4.70786 17.4763 4.76831 17.9516 5.24357L18.8143 6.10757C19.2466 6.54234 19.301 7.22605 18.9429 7.72371C18.6623 8.13966 18.6264 8.67417 18.849 9.12385L18.9043 9.25242C19.0845 9.69144 19.4744 10.0097 19.9406 10.0984C20.5499 10.1977 20.998 10.7231 21 11.3404V12.7714C20.9998 13.3158 20.6061 13.7802 20.0691 13.8694C19.6275 13.9541 19.2677 14.2739 19.1319 14.7026C19.0719 14.874 19.005 15.0454 18.9313 15.2168C18.7597 15.5935 18.7978 16.0325 19.0316 16.374C19.3401 16.8032 19.2922 17.3927 18.9184 17.7664L17.7214 18.9647C17.3791 19.307 16.8393 19.351 16.446 19.0688C16.1177 18.8445 15.6924 18.8198 15.3403 19.0046C15.0894 19.1288 14.8319 19.2391 14.5689 19.335C14.2011 19.4618 13.93 19.7766 13.8591 20.1591C13.7842 20.6403 13.3716 20.9963 12.8846 21H11.1Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9996 12.0001C14.9996 13.6567 13.6567 14.9996 12.0001 14.9996C10.3434 14.9996 9.00049 13.6567 9.00049 12.0001C9.00049 10.3434 10.3434 9.00049 12.0001 9.00049C13.6567 9.00049 14.9996 10.3434 14.9996 12.0001Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                    <div class="photo-card__desc">
+                      <div class="photo-card__title">
+                        <h4 class="title-32">Фотографии с выставки EcwaTech2023</h4>
+                      </div>
+                      <div class="button pseudo-button">
+                        <div class="button-gradient desktop"></div>
+                        <div class="button-border"></div>
+                        <div class="button-content">
+                          <div class="button__text">Открыть галерею</div>
+                          <div class="button__icon">
+                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          </div>
                         </div>
-                        <div class="card-banner__text">Под заказ</div>
                       </div>
                     </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
+                  </div>
+                </div>
+              </div></a><a class="photo-card__wrapper" href="images/photo-card-0.jpg" data-fancybox="data-fancybox">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <div class="photo-card"> 
+                    <div class="photo-card__pic"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img2.webp " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.jpg " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.png " alt="product-detail-img2.png"/><img class="picture__img lazyload" data-src="images/product-detail-img2.png" alt="product-detail-img2.png"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-0.webp " alt="photo-card-0.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-0.jpg " alt="photo-card-0.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-0.png " alt="photo-card-0.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-0.jpg" alt="photo-card-0.jpg"/>
                       </picture>
                     </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">LLT(S) </p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner blue">
-                        <div class="card-banner__svg"> 
-                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.2L3 6.6L7.5 4.8L12 3L21 6.6L16.5 8.4L12 10.2Z" stroke="#0070B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M11.7215 21.696C12.106 21.8498 12.5425 21.6627 12.6964 21.2782C12.8502 20.8936 12.6631 20.4571 12.2785 20.3033L11.7215 21.696ZM3 17.3996H2.25C2.25 17.7063 2.43671 17.9821 2.72146 18.096L3 17.3996ZM3.75 6.59961C3.75 6.1854 3.41421 5.84961 3 5.84961C2.58579 5.84961 2.25 6.1854 2.25 6.59961H3.75ZM11.7215 20.3033C11.3369 20.4571 11.1498 20.8936 11.3036 21.2782C11.4575 21.6627 11.894 21.8498 12.2785 21.696L11.7215 20.3033ZM21 17.3996L21.2785 18.096C21.5633 17.9821 21.75 17.7063 21.75 17.3996H21ZM21.75 6.59961C21.75 6.1854 21.4142 5.84961 21 5.84961C20.5858 5.84961 20.25 6.1854 20.25 6.59961H21.75ZM11.25 21C11.25 21.4142 11.5858 21.75 12 21.75C12.4142 21.75 12.75 21.4142 12.75 21H11.25ZM12.75 10.2C12.75 9.78577 12.4142 9.44999 12 9.44999C11.5858 9.44999 11.25 9.78577 11.25 10.2H12.75ZM7.77854 4.10338C7.39396 3.94954 6.95748 4.1366 6.80364 4.52119C6.64981 4.90578 6.83687 5.34226 7.22146 5.49609L7.77854 4.10338ZM16.5 8.39973H17.25C17.25 8.09306 17.0633 7.81728 16.7785 7.70338L16.5 8.39973ZM15.75 11.3569C15.75 11.7711 16.0858 12.1069 16.5 12.1069C16.9142 12.1069 17.25 11.7711 17.25 11.3569H15.75ZM12.2785 20.3033L3.27854 16.7033L2.72146 18.096L11.7215 21.696L12.2785 20.3033ZM3.75 17.3996V6.59961H2.25V17.3996H3.75ZM12.2785 21.696L21.2785 18.096L20.7215 16.7033L11.7215 20.3033L12.2785 21.696ZM21.75 17.3996V6.59961H20.25V17.3996H21.75ZM12.75 21V10.2H11.25V21H12.75ZM7.22146 5.49609L16.2215 9.09609L16.7785 7.70338L7.77854 4.10338L7.22146 5.49609ZM15.75 8.39973V11.3569H17.25V8.39973H15.75Z" fill="#0070B8"></path>
-                          </svg>
+                    <div class="photo-card__desc">
+                      <div class="photo-card__title">
+                        <h4 class="title-32">Производство насосов серии CDM, CDMF</h4>
+                      </div>
+                      <div class="button pseudo-button">
+                        <div class="button-gradient desktop"></div>
+                        <div class="button-border"></div>
+                        <div class="button-content">
+                          <div class="button__text">Открыть галерею</div>
+                          <div class="button__icon">
+                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          </div>
                         </div>
-                        <div class="card-banner__text">Складская позиция</div>
                       </div>
                     </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
+                  </div>
+                </div>
+              </div></a><a class="photo-card__wrapper" href="images/photo-card-1.jpg" data-fancybox="data-fancybox">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <div class="photo-card"> 
+                    <div class="photo-card__pic"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-1.webp " alt="photo-card-1.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-1.jpg " alt="photo-card-1.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-1.png " alt="photo-card-1.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-1.jpg" alt="photo-card-1.jpg"/>
                       </picture>
                     </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">TD</p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner grey">
-                        <div class="card-banner__svg"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1 21C10.6287 21 10.2266 20.6589 10.1499 20.1938C10.0792 19.8176 9.80834 19.5102 9.444 19.3928C9.14713 19.2909 8.85686 19.1707 8.57486 19.0328C8.23931 18.8612 7.83677 18.8869 7.52572 19.0997C7.1493 19.3704 6.63221 19.3285 6.30429 19.0007L5.02887 17.7253C4.68562 17.382 4.64102 16.8408 4.92344 16.446C5.14125 16.1278 5.17262 15.7175 5.00572 15.3698C4.89576 15.1283 4.79876 14.8811 4.71515 14.6293C4.59541 14.2324 4.26487 13.9351 3.85758 13.8578C3.36642 13.7794 3.00383 13.3575 3.00001 12.8601V11.2646C2.9974 10.6912 3.41149 10.2009 3.97715 10.1074C4.40628 10.0258 4.76461 9.73187 4.92858 9.32699C4.97744 9.21299 5.02887 9.09985 5.08287 8.98756C5.30095 8.56771 5.27083 8.06199 5.00444 7.67099C4.67129 7.20798 4.72245 6.57183 5.1253 6.168L6.06258 5.23071C6.52486 4.76827 7.25393 4.70842 7.78544 5.08928L7.81501 5.10985C8.21189 5.37698 8.71692 5.42535 9.15729 5.23843C9.6284 5.06886 9.97562 4.66402 10.0714 4.17257L10.0843 4.12886C10.1902 3.47825 10.752 3.00027 11.4111 3H12.5426C13.2195 2.99969 13.7973 3.48931 13.908 4.15714L13.9286 4.24714C14.0194 4.71794 14.3487 5.10756 14.7977 5.27571C15.2305 5.46146 15.7281 5.41295 16.1169 5.14714L16.1811 5.10085C16.7264 4.70786 17.4763 4.76831 17.9516 5.24357L18.8143 6.10757C19.2466 6.54234 19.301 7.22605 18.9429 7.72371C18.6623 8.13966 18.6264 8.67417 18.849 9.12385L18.9043 9.25242C19.0845 9.69144 19.4744 10.0097 19.9406 10.0984C20.5499 10.1977 20.998 10.7231 21 11.3404V12.7714C20.9998 13.3158 20.6061 13.7802 20.0691 13.8694C19.6275 13.9541 19.2677 14.2739 19.1319 14.7026C19.0719 14.874 19.005 15.0454 18.9313 15.2168C18.7597 15.5935 18.7978 16.0325 19.0316 16.374C19.3401 16.8032 19.2922 17.3927 18.9184 17.7664L17.7214 18.9647C17.3791 19.307 16.8393 19.351 16.446 19.0688C16.1177 18.8445 15.6924 18.8198 15.3403 19.0046C15.0894 19.1288 14.8319 19.2391 14.5689 19.335C14.2011 19.4618 13.93 19.7766 13.8591 20.1591C13.7842 20.6403 13.3716 20.9963 12.8846 21H11.1Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9996 12.0001C14.9996 13.6567 13.6567 14.9996 12.0001 14.9996C10.3434 14.9996 9.00049 13.6567 9.00049 12.0001C9.00049 10.3434 10.3434 9.00049 12.0001 9.00049C13.6567 9.00049 14.9996 10.3434 14.9996 12.0001Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                    <div class="photo-card__desc">
+                      <div class="photo-card__title">
+                        <h4 class="title-32">Фотографии с выставки EcwaTech2023</h4>
+                      </div>
+                      <div class="button pseudo-button">
+                        <div class="button-gradient desktop"></div>
+                        <div class="button-border"></div>
+                        <div class="button-content">
+                          <div class="button__text">Открыть галерею</div>
+                          <div class="button__icon">
+                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          </div>
                         </div>
-                        <div class="card-banner__text">Под заказ</div>
                       </div>
                     </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
+                  </div>
+                </div>
+              </div></a><a class="photo-card__wrapper" href="images/photo-card-0.jpg" data-fancybox="data-fancybox">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <div class="photo-card"> 
+                    <div class="photo-card__pic"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img2.webp " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.jpg " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.png " alt="product-detail-img2.png"/><img class="picture__img lazyload" data-src="images/product-detail-img2.png" alt="product-detail-img2.png"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-0.webp " alt="photo-card-0.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-0.jpg " alt="photo-card-0.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-0.png " alt="photo-card-0.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-0.jpg" alt="photo-card-0.jpg"/>
                       </picture>
                     </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">LLT(S) </p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner blue">
-                        <div class="card-banner__svg"> 
-                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.2L3 6.6L7.5 4.8L12 3L21 6.6L16.5 8.4L12 10.2Z" stroke="#0070B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M11.7215 21.696C12.106 21.8498 12.5425 21.6627 12.6964 21.2782C12.8502 20.8936 12.6631 20.4571 12.2785 20.3033L11.7215 21.696ZM3 17.3996H2.25C2.25 17.7063 2.43671 17.9821 2.72146 18.096L3 17.3996ZM3.75 6.59961C3.75 6.1854 3.41421 5.84961 3 5.84961C2.58579 5.84961 2.25 6.1854 2.25 6.59961H3.75ZM11.7215 20.3033C11.3369 20.4571 11.1498 20.8936 11.3036 21.2782C11.4575 21.6627 11.894 21.8498 12.2785 21.696L11.7215 20.3033ZM21 17.3996L21.2785 18.096C21.5633 17.9821 21.75 17.7063 21.75 17.3996H21ZM21.75 6.59961C21.75 6.1854 21.4142 5.84961 21 5.84961C20.5858 5.84961 20.25 6.1854 20.25 6.59961H21.75ZM11.25 21C11.25 21.4142 11.5858 21.75 12 21.75C12.4142 21.75 12.75 21.4142 12.75 21H11.25ZM12.75 10.2C12.75 9.78577 12.4142 9.44999 12 9.44999C11.5858 9.44999 11.25 9.78577 11.25 10.2H12.75ZM7.77854 4.10338C7.39396 3.94954 6.95748 4.1366 6.80364 4.52119C6.64981 4.90578 6.83687 5.34226 7.22146 5.49609L7.77854 4.10338ZM16.5 8.39973H17.25C17.25 8.09306 17.0633 7.81728 16.7785 7.70338L16.5 8.39973ZM15.75 11.3569C15.75 11.7711 16.0858 12.1069 16.5 12.1069C16.9142 12.1069 17.25 11.7711 17.25 11.3569H15.75ZM12.2785 20.3033L3.27854 16.7033L2.72146 18.096L11.7215 21.696L12.2785 20.3033ZM3.75 17.3996V6.59961H2.25V17.3996H3.75ZM12.2785 21.696L21.2785 18.096L20.7215 16.7033L11.7215 20.3033L12.2785 21.696ZM21.75 17.3996V6.59961H20.25V17.3996H21.75ZM12.75 21V10.2H11.25V21H12.75ZM7.22146 5.49609L16.2215 9.09609L16.7785 7.70338L7.77854 4.10338L7.22146 5.49609ZM15.75 8.39973V11.3569H17.25V8.39973H15.75Z" fill="#0070B8"></path>
-                          </svg>
+                    <div class="photo-card__desc">
+                      <div class="photo-card__title">
+                        <h4 class="title-32">Производство насосов серии CDM, CDMF</h4>
+                      </div>
+                      <div class="button pseudo-button">
+                        <div class="button-gradient desktop"></div>
+                        <div class="button-border"></div>
+                        <div class="button-content">
+                          <div class="button__text">Открыть галерею</div>
+                          <div class="button__icon">
+                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          </div>
                         </div>
-                        <div class="card-banner__text">Складская позиция</div>
                       </div>
                     </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
+                  </div>
+                </div>
+              </div></a><a class="photo-card__wrapper" href="images/photo-card-1.jpg" data-fancybox="data-fancybox">
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <div class="photo-card"> 
+                    <div class="photo-card__pic"> 
                       <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-1.webp " alt="photo-card-1.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-1.jpg " alt="photo-card-1.jpg"/>
+                        <source class="lazyload" srcset="images/photo-card-1.png " alt="photo-card-1.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-1.jpg" alt="photo-card-1.jpg"/>
                       </picture>
                     </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">TD</p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner grey">
-                        <div class="card-banner__svg"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1 21C10.6287 21 10.2266 20.6589 10.1499 20.1938C10.0792 19.8176 9.80834 19.5102 9.444 19.3928C9.14713 19.2909 8.85686 19.1707 8.57486 19.0328C8.23931 18.8612 7.83677 18.8869 7.52572 19.0997C7.1493 19.3704 6.63221 19.3285 6.30429 19.0007L5.02887 17.7253C4.68562 17.382 4.64102 16.8408 4.92344 16.446C5.14125 16.1278 5.17262 15.7175 5.00572 15.3698C4.89576 15.1283 4.79876 14.8811 4.71515 14.6293C4.59541 14.2324 4.26487 13.9351 3.85758 13.8578C3.36642 13.7794 3.00383 13.3575 3.00001 12.8601V11.2646C2.9974 10.6912 3.41149 10.2009 3.97715 10.1074C4.40628 10.0258 4.76461 9.73187 4.92858 9.32699C4.97744 9.21299 5.02887 9.09985 5.08287 8.98756C5.30095 8.56771 5.27083 8.06199 5.00444 7.67099C4.67129 7.20798 4.72245 6.57183 5.1253 6.168L6.06258 5.23071C6.52486 4.76827 7.25393 4.70842 7.78544 5.08928L7.81501 5.10985C8.21189 5.37698 8.71692 5.42535 9.15729 5.23843C9.6284 5.06886 9.97562 4.66402 10.0714 4.17257L10.0843 4.12886C10.1902 3.47825 10.752 3.00027 11.4111 3H12.5426C13.2195 2.99969 13.7973 3.48931 13.908 4.15714L13.9286 4.24714C14.0194 4.71794 14.3487 5.10756 14.7977 5.27571C15.2305 5.46146 15.7281 5.41295 16.1169 5.14714L16.1811 5.10085C16.7264 4.70786 17.4763 4.76831 17.9516 5.24357L18.8143 6.10757C19.2466 6.54234 19.301 7.22605 18.9429 7.72371C18.6623 8.13966 18.6264 8.67417 18.849 9.12385L18.9043 9.25242C19.0845 9.69144 19.4744 10.0097 19.9406 10.0984C20.5499 10.1977 20.998 10.7231 21 11.3404V12.7714C20.9998 13.3158 20.6061 13.7802 20.0691 13.8694C19.6275 13.9541 19.2677 14.2739 19.1319 14.7026C19.0719 14.874 19.005 15.0454 18.9313 15.2168C18.7597 15.5935 18.7978 16.0325 19.0316 16.374C19.3401 16.8032 19.2922 17.3927 18.9184 17.7664L17.7214 18.9647C17.3791 19.307 16.8393 19.351 16.446 19.0688C16.1177 18.8445 15.6924 18.8198 15.3403 19.0046C15.0894 19.1288 14.8319 19.2391 14.5689 19.335C14.2011 19.4618 13.93 19.7766 13.8591 20.1591C13.7842 20.6403 13.3716 20.9963 12.8846 21H11.1Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9996 12.0001C14.9996 13.6567 13.6567 14.9996 12.0001 14.9996C10.3434 14.9996 9.00049 13.6567 9.00049 12.0001C9.00049 10.3434 10.3434 9.00049 12.0001 9.00049C13.6567 9.00049 14.9996 10.3434 14.9996 12.0001Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                    <div class="photo-card__desc">
+                      <div class="photo-card__title">
+                        <h4 class="title-32">Фотографии с выставки EcwaTech2023</h4>
+                      </div>
+                      <div class="button pseudo-button">
+                        <div class="button-gradient desktop"></div>
+                        <div class="button-border"></div>
+                        <div class="button-content">
+                          <div class="button__text">Открыть галерею</div>
+                          <div class="button__icon">
+                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                          </div>
                         </div>
-                        <div class="card-banner__text">Под заказ</div>
                       </div>
                     </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img2.webp " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.jpg " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.png " alt="product-detail-img2.png"/><img class="picture__img lazyload" data-src="images/product-detail-img2.png" alt="product-detail-img2.png"/>
-                      </picture>
-                    </div>
                   </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">LLT(S) </p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner blue">
-                        <div class="card-banner__svg"> 
-                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.2L3 6.6L7.5 4.8L12 3L21 6.6L16.5 8.4L12 10.2Z" stroke="#0070B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M11.7215 21.696C12.106 21.8498 12.5425 21.6627 12.6964 21.2782C12.8502 20.8936 12.6631 20.4571 12.2785 20.3033L11.7215 21.696ZM3 17.3996H2.25C2.25 17.7063 2.43671 17.9821 2.72146 18.096L3 17.3996ZM3.75 6.59961C3.75 6.1854 3.41421 5.84961 3 5.84961C2.58579 5.84961 2.25 6.1854 2.25 6.59961H3.75ZM11.7215 20.3033C11.3369 20.4571 11.1498 20.8936 11.3036 21.2782C11.4575 21.6627 11.894 21.8498 12.2785 21.696L11.7215 20.3033ZM21 17.3996L21.2785 18.096C21.5633 17.9821 21.75 17.7063 21.75 17.3996H21ZM21.75 6.59961C21.75 6.1854 21.4142 5.84961 21 5.84961C20.5858 5.84961 20.25 6.1854 20.25 6.59961H21.75ZM11.25 21C11.25 21.4142 11.5858 21.75 12 21.75C12.4142 21.75 12.75 21.4142 12.75 21H11.25ZM12.75 10.2C12.75 9.78577 12.4142 9.44999 12 9.44999C11.5858 9.44999 11.25 9.78577 11.25 10.2H12.75ZM7.77854 4.10338C7.39396 3.94954 6.95748 4.1366 6.80364 4.52119C6.64981 4.90578 6.83687 5.34226 7.22146 5.49609L7.77854 4.10338ZM16.5 8.39973H17.25C17.25 8.09306 17.0633 7.81728 16.7785 7.70338L16.5 8.39973ZM15.75 11.3569C15.75 11.7711 16.0858 12.1069 16.5 12.1069C16.9142 12.1069 17.25 11.7711 17.25 11.3569H15.75ZM12.2785 20.3033L3.27854 16.7033L2.72146 18.096L11.7215 21.696L12.2785 20.3033ZM3.75 17.3996V6.59961H2.25V17.3996H3.75ZM12.2785 21.696L21.2785 18.096L20.7215 16.7033L11.7215 20.3033L12.2785 21.696ZM21.75 17.3996V6.59961H20.25V17.3996H21.75ZM12.75 21V10.2H11.25V21H12.75ZM7.22146 5.49609L16.2215 9.09609L16.7785 7.70338L7.77854 4.10338L7.22146 5.49609ZM15.75 8.39973V11.3569H17.25V8.39973H15.75Z" fill="#0070B8"></path>
-                          </svg>
-                        </div>
-                        <div class="card-banner__text">Складская позиция</div>
-                      </div>
-                    </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">TD</p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner grey">
-                        <div class="card-banner__svg"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1 21C10.6287 21 10.2266 20.6589 10.1499 20.1938C10.0792 19.8176 9.80834 19.5102 9.444 19.3928C9.14713 19.2909 8.85686 19.1707 8.57486 19.0328C8.23931 18.8612 7.83677 18.8869 7.52572 19.0997C7.1493 19.3704 6.63221 19.3285 6.30429 19.0007L5.02887 17.7253C4.68562 17.382 4.64102 16.8408 4.92344 16.446C5.14125 16.1278 5.17262 15.7175 5.00572 15.3698C4.89576 15.1283 4.79876 14.8811 4.71515 14.6293C4.59541 14.2324 4.26487 13.9351 3.85758 13.8578C3.36642 13.7794 3.00383 13.3575 3.00001 12.8601V11.2646C2.9974 10.6912 3.41149 10.2009 3.97715 10.1074C4.40628 10.0258 4.76461 9.73187 4.92858 9.32699C4.97744 9.21299 5.02887 9.09985 5.08287 8.98756C5.30095 8.56771 5.27083 8.06199 5.00444 7.67099C4.67129 7.20798 4.72245 6.57183 5.1253 6.168L6.06258 5.23071C6.52486 4.76827 7.25393 4.70842 7.78544 5.08928L7.81501 5.10985C8.21189 5.37698 8.71692 5.42535 9.15729 5.23843C9.6284 5.06886 9.97562 4.66402 10.0714 4.17257L10.0843 4.12886C10.1902 3.47825 10.752 3.00027 11.4111 3H12.5426C13.2195 2.99969 13.7973 3.48931 13.908 4.15714L13.9286 4.24714C14.0194 4.71794 14.3487 5.10756 14.7977 5.27571C15.2305 5.46146 15.7281 5.41295 16.1169 5.14714L16.1811 5.10085C16.7264 4.70786 17.4763 4.76831 17.9516 5.24357L18.8143 6.10757C19.2466 6.54234 19.301 7.22605 18.9429 7.72371C18.6623 8.13966 18.6264 8.67417 18.849 9.12385L18.9043 9.25242C19.0845 9.69144 19.4744 10.0097 19.9406 10.0984C20.5499 10.1977 20.998 10.7231 21 11.3404V12.7714C20.9998 13.3158 20.6061 13.7802 20.0691 13.8694C19.6275 13.9541 19.2677 14.2739 19.1319 14.7026C19.0719 14.874 19.005 15.0454 18.9313 15.2168C18.7597 15.5935 18.7978 16.0325 19.0316 16.374C19.3401 16.8032 19.2922 17.3927 18.9184 17.7664L17.7214 18.9647C17.3791 19.307 16.8393 19.351 16.446 19.0688C16.1177 18.8445 15.6924 18.8198 15.3403 19.0046C15.0894 19.1288 14.8319 19.2391 14.5689 19.335C14.2011 19.4618 13.93 19.7766 13.8591 20.1591C13.7842 20.6403 13.3716 20.9963 12.8846 21H11.1Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9996 12.0001C14.9996 13.6567 13.6567 14.9996 12.0001 14.9996C10.3434 14.9996 9.00049 13.6567 9.00049 12.0001C9.00049 10.3434 10.3434 9.00049 12.0001 9.00049C13.6567 9.00049 14.9996 10.3434 14.9996 12.0001Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                        <div class="card-banner__text">Под заказ</div>
-                      </div>
-                    </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img2.webp " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.jpg " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.png " alt="product-detail-img2.png"/><img class="picture__img lazyload" data-src="images/product-detail-img2.png" alt="product-detail-img2.png"/>
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">LLT(S) </p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner blue">
-                        <div class="card-banner__svg"> 
-                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.2L3 6.6L7.5 4.8L12 3L21 6.6L16.5 8.4L12 10.2Z" stroke="#0070B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M11.7215 21.696C12.106 21.8498 12.5425 21.6627 12.6964 21.2782C12.8502 20.8936 12.6631 20.4571 12.2785 20.3033L11.7215 21.696ZM3 17.3996H2.25C2.25 17.7063 2.43671 17.9821 2.72146 18.096L3 17.3996ZM3.75 6.59961C3.75 6.1854 3.41421 5.84961 3 5.84961C2.58579 5.84961 2.25 6.1854 2.25 6.59961H3.75ZM11.7215 20.3033C11.3369 20.4571 11.1498 20.8936 11.3036 21.2782C11.4575 21.6627 11.894 21.8498 12.2785 21.696L11.7215 20.3033ZM21 17.3996L21.2785 18.096C21.5633 17.9821 21.75 17.7063 21.75 17.3996H21ZM21.75 6.59961C21.75 6.1854 21.4142 5.84961 21 5.84961C20.5858 5.84961 20.25 6.1854 20.25 6.59961H21.75ZM11.25 21C11.25 21.4142 11.5858 21.75 12 21.75C12.4142 21.75 12.75 21.4142 12.75 21H11.25ZM12.75 10.2C12.75 9.78577 12.4142 9.44999 12 9.44999C11.5858 9.44999 11.25 9.78577 11.25 10.2H12.75ZM7.77854 4.10338C7.39396 3.94954 6.95748 4.1366 6.80364 4.52119C6.64981 4.90578 6.83687 5.34226 7.22146 5.49609L7.77854 4.10338ZM16.5 8.39973H17.25C17.25 8.09306 17.0633 7.81728 16.7785 7.70338L16.5 8.39973ZM15.75 11.3569C15.75 11.7711 16.0858 12.1069 16.5 12.1069C16.9142 12.1069 17.25 11.7711 17.25 11.3569H15.75ZM12.2785 20.3033L3.27854 16.7033L2.72146 18.096L11.7215 21.696L12.2785 20.3033ZM3.75 17.3996V6.59961H2.25V17.3996H3.75ZM12.2785 21.696L21.2785 18.096L20.7215 16.7033L11.7215 20.3033L12.2785 21.696ZM21.75 17.3996V6.59961H20.25V17.3996H21.75ZM12.75 21V10.2H11.25V21H12.75ZM7.22146 5.49609L16.2215 9.09609L16.7785 7.70338L7.77854 4.10338L7.22146 5.49609ZM15.75 8.39973V11.3569H17.25V8.39973H15.75Z" fill="#0070B8"></path>
-                          </svg>
-                        </div>
-                        <div class="card-banner__text">Складская позиция</div>
-                      </div>
-                    </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">TD</p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner grey">
-                        <div class="card-banner__svg"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1 21C10.6287 21 10.2266 20.6589 10.1499 20.1938C10.0792 19.8176 9.80834 19.5102 9.444 19.3928C9.14713 19.2909 8.85686 19.1707 8.57486 19.0328C8.23931 18.8612 7.83677 18.8869 7.52572 19.0997C7.1493 19.3704 6.63221 19.3285 6.30429 19.0007L5.02887 17.7253C4.68562 17.382 4.64102 16.8408 4.92344 16.446C5.14125 16.1278 5.17262 15.7175 5.00572 15.3698C4.89576 15.1283 4.79876 14.8811 4.71515 14.6293C4.59541 14.2324 4.26487 13.9351 3.85758 13.8578C3.36642 13.7794 3.00383 13.3575 3.00001 12.8601V11.2646C2.9974 10.6912 3.41149 10.2009 3.97715 10.1074C4.40628 10.0258 4.76461 9.73187 4.92858 9.32699C4.97744 9.21299 5.02887 9.09985 5.08287 8.98756C5.30095 8.56771 5.27083 8.06199 5.00444 7.67099C4.67129 7.20798 4.72245 6.57183 5.1253 6.168L6.06258 5.23071C6.52486 4.76827 7.25393 4.70842 7.78544 5.08928L7.81501 5.10985C8.21189 5.37698 8.71692 5.42535 9.15729 5.23843C9.6284 5.06886 9.97562 4.66402 10.0714 4.17257L10.0843 4.12886C10.1902 3.47825 10.752 3.00027 11.4111 3H12.5426C13.2195 2.99969 13.7973 3.48931 13.908 4.15714L13.9286 4.24714C14.0194 4.71794 14.3487 5.10756 14.7977 5.27571C15.2305 5.46146 15.7281 5.41295 16.1169 5.14714L16.1811 5.10085C16.7264 4.70786 17.4763 4.76831 17.9516 5.24357L18.8143 6.10757C19.2466 6.54234 19.301 7.22605 18.9429 7.72371C18.6623 8.13966 18.6264 8.67417 18.849 9.12385L18.9043 9.25242C19.0845 9.69144 19.4744 10.0097 19.9406 10.0984C20.5499 10.1977 20.998 10.7231 21 11.3404V12.7714C20.9998 13.3158 20.6061 13.7802 20.0691 13.8694C19.6275 13.9541 19.2677 14.2739 19.1319 14.7026C19.0719 14.874 19.005 15.0454 18.9313 15.2168C18.7597 15.5935 18.7978 16.0325 19.0316 16.374C19.3401 16.8032 19.2922 17.3927 18.9184 17.7664L17.7214 18.9647C17.3791 19.307 16.8393 19.351 16.446 19.0688C16.1177 18.8445 15.6924 18.8198 15.3403 19.0046C15.0894 19.1288 14.8319 19.2391 14.5689 19.335C14.2011 19.4618 13.93 19.7766 13.8591 20.1591C13.7842 20.6403 13.3716 20.9963 12.8846 21H11.1Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9996 12.0001C14.9996 13.6567 13.6567 14.9996 12.0001 14.9996C10.3434 14.9996 9.00049 13.6567 9.00049 12.0001C9.00049 10.3434 10.3434 9.00049 12.0001 9.00049C13.6567 9.00049 14.9996 10.3434 14.9996 12.0001Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                        <div class="card-banner__text">Под заказ</div>
-                      </div>
-                    </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img2.webp " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.jpg " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.png " alt="product-detail-img2.png"/><img class="picture__img lazyload" data-src="images/product-detail-img2.png" alt="product-detail-img2.png"/>
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">LLT(S) </p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner blue">
-                        <div class="card-banner__svg"> 
-                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.2L3 6.6L7.5 4.8L12 3L21 6.6L16.5 8.4L12 10.2Z" stroke="#0070B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M11.7215 21.696C12.106 21.8498 12.5425 21.6627 12.6964 21.2782C12.8502 20.8936 12.6631 20.4571 12.2785 20.3033L11.7215 21.696ZM3 17.3996H2.25C2.25 17.7063 2.43671 17.9821 2.72146 18.096L3 17.3996ZM3.75 6.59961C3.75 6.1854 3.41421 5.84961 3 5.84961C2.58579 5.84961 2.25 6.1854 2.25 6.59961H3.75ZM11.7215 20.3033C11.3369 20.4571 11.1498 20.8936 11.3036 21.2782C11.4575 21.6627 11.894 21.8498 12.2785 21.696L11.7215 20.3033ZM21 17.3996L21.2785 18.096C21.5633 17.9821 21.75 17.7063 21.75 17.3996H21ZM21.75 6.59961C21.75 6.1854 21.4142 5.84961 21 5.84961C20.5858 5.84961 20.25 6.1854 20.25 6.59961H21.75ZM11.25 21C11.25 21.4142 11.5858 21.75 12 21.75C12.4142 21.75 12.75 21.4142 12.75 21H11.25ZM12.75 10.2C12.75 9.78577 12.4142 9.44999 12 9.44999C11.5858 9.44999 11.25 9.78577 11.25 10.2H12.75ZM7.77854 4.10338C7.39396 3.94954 6.95748 4.1366 6.80364 4.52119C6.64981 4.90578 6.83687 5.34226 7.22146 5.49609L7.77854 4.10338ZM16.5 8.39973H17.25C17.25 8.09306 17.0633 7.81728 16.7785 7.70338L16.5 8.39973ZM15.75 11.3569C15.75 11.7711 16.0858 12.1069 16.5 12.1069C16.9142 12.1069 17.25 11.7711 17.25 11.3569H15.75ZM12.2785 20.3033L3.27854 16.7033L2.72146 18.096L11.7215 21.696L12.2785 20.3033ZM3.75 17.3996V6.59961H2.25V17.3996H3.75ZM12.2785 21.696L21.2785 18.096L20.7215 16.7033L11.7215 20.3033L12.2785 21.696ZM21.75 17.3996V6.59961H20.25V17.3996H21.75ZM12.75 21V10.2H11.25V21H12.75ZM7.22146 5.49609L16.2215 9.09609L16.7785 7.70338L7.77854 4.10338L7.22146 5.49609ZM15.75 8.39973V11.3569H17.25V8.39973H15.75Z" fill="#0070B8"></path>
-                          </svg>
-                        </div>
-                        <div class="card-banner__text">Складская позиция</div>
-                      </div>
-                    </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">TD</p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a><a class="pump-card top-hover aikon" href="#">
-                  <div class="pump-card__inner hover-border">
-                    <div class="pump-card__banner">
-                      <div class="card-banner grey">
-                        <div class="card-banner__svg"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1 21C10.6287 21 10.2266 20.6589 10.1499 20.1938C10.0792 19.8176 9.80834 19.5102 9.444 19.3928C9.14713 19.2909 8.85686 19.1707 8.57486 19.0328C8.23931 18.8612 7.83677 18.8869 7.52572 19.0997C7.1493 19.3704 6.63221 19.3285 6.30429 19.0007L5.02887 17.7253C4.68562 17.382 4.64102 16.8408 4.92344 16.446C5.14125 16.1278 5.17262 15.7175 5.00572 15.3698C4.89576 15.1283 4.79876 14.8811 4.71515 14.6293C4.59541 14.2324 4.26487 13.9351 3.85758 13.8578C3.36642 13.7794 3.00383 13.3575 3.00001 12.8601V11.2646C2.9974 10.6912 3.41149 10.2009 3.97715 10.1074C4.40628 10.0258 4.76461 9.73187 4.92858 9.32699C4.97744 9.21299 5.02887 9.09985 5.08287 8.98756C5.30095 8.56771 5.27083 8.06199 5.00444 7.67099C4.67129 7.20798 4.72245 6.57183 5.1253 6.168L6.06258 5.23071C6.52486 4.76827 7.25393 4.70842 7.78544 5.08928L7.81501 5.10985C8.21189 5.37698 8.71692 5.42535 9.15729 5.23843C9.6284 5.06886 9.97562 4.66402 10.0714 4.17257L10.0843 4.12886C10.1902 3.47825 10.752 3.00027 11.4111 3H12.5426C13.2195 2.99969 13.7973 3.48931 13.908 4.15714L13.9286 4.24714C14.0194 4.71794 14.3487 5.10756 14.7977 5.27571C15.2305 5.46146 15.7281 5.41295 16.1169 5.14714L16.1811 5.10085C16.7264 4.70786 17.4763 4.76831 17.9516 5.24357L18.8143 6.10757C19.2466 6.54234 19.301 7.22605 18.9429 7.72371C18.6623 8.13966 18.6264 8.67417 18.849 9.12385L18.9043 9.25242C19.0845 9.69144 19.4744 10.0097 19.9406 10.0984C20.5499 10.1977 20.998 10.7231 21 11.3404V12.7714C20.9998 13.3158 20.6061 13.7802 20.0691 13.8694C19.6275 13.9541 19.2677 14.2739 19.1319 14.7026C19.0719 14.874 19.005 15.0454 18.9313 15.2168C18.7597 15.5935 18.7978 16.0325 19.0316 16.374C19.3401 16.8032 19.2922 17.3927 18.9184 17.7664L17.7214 18.9647C17.3791 19.307 16.8393 19.351 16.446 19.0688C16.1177 18.8445 15.6924 18.8198 15.3403 19.0046C15.0894 19.1288 14.8319 19.2391 14.5689 19.335C14.2011 19.4618 13.93 19.7766 13.8591 20.1591C13.7842 20.6403 13.3716 20.9963 12.8846 21H11.1Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9996 12.0001C14.9996 13.6567 13.6567 14.9996 12.0001 14.9996C10.3434 14.9996 9.00049 13.6567 9.00049 12.0001C9.00049 10.3434 10.3434 9.00049 12.0001 9.00049C13.6567 9.00049 14.9996 10.3434 14.9996 12.0001Z" stroke="#747884" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                        <div class="card-banner__text">Под заказ</div>
-                      </div>
-                    </div>
-                    <div class="hover-border__bg"></div>
-                    <div class="pump-card__img hover-border__content">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img2.webp " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.jpg " alt="product-detail-img2.png"/>
-                        <source class="lazyload" srcset="images/product-detail-img2.png " alt="product-detail-img2.png"/><img class="picture__img lazyload" data-src="images/product-detail-img2.png" alt="product-detail-img2.png"/>
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="pump-card__content"> 
-                    <p class="pump-card__title title-32">LLT(S) </p>
-                    <p class="pump-card__text text-20 grey-text">Циркуляционные насосы</p>
-                  </div></a>
-              </div>
+                </div>
+              </div></a>
+            <div class="media__more">
               <div class="hover-component catalog-listing__button catalog-listing__button">
                 <div class="hover-component__gradient"></div>
                 <div class="hover-component__content">
