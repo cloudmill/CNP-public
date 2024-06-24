@@ -6,7 +6,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>media-photos</title>
+    <title>projects-list-empty</title>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -230,7 +230,7 @@
           </div>
         </div>
       </header>
-      <main class="media">
+      <main class="projects">
         <div class="base-components">
           <div class="overlay" data-overlay="data-overlay"></div>
           <div class="modal-send" data-modal-wrapper="modal-send"> 
@@ -269,244 +269,211 @@
             </div>
           </div>
         </div>
-        <section class="container product top-section">
-          <div class="product-breadcrumbs">
-            <div class="breadcrumbs white"> 
+        <section class="container top-section">
+          <div class="projects__breadcrumbs">
+            <div class="breadcrumbs"> 
               <ul class="breadcrumbs__list"> 
                 <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
                      Главная</a></li>
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#"> О компании</a></li>
                 <li class="breadcrumbs__item"> 
-                  <div class="breadcrumbs__text"> Медиаматериалы</div>
+                  <div class="breadcrumbs__text"> Проекты</div>
                 </li>
               </ul>
             </div>
           </div>
-          <h1 class="media__title title-90">Медиаматериалы</h1>
-          <div class="tabs" items='["Все","Производство","Выставки"]'>
-            <div class="tabs__list"> 
-              <div class="tabs__item active"> Все</div>
-              <div class="tabs__item"> Производство</div>
-              <div class="tabs__item"> Выставки</div>
-            </div>
-          </div>
-          <div class="media__tabs">
-            <div class="small-button__wrapper active">
+          <h1 class="projects__title title-90">Проекты</h1>
+          <div class="projects__top">
+            <div class="projects__selects">
               <div class="hover-component">
                 <div class="hover-component__gradient"></div>
                 <div class="hover-component__content">
-                  <button class="small-button active">
-                    <p class="small-button__text text-24">Фото</p>
+                  <div class="select select-wrapper">
+                    <div class="select__button">
+                      <div class="input-ui custom-placeholder" data-input-parent="">
+                        <input data-input="" required="required" readonly="readonly" type="text" value="" placeholder="Тип оборудования"/>
+                        <div class="custom-placeholder__service"><span>Тип оборудования</span></div>
+                      </div>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <div class="select__list" data-lenis-prevent="true">
+                      <ul>
+                        <li>
+                          <p>Циркуляционные насосы</p>
+                        </li>
+                        <li>
+                          <p>Консольные и консольно-моноблочные насосы</p>
+                        </li>
+                        <li>
+                          <p>Вертикальные многоступенчатые насосы</p>
+                        </li>
+                        <li>
+                          <p>Горизонтальные многоступенчатые насосы</p>
+                        </li>
+                        <li>
+                          <p>Полупогружные насосы</p>
+                        </li>
+                        <li>
+                          <p>Скважинные насосы</p>
+                        </li>
+                        <li>
+                          <p>Шламовые насосы</p>
+                        </li>
+                        <li>
+                          <p>Погружные канализационные насосы</p>
+                        </li>
+                        <li>
+                          <p>Дренажные насосы</p>
+                        </li>
+                        <li>
+                          <p>Мешалки</p>
+                        </li>
+                        <li>
+                          <p>Самовсасывающие канализационные насосы</p>
+                        </li>
+                        <li>
+                          <p>Канализационные насосные установки</p>
+                        </li>
+                        <li>
+                          <p>Насосы двухстороннего всасывания</p>
+                        </li>
+                        <li>
+                          <p>Секционные насосы</p>
+                        </li>
+                        <li>
+                          <p>Насосы с диагональным рабочим колесом</p>
+                        </li>
+                        <li>
+                          <p>Нефтяные насосы по стандарту API610</p>
+                        </li>
+                        <li>
+                          <p>Дозирующие насосы</p>
+                        </li>
+                        <li>
+                          <p>Вихревые насосы</p>
+                        </li>
+                        <li>
+                          <p>Насосные установки</p>
+                        </li>
+                        <li>
+                          <p>Электродвигатели</p>
+                        </li>
+                        <li>
+                          <p>Преобразователи частоты</p>
+                        </li>
+                        <li>
+                          <p>Устройства плавного пуска</p>
+                        </li>
+                        <li>
+                          <p>Щиты управления насосами</p>
+                        </li>
+                        <li>
+                          <p>Системы автоматизации</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hover-component">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <div class="select select-wrapper">
+                    <div class="select__button">
+                      <div class="input-ui custom-placeholder" data-input-parent="">
+                        <input data-input="" required="required" readonly="readonly" type="text" value="" placeholder="Область применения"/>
+                        <div class="custom-placeholder__service"><span>Область применения</span></div>
+                      </div>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <div class="select__list" data-lenis-prevent="true">
+                      <ul>
+                        <li>
+                          <p>Водоснабжение </p>
+                        </li>
+                        <li>
+                          <p>Отопление</p>
+                        </li>
+                        <li>
+                          <p>Вентиляция и кондиционирование</p>
+                        </li>
+                        <li>
+                          <p>Водоочистка и водоподготовка</p>
+                        </li>
+                        <li>
+                          <p>Пожаротушение</p>
+                        </li>
+                        <li>
+                          <p>Ирригация</p>
+                        </li>
+                        <li>
+                          <p>Химическая промышленность</p>
+                        </li>
+                        <li>
+                          <p>Нефтяная промышленнсоть</p>
+                        </li>
+                        <li>
+                          <p>Энергетика</p>
+                        </li>
+                        <li>
+                          <p>Горная промышленность</p>
+                        </li>
+                        <li>
+                          <p>Водоотведение и дренаж</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hover-component desktop desktop">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
+                  <button class="button button_reset desktop">
+                    <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                   </button>
                 </div>
               </div>
             </div>
-            <div class="small-button__wrapper">
-              <div class="hover-component">
+            <div class="projects__tabs"><a class="button_project-tab active" href="#"><span class="button_project-tab__content button__content">
+                  <svg class="button_project-tab__svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22.6665H25.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.66675 22.6665H6.66941V22.6692H6.66675V22.6665Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 16H25.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.66675 16H6.66941V16.0027H6.66675V16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 9.3335H25.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.66675 9.3335H6.66941V9.33616H6.66675V9.3335Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg><span>Список</span></span></a><a class="button_project-tab" href="#"><span class="button_project-tab__content button__content">
+                  <svg class="button_project-tab__svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 26.6668C16 26.6668 24 20.9232 24 13.5386C24 11.3625 23.1571 9.27548 21.6569 7.73672C20.1566 6.19796 18.1217 5.3335 16 5.3335C13.8783 5.3335 11.8434 6.19796 10.3431 7.73672C8.84285 9.27548 8 11.3625 8 13.5386C8 20.9232 16 26.6668 16 26.6668Z" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle cx="15.9999" cy="13.3332" r="2.66667" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+                  </svg><span>Карта</span></span></a>
+              <div class="hover-component devices devices">
                 <div class="hover-component__gradient"></div>
                 <div class="hover-component__content">
-                  <button class="small-button">
-                    <p class="small-button__text text-24">Видео</p>
+                  <button class="button button_reset devices">
+                    <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                   </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="media__content"> <a class="photo-card__wrapper" href="images/photo-card-0.jpg" data-fancybox="data-fancybox">
-              <div class="hover-border wide">
-                <div class="hover-content"> 
-                  <div class="photo-card"> 
-                    <div class="photo-card__pic"> 
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-0.webp " alt="photo-card-0.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-0.jpg " alt="photo-card-0.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-0.png " alt="photo-card-0.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-0.jpg" alt="photo-card-0.jpg"/>
-                      </picture>
-                    </div>
-                    <div class="photo-card__desc">
-                      <div class="photo-card__title">
-                        <h4 class="title-32">Производство насосов серии CDM, CDMF</h4>
-                      </div>
-                      <div class="button pseudo-button">
-                        <div class="button-gradient desktop"></div>
-                        <div class="button-border"></div>
-                        <div class="button-content">
-                          <div class="button__text">Открыть галерею</div>
-                          <div class="button__icon"> 
-                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div></a><a class="photo-card__wrapper" href="images/photo-card-1.jpg" data-fancybox="data-fancybox">
-              <div class="hover-border wide">
-                <div class="hover-content"> 
-                  <div class="photo-card"> 
-                    <div class="photo-card__pic"> 
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-1.webp " alt="photo-card-1.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-1.jpg " alt="photo-card-1.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-1.png " alt="photo-card-1.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-1.jpg" alt="photo-card-1.jpg"/>
-                      </picture>
-                    </div>
-                    <div class="photo-card__desc">
-                      <div class="photo-card__title">
-                        <h4 class="title-32">Фотографии с выставки</h4>
-                      </div>
-                      <div class="button pseudo-button">
-                        <div class="button-gradient desktop"></div>
-                        <div class="button-border"></div>
-                        <div class="button-content">
-                          <div class="button__text">Открыть галерею</div>
-                          <div class="button__icon"> 
-                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div></a><a class="photo-card__wrapper" href="images/photo-card-0.jpg" data-fancybox="data-fancybox">
-              <div class="hover-border wide">
-                <div class="hover-content"> 
-                  <div class="photo-card"> 
-                    <div class="photo-card__pic"> 
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-0.webp " alt="photo-card-0.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-0.jpg " alt="photo-card-0.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-0.png " alt="photo-card-0.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-0.jpg" alt="photo-card-0.jpg"/>
-                      </picture>
-                    </div>
-                    <div class="photo-card__desc">
-                      <div class="photo-card__title">
-                        <h4 class="title-32">Производство насосов серии CDM, CDMF</h4>
-                      </div>
-                      <div class="button pseudo-button">
-                        <div class="button-gradient desktop"></div>
-                        <div class="button-border"></div>
-                        <div class="button-content">
-                          <div class="button__text">Открыть галерею</div>
-                          <div class="button__icon"> 
-                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div></a><a class="photo-card__wrapper" href="images/photo-card-1.jpg" data-fancybox="data-fancybox">
-              <div class="hover-border wide">
-                <div class="hover-content"> 
-                  <div class="photo-card"> 
-                    <div class="photo-card__pic"> 
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-1.webp " alt="photo-card-1.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-1.jpg " alt="photo-card-1.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-1.png " alt="photo-card-1.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-1.jpg" alt="photo-card-1.jpg"/>
-                      </picture>
-                    </div>
-                    <div class="photo-card__desc">
-                      <div class="photo-card__title">
-                        <h4 class="title-32">Фотографии с выставки EcwaTech2023</h4>
-                      </div>
-                      <div class="button pseudo-button">
-                        <div class="button-gradient desktop"></div>
-                        <div class="button-border"></div>
-                        <div class="button-content">
-                          <div class="button__text">Открыть галерею</div>
-                          <div class="button__icon"> 
-                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div></a><a class="photo-card__wrapper" href="images/photo-card-0.jpg" data-fancybox="data-fancybox">
-              <div class="hover-border wide">
-                <div class="hover-content"> 
-                  <div class="photo-card"> 
-                    <div class="photo-card__pic"> 
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-0.webp " alt="photo-card-0.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-0.jpg " alt="photo-card-0.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-0.png " alt="photo-card-0.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-0.jpg" alt="photo-card-0.jpg"/>
-                      </picture>
-                    </div>
-                    <div class="photo-card__desc">
-                      <div class="photo-card__title">
-                        <h4 class="title-32">Производство насосов серии CDM, CDMF</h4>
-                      </div>
-                      <div class="button pseudo-button">
-                        <div class="button-gradient desktop"></div>
-                        <div class="button-border"></div>
-                        <div class="button-content">
-                          <div class="button__text">Открыть галерею</div>
-                          <div class="button__icon"> 
-                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div></a><a class="photo-card__wrapper" href="images/photo-card-1.jpg" data-fancybox="data-fancybox">
-              <div class="hover-border wide">
-                <div class="hover-content"> 
-                  <div class="photo-card"> 
-                    <div class="photo-card__pic"> 
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/photo-card-1.webp " alt="photo-card-1.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-1.jpg " alt="photo-card-1.jpg"/>
-                        <source class="lazyload" srcset="images/photo-card-1.png " alt="photo-card-1.jpg"/><img class="picture__img lazyload" data-src="images/photo-card-1.jpg" alt="photo-card-1.jpg"/>
-                      </picture>
-                    </div>
-                    <div class="photo-card__desc">
-                      <div class="photo-card__title">
-                        <h4 class="title-32">Фотографии с выставки EcwaTech2023</h4>
-                      </div>
-                      <div class="button pseudo-button">
-                        <div class="button-gradient desktop"></div>
-                        <div class="button-border"></div>
-                        <div class="button-content">
-                          <div class="button__text">Открыть галерею</div>
-                          <div class="button__icon"> 
-                            <svg class="button__svg" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.33203 10.0002L16.6654 10.0002" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                              <path d="M10 3.3335L10 16.6668" stroke="#0B1226" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div></a>
-            <div class="media__more">
-              <div class="hover-border catalog-listing__button">
-                <div class="hover-content"> 
-                  <button class="catalog-listing__more text-20">Показать еще</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <div class="projects__content">
+          <h2 class="title-32 projects__not-found">По таким параметрам ничего не найдено...</h2>
+        </div>
       </main>
       <div class="footer-wrapper">
         <div class="footer-products">
