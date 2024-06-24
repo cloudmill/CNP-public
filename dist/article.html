@@ -6,7 +6,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>service-partners-2</title>
+    <title>article</title>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -230,90 +230,304 @@
           </div>
         </div>
       </header>
-      <main class="dealer">
-        <div class="container">
-          <section class="top-section">
-            <div class="dealer__breadcrumbs">
-              <div class="breadcrumbs"> 
-                <ul class="breadcrumbs__list"> 
-                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
-                       Главная</a></li>
-                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#"> Сотрудничество</a></li>
-                  <li class="breadcrumbs__item"> 
-                    <div class="breadcrumbs__text"> Сервисным партнерам</div>
-                  </li>
-                </ul>
-              </div>
+      <main class="articles">
+        <section class="top-section container">
+          <div class="press-kit__breadcrumbs">
+            <div class="breadcrumbs"> 
+              <ul class="breadcrumbs__list"> 
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+                     Главная</a></li>
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#"> Пресс-центр</a></li>
+                <li class="breadcrumbs__item"> 
+                  <div class="breadcrumbs__text"> Статьи</div>
+                </li>
+              </ul>
             </div>
-            <h1 class="dealer__head title-90">Сервисным партнерам</h1>
-            <div class="dealer-listing">
-              <div class="dealer-listing__links"> <a class="dealer-listing__links-item text-32" href="service-partners">Требования к авторизованным сервисным центрам</a><a class="dealer-listing__links-item active text-32" href="#">Размещение на сайте</a></div>
-            </div>
-          </section>
-          <section class="info-content">
-            <h5>Размещение на сайте</h5><br>
-            <p>Кандидат отправляет по электронной почте на адрес <a href="mailto:asc@cnprussia.ru">asc@cnprussia.ru</a> следующую информацию:</p><br>
-            <ul> 
-              <li>
-                 Анкету кандидата</li>
-              <li class="info-content__btn"> 
-                <div class="hover-border">
-                  <div class="hover-content"> 
-                    <div class="card-file-simple__wrapper">
-                      <div class="card-file-simple"><a class="card-file-simple__docs-item" href="#" download="download"> 
-                          <div class="card-file-simple__docs-left"> 
-                            <div class="card-file-simple__docs-title title-20"> Анкета кандидата
-                            </div>
-                            <p class="card-file-simple__docs-size text-16 devices"> 1,55 МБ
-                            </p>
-                          </div>
-                          <div class="card-file-simple__docs-right">
-                            <div class="card-file-simple__docs-size text-16 desktop"> 1,55 МБ
-                            </div>
-                            <div class="card-file-simple__arrow">
-                              <div class="hover-border">
-                                <div class="hover-content"> 
-                                  <div class="card-file-simple__docs-icon">
-                                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M6 21.0005H18" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M12 3.00049L12 17.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M17 12.0005L12 17.0005L7 12.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div></a></div>
+          </div>
+          <h1 class="press-kit__head title-90">Пресс-центр</h1>
+          <div class="press-kit-listing">
+            <div class="press-kit-listing__links"> <a class="press-kit-listing__links-item text-32" href="#">Новости</a><a class="press-kit-listing__links-item active text-32" href="#">Статьи</a><a class="press-kit-listing__links-item text-32" href="#">Публикации в СМИ</a><a class="press-kit-listing__links-item text-32" href="#">Мероприятия</a><a class="press-kit-listing__links-item text-32" href="press-kit">Пресс-кит</a></div>
+          </div>
+        </section>
+        <section class="articles-filter container">
+          <div class="articles-filter__search"></div>
+          <button class="button button--blue button--hover-gradient button--h-auto">
+            <div class="button-gradient"></div>
+            <div class="button__text">Найти</div>
+          </button>
+          <!--+button-arrow-icon('Актуальны§е вакансии', false).button--blue.button--hover-gradient(href="#section-vacansies" data-slide-link)-->
+          <div class="articles-filter__selects">
+            <div class="hover-border">
+              <div class="hover-content"> 
+                <div class="select select-wrapper">
+                  <div class="select__button">
+                    <div class="input-ui custom-placeholder" data-input-parent="">
+                      <input data-input="" required="required" readonly="readonly" type="text" value="" placeholder="Сортировка"/>
+                      <div class="custom-placeholder__service"><span>Сортировка</span></div>
                     </div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <div class="select__list" data-lenis-prevent="true">
+                    <ul>
+                      <li>
+                        <p>Самые свежие</p>
+                      </li>
+                      <li>
+                        <p>2024</p>
+                      </li>
+                      <li>
+                        <p>2023</p>
+                      </li>
+                      <li>
+                        <p>2022</p>
+                      </li>
+                      <li>
+                        <p>2021</p>
+                      </li>
+                      <li>
+                        <p>2020</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </li>
-              <li>Фотографии (не более 1 Мб каждая): вид с улицы, вид приемки, рабочее место мастера, склада хранения оборудования клиентов</li>
-              <li>Презентацию Кандидата (если имеется)</li>
-            </ul><br>
-            <p> <span> <strong>Важно! В случае наличия у Кандидата нескольких приемок/филиалов необходимо заполнение Авторизационной формы на каждую из них.</strong></span></p><br>
-            <h5>Проверка</h5><br>
-            <p>CNP проверяет соответствие Кандидата критериям. При соответствии критериям авторизации, CNP в течение 10 (десяти) рабочих дней сообщает Кандидату о возможности присвоения статуса АСЦ CNP Aikon.</p><br>
-            <p> <span> <strong>Важно! Компания CNP оставляет за собой право отказать Кандидату в авторизации. В этом случае Авторизационная форма и фотографии Кандидата поступают в архив и в будущем Кандидат может быть рассмотрен CNP повторно.</strong></span></p><br>
-            <h5>Договор</h5><br>
-            <p>После принятия положительного решения об авторизации СЦ в течении пяти рабочих дней компании заключают Договор сервисного обслуживания и утверждают сроки отчетности, удобные обоим сторонам.</p><br>
-            <h5>Размещение контактных данных</h5><br>
-            <p>CNP Aikon размещает контактные данные АСЦ и его приемок, на которые были присланы Авторизационные формы, на сайте в разделе «Сервисные центры».</p><br>
-            <p>Информация размещается в следующем виде:</p><br>
-            <ul> 
-              <li>Город</li>
-              <li>Название компании</li>
-              <li>Телефон</li>
-              <li>Адрес</li>
-              <li>Адрес веб-страницы (URL), если имеется.</li>
-            </ul><br>
-            <p>Дальнейшее сотрудничество осуществляется в рабочем порядке на основании требований Договора сервисного обслуживания</p><br>
-            <h5>Период авторизации</h5><br>
-            <p>Период авторизации АСЦ устанавливается следующим образом: с момента подписания Договора сервисного обслуживания с ежегодной автоматической пролонгацией при отсутствии блокирующих причин.</p><br>
-            <h5>Условия прекращения авторизации</h5><br>
-            <p>При несоблюдении обязанностей АСЦ, указанных в договоре на сервисное обслуживание или нарушении условий Сервисной политики CNP оставляет за собой право лишить АСЦ авторизации до окончания периода авторизации. Контроль над соблюдением условий Сервисной политики проводится путем анализа предоставляемых Гарантийных Отчетов, мониторинга информации из различных открытых источников, непосредственных проверок и мнения клиентов.</p>
-          </section>
-        </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="articles-content container">
+          <div class="hover-border">
+            <div class="hover-content"> <a class="article-card" href="#">
+                <div class="article-card__img">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/articles-img1.webp " alt="articles-img1.png"/>
+                    <source class="lazyload" srcset="images/articles-img1.jpg " alt="articles-img1.png"/>
+                    <source class="lazyload" srcset="images/articles-img1.png " alt="articles-img1.png"/><img class="picture__img lazyload" data-src="images/articles-img1.png" alt="articles-img1.png"/>
+                  </picture>
+                  <div class="article-card__date">18 октября 2023
+                  </div>
+                  <div class="article-card__category">Новости
+                  </div>
+                </div>
+                <div class="article-card-block">
+                  <h5 class="article-card-block__title">Итоги выставки EcwaTech
+                  </h5>
+                  <div class="article-card-block__descr">
+                    <div class="article-card-block__tags">
+                      <div class="article-card-block__tag-item">#выставки</div>
+                    </div>
+                    <div class="article-card-block__btn">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
+                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="hover-border">
+            <div class="hover-content"> <a class="article-card" href="#">
+                <div class="article-card__img">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/articles-img2.webp " alt="articles-img2.png"/>
+                    <source class="lazyload" srcset="images/articles-img2.jpg " alt="articles-img2.png"/>
+                    <source class="lazyload" srcset="images/articles-img2.png " alt="articles-img2.png"/><img class="picture__img lazyload" data-src="images/articles-img2.png" alt="articles-img2.png"/>
+                  </picture>
+                  <div class="article-card__date">11 февраля 2022
+                  </div>
+                  <div class="article-card__category">Новости
+                  </div>
+                </div>
+                <div class="article-card-block">
+                  <h5 class="article-card-block__title">Кавитация и NPSHr, расчет максимальной высоты подъёма
+                  </h5>
+                  <div class="article-card-block__descr">
+                    <div class="article-card-block__tags">
+                      <div class="article-card-block__tag-item">#расчеты</div>
+                    </div>
+                    <div class="article-card-block__btn">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
+                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="hover-border">
+            <div class="hover-content"> <a class="article-card" href="#">
+                <div class="article-card__img">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/articles-img3.webp " alt="articles-img3.png"/>
+                    <source class="lazyload" srcset="images/articles-img3.jpg " alt="articles-img3.png"/>
+                    <source class="lazyload" srcset="images/articles-img3.png " alt="articles-img3.png"/><img class="picture__img lazyload" data-src="images/articles-img3.png" alt="articles-img3.png"/>
+                  </picture>
+                  <div class="article-card__date">10 ноября 2023
+                  </div>
+                  <div class="article-card__category">Новости
+                  </div>
+                </div>
+                <div class="article-card-block">
+                  <h5 class="article-card-block__title">Насосы серии NIS вошли в складскую программу CNP
+                  </h5>
+                  <div class="article-card-block__descr">
+                    <div class="article-card-block__tags">
+                      <div class="article-card-block__tag-item">#NIS</div>
+                      <div class="article-card-block__tag-item">#NISO</div>
+                      <div class="article-card-block__tag-item">#склад</div>
+                      <div class="article-card-block__tag-item">#распродажа</div>
+                    </div>
+                    <div class="article-card-block__btn">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
+                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="hover-border">
+            <div class="hover-content"> <a class="article-card" href="#">
+                <div class="article-card__img">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/articles-img4.webp " alt="articles-img4.png"/>
+                    <source class="lazyload" srcset="images/articles-img4.jpg " alt="articles-img4.png"/>
+                    <source class="lazyload" srcset="images/articles-img4.png " alt="articles-img4.png"/><img class="picture__img lazyload" data-src="images/articles-img4.png" alt="articles-img4.png"/>
+                  </picture>
+                  <div class="article-card__date">18 октября 2023
+                  </div>
+                  <div class="article-card__category">Новости
+                  </div>
+                </div>
+                <div class="article-card-block">
+                  <h5 class="article-card-block__title">Итоги выставки EcwaTech
+                  </h5>
+                  <div class="article-card-block__descr">
+                    <div class="article-card-block__tags">
+                      <div class="article-card-block__tag-item">#выставки</div>
+                    </div>
+                    <div class="article-card-block__btn">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
+                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="hover-border">
+            <div class="hover-content"> <a class="article-card" href="#">
+                <div class="article-card__img">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/articles-img5.webp " alt="articles-img5.png"/>
+                    <source class="lazyload" srcset="images/articles-img5.jpg " alt="articles-img5.png"/>
+                    <source class="lazyload" srcset="images/articles-img5.png " alt="articles-img5.png"/><img class="picture__img lazyload" data-src="images/articles-img5.png" alt="articles-img5.png"/>
+                  </picture>
+                  <div class="article-card__date">11 февраля 2022
+                  </div>
+                  <div class="article-card__category">Новости
+                  </div>
+                </div>
+                <div class="article-card-block">
+                  <h5 class="article-card-block__title">Кавитация и NPSHr, расчет максимальной высоты подъёма
+                  </h5>
+                  <div class="article-card-block__descr">
+                    <div class="article-card-block__tags">
+                      <div class="article-card-block__tag-item">#расчеты</div>
+                    </div>
+                    <div class="article-card-block__btn">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
+                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="hover-border">
+            <div class="hover-content"> <a class="article-card" href="#">
+                <div class="article-card__img">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/articles-img3.webp " alt="articles-img6.png"/>
+                    <source class="lazyload" srcset="images/articles-img6.jpg " alt="articles-img6.png"/>
+                    <source class="lazyload" srcset="images/articles-img3.png " alt="articles-img6.png"/><img class="picture__img lazyload" data-src="images/articles-img6.png" alt="articles-img6.png"/>
+                  </picture>
+                  <div class="article-card__date">10 ноября 2023
+                  </div>
+                  <div class="article-card__category">Новости
+                  </div>
+                </div>
+                <div class="article-card-block">
+                  <h5 class="article-card-block__title">Насосы серии NIS вошли в складскую программу CNP
+                  </h5>
+                  <div class="article-card-block__descr">
+                    <div class="article-card-block__tags">
+                      <div class="article-card-block__tag-item">#NIS</div>
+                      <div class="article-card-block__tag-item">#NISO</div>
+                      <div class="article-card-block__tag-item">#склад</div>
+                      <div class="article-card-block__tag-item">#распродажа</div>
+                    </div>
+                    <div class="article-card-block__btn">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
+                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="articles-content__more">  
+            <div class="hover-border catalog-listing__button">
+              <div class="hover-content"> 
+                <button class="catalog-listing__more text-20">Показать еще</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="articles-form container">
+          <div class="subscribe-form">
+            <div class="subscribe-form__text">Подпишитесь и будьте в курсе последних новостей</div>
+            <form class="subscribe-form-inner" data-form-subscribe="data-form-subscribe">
+              <div class="subscribe-form-inner__block">
+                <div class="subscribe-form-inner__input">
+                  <div class="input-ui custom-placeholder form-input form-input-light" data-input-parent="">
+                    <input class="form-input form-input-light" data-input="" required="required" name="email" placeholder="E-mail" type="email"/>
+                    <div class="custom-placeholder__service"><span>E-mail</span></div>
+                  </div>
+                </div>
+                <div class="subscribe-form-inner__btn"> 
+                  <button class="button button--blue button--hover-gradient button--h-auto">
+                    <div class="button-gradient"></div>
+                    <div class="button__text">Подписаться</div>
+                  </button>
+                </div>
+              </div>
+              <div class="subscribe-form-inner__bot"> 
+                <div class="subscribe-form-inner__privacy"> 
+                  <label class="subscribe-form-inner__privacy-checkbox" for="subscribe-check"> 
+                    <input class="subscribe-form-inner__privacy-input" type="checkbox" name="subscribe-checkbox" id="subscribe-check" required="required" checked="checked" data-vacansies-checkbox="data-vacansies-checkbox"/>
+                    <div class="subscribe-form-inner__privacy-check"> 
+                      <div class="subscribe-form-inner__privacy-mark">
+                        <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 8.49981L6.82843 11.3282L12.4853 5.67139" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </label>
+                  <p class="subscribe-form-inner__privacy-text text-16">
+                     Нажимая на кнопку «Отправить», я принимаю <a href="#" target="blank">условия политики конфиденциальности</a></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </main>
       <div class="footer-wrapper">
         <div class="footer-products">
