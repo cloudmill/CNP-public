@@ -18,7 +18,7 @@
       <div class="modal-block">
       </div>
       <main>
-        <div class="inner">
+        <div class="inner"><br><br>
           <h1 class="title-150">H1 класс title-150</h1>
           <h2 class="title-90">H2 класс title-90</h2><br>
           <h3 class="title-60">H3 класс title-60</h3><br>
@@ -151,7 +151,7 @@
                   </div></a>
               </div>
             </div>
-          </div><br><br><br><br><br>
+          </div><br><br><br><br>
           <div class="hover-component">
             <div class="hover-component__gradient"></div>
             <div class="hover-component__content">
@@ -249,7 +249,162 @@
                 <div class="small-button-link"><a class="text-20" href="#"> Прайс</a></div>
               </div>
             </div>
-          </div><br><br><br><br><br><br><br><br><br>
+          </div><br><br><br><br><br><br><br><br><br>Базовый инпут +base-input('myName','myInputId')(placeholder='myPlaceholder')<br>
+          <div class="base-input__wrapper">
+            <div class="hover-border input-wrapper wide">
+              <div class="hover-content"> 
+                <div class="input-ui base-input" data-input-parent="">
+                  <input class="form-input" data-input="" name="myName" data-parsley-errors-container="#myInputId-error-container" placeholder="myPlaceholder"/>
+                  <div class="custom-placeholder__service"><span>myPlaceholder</span></div>
+                </div>
+              </div>
+            </div>
+            <div id="myInputId-error-container"></div>
+          </div><br><br>Темный инпут +base-input('myName','myBlackInputId')(placeholder='myPlaceholder').black<br>
+          <div style="background:#0B1226; padding: 60px">
+            <div class="base-input__wrapper">
+              <div class="hover-border input-wrapper wide black">
+                <div class="hover-content"> 
+                  <div class="input-ui base-input black" data-input-parent="">
+                    <input class="form-input black" data-input="" name="myName" data-parsley-errors-container="#myBlackInputId-error-container" placeholder="myPlaceholder"/>
+                    <div class="custom-placeholder__service"><span>myPlaceholder</span></div>
+                  </div>
+                </div>
+              </div>
+              <div id="myBlackInputId-error-container"></div>
+            </div>
+          </div><br><br><br>Базовая текстареа +base-textarea('myTextareaId')(placeholder='myPlaceholder')
+          <div class="base-textarea__wrapper"> 
+            <div class="hover-border input-wrapper wide">
+              <div class="hover-content"> 
+                <label class="textarea-ui base-textarea" data-input-parent="">
+                  <textarea data-input="" placeholder="myPlaceholder"></textarea>
+                  <div class="custom-placeholder__service"><span>myPlaceholder</span></div>
+                </label>
+              </div>
+            </div>
+            <div id="myTextareaId-error-container"></div>
+          </div><br><br><br>инпут поиска +search-input("myPlaceholder",'searchInputId')(required='').form-input.wide
+          <div class="search-input__wrapper">
+            <div class="hover-border input-wrapper wide form-input wide">
+              <div class="hover-content"> 
+                <div class="input-ui search-input form-input form-input wide" data-input-parent="">
+                  <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#0B1226"></path>
+                  </svg>
+                  <input class="form-input wide" data-input="" required="" name="searchInputId" placeholder="myPlaceholder" maxlength="255" data-parsley-errors-container="#searchInputId-error-container" type="text"/>
+                  <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div id="searchInputId-error-container"></div>
+          </div><br><br><br>инпут password +password-input('password', 'passwordInputId')(placeholder='myPassword')
+          <div class="base-input__wrapper">
+            <div class="hover-border input-wrapper wide">
+              <div class="hover-content"> 
+                <div class="input-ui base-input" data-input-parent="">
+                  <input class="form-input" data-input="" type="password" required="required" name="password" data-parsley-errors-container="" placeholder="myPassword"/>
+                  <div class="custom-placeholder__service"><span>myPassword</span></div>
+                  <div class="base-input__show" data-password-show="">
+                    <div class="base-input__show-inner">
+                      <svg class="toggle show" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9996 5C5.69259 5 2.63259 10.683 2.08959 11.808C2.0602 11.8677 2.04492 11.9334 2.04492 12C2.04492 12.0666 2.0602 12.1323 2.08959 12.192C2.63159 13.317 5.69159 19 11.9996 19C18.3076 19 21.3666 13.317 21.9096 12.192C21.939 12.1323 21.9543 12.0666 21.9543 12C21.9543 11.9334 21.939 11.8677 21.9096 11.808C21.3676 10.683 18.3076 5 11.9996 5Z" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <svg class="toggle hide" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0426 5.83569C16.4599 4.78322 14.4545 4 11.9996 4C8.517 4 5.93926 5.57661 4.18941 7.26184C2.45211 8.93498 1.48993 10.7503 1.19019 11.3709C1.09461 11.5668 1.04492 11.782 1.04492 12C1.04492 12.2176 1.09443 12.4324 1.18967 12.6281C1.48893 13.2488 2.45098 15.0647 4.18866 16.7382C4.66724 17.1991 5.20776 17.6518 5.81179 18.0665L7.255 16.6232C6.62623 16.2261 6.06783 15.7712 5.57602 15.2976C4.26371 14.0338 3.45778 12.6642 3.11211 12.0002C3.45837 11.3357 4.26452 9.96619 5.57677 8.70241C7.06942 7.26488 9.17517 6 11.9996 6C13.8204 6 15.3425 6.5255 16.5943 7.284L18.0426 5.83569ZM8.65224 17.3473C9.63241 17.7506 10.7451 18 11.9996 18C14.8245 18 16.9303 16.7351 18.4228 15.2976C19.7349 14.0339 20.5408 12.6644 20.8871 11.9998C20.5414 11.3358 19.7355 9.96626 18.4232 8.70241C18.2352 8.52138 18.0375 8.34309 17.8299 8.16972L19.2488 6.7508C19.4447 6.91898 19.6319 7.08984 19.8105 7.26184C21.5479 8.93504 22.5099 10.7505 22.8093 11.3716C22.9047 11.5673 22.9543 11.7822 22.9543 12C22.9543 12.218 22.9046 12.4332 22.809 12.6291C22.5093 13.2496 21.5474 15.065 19.8102 16.7381C18.0604 18.4234 15.4826 20 11.9996 20C10.1221 20 8.50756 19.5419 7.14396 18.8556L8.65224 17.3473Z" fill="#747884"></path>
+                        <line x1="2.46967" y1="20.4697" x2="20.4697" y2="2.46967" stroke="#747884" stroke-width="1.5"></line>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2366 9.64204C13.654 9.08918 12.8666 8.75 12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 12.8666 9.08918 13.654 9.64204 14.2366L11.4125 12.4662C11.3108 12.3382 11.25 12.1762 11.25 12C11.25 11.5858 11.5858 11.25 12 11.25C12.1762 11.25 12.3382 11.3108 12.4662 11.4125L14.2366 9.64204ZM10.9302 15.0698C11.2652 15.1866 11.6252 15.25 12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 11.6252 15.1866 11.2652 15.0698 10.9302L10.9302 15.0698Z" fill="#747884"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="error"></div><br><br><br>инпут password с внешним блоком вывода ошибки parsley <br>+password-input('password')(placeholder='myPassword')(data-parsley-errors-container='#errorDiv') 
+          <div class="base-input__wrapper">
+            <div class="hover-border input-wrapper wide">
+              <div class="hover-content"> 
+                <div class="input-ui base-input" data-input-parent="">
+                  <input class="form-input" data-input="" type="password" required="required" name="password" data-parsley-errors-container="#errorDiv" placeholder="myPassword"/>
+                  <div class="custom-placeholder__service"><span>myPassword</span></div>
+                  <div class="base-input__show" data-password-show="">
+                    <div class="base-input__show-inner">
+                      <svg class="toggle show" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9996 5C5.69259 5 2.63259 10.683 2.08959 11.808C2.0602 11.8677 2.04492 11.9334 2.04492 12C2.04492 12.0666 2.0602 12.1323 2.08959 12.192C2.63159 13.317 5.69159 19 11.9996 19C18.3076 19 21.3666 13.317 21.9096 12.192C21.939 12.1323 21.9543 12.0666 21.9543 12C21.9543 11.9334 21.939 11.8677 21.9096 11.808C21.3676 10.683 18.3076 5 11.9996 5Z" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <svg class="toggle hide" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0426 5.83569C16.4599 4.78322 14.4545 4 11.9996 4C8.517 4 5.93926 5.57661 4.18941 7.26184C2.45211 8.93498 1.48993 10.7503 1.19019 11.3709C1.09461 11.5668 1.04492 11.782 1.04492 12C1.04492 12.2176 1.09443 12.4324 1.18967 12.6281C1.48893 13.2488 2.45098 15.0647 4.18866 16.7382C4.66724 17.1991 5.20776 17.6518 5.81179 18.0665L7.255 16.6232C6.62623 16.2261 6.06783 15.7712 5.57602 15.2976C4.26371 14.0338 3.45778 12.6642 3.11211 12.0002C3.45837 11.3357 4.26452 9.96619 5.57677 8.70241C7.06942 7.26488 9.17517 6 11.9996 6C13.8204 6 15.3425 6.5255 16.5943 7.284L18.0426 5.83569ZM8.65224 17.3473C9.63241 17.7506 10.7451 18 11.9996 18C14.8245 18 16.9303 16.7351 18.4228 15.2976C19.7349 14.0339 20.5408 12.6644 20.8871 11.9998C20.5414 11.3358 19.7355 9.96626 18.4232 8.70241C18.2352 8.52138 18.0375 8.34309 17.8299 8.16972L19.2488 6.7508C19.4447 6.91898 19.6319 7.08984 19.8105 7.26184C21.5479 8.93504 22.5099 10.7505 22.8093 11.3716C22.9047 11.5673 22.9543 11.7822 22.9543 12C22.9543 12.218 22.9046 12.4332 22.809 12.6291C22.5093 13.2496 21.5474 15.065 19.8102 16.7381C18.0604 18.4234 15.4826 20 11.9996 20C10.1221 20 8.50756 19.5419 7.14396 18.8556L8.65224 17.3473Z" fill="#747884"></path>
+                        <line x1="2.46967" y1="20.4697" x2="20.4697" y2="2.46967" stroke="#747884" stroke-width="1.5"></line>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2366 9.64204C13.654 9.08918 12.8666 8.75 12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 12.8666 9.08918 13.654 9.64204 14.2366L11.4125 12.4662C11.3108 12.3382 11.25 12.1762 11.25 12C11.25 11.5858 11.5858 11.25 12 11.25C12.1762 11.25 12.3382 11.3108 12.4662 11.4125L14.2366 9.64204ZM10.9302 15.0698C11.2652 15.1866 11.6252 15.25 12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 11.6252 15.1866 11.2652 15.0698 10.9302L10.9302 15.0698Z" fill="#747884"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>+password-input('repeat-password')(placeholder='repeatMyPassword')(data-parsley-errors-container='#errorDiv')
+          <div class="base-input__wrapper">
+            <div class="hover-border input-wrapper wide">
+              <div class="hover-content"> 
+                <div class="input-ui base-input" data-input-parent="">
+                  <input class="form-input" data-input="" type="password" required="required" name="repeat-password" data-parsley-errors-container="#errorDiv" placeholder="repeatMyPassword"/>
+                  <div class="custom-placeholder__service"><span>repeatMyPassword</span></div>
+                  <div class="base-input__show" data-password-show="">
+                    <div class="base-input__show-inner">
+                      <svg class="toggle show" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9996 5C5.69259 5 2.63259 10.683 2.08959 11.808C2.0602 11.8677 2.04492 11.9334 2.04492 12C2.04492 12.0666 2.0602 12.1323 2.08959 12.192C2.63159 13.317 5.69159 19 11.9996 19C18.3076 19 21.3666 13.317 21.9096 12.192C21.939 12.1323 21.9543 12.0666 21.9543 12C21.9543 11.9334 21.939 11.8677 21.9096 11.808C21.3676 10.683 18.3076 5 11.9996 5Z" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <svg class="toggle hide" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0426 5.83569C16.4599 4.78322 14.4545 4 11.9996 4C8.517 4 5.93926 5.57661 4.18941 7.26184C2.45211 8.93498 1.48993 10.7503 1.19019 11.3709C1.09461 11.5668 1.04492 11.782 1.04492 12C1.04492 12.2176 1.09443 12.4324 1.18967 12.6281C1.48893 13.2488 2.45098 15.0647 4.18866 16.7382C4.66724 17.1991 5.20776 17.6518 5.81179 18.0665L7.255 16.6232C6.62623 16.2261 6.06783 15.7712 5.57602 15.2976C4.26371 14.0338 3.45778 12.6642 3.11211 12.0002C3.45837 11.3357 4.26452 9.96619 5.57677 8.70241C7.06942 7.26488 9.17517 6 11.9996 6C13.8204 6 15.3425 6.5255 16.5943 7.284L18.0426 5.83569ZM8.65224 17.3473C9.63241 17.7506 10.7451 18 11.9996 18C14.8245 18 16.9303 16.7351 18.4228 15.2976C19.7349 14.0339 20.5408 12.6644 20.8871 11.9998C20.5414 11.3358 19.7355 9.96626 18.4232 8.70241C18.2352 8.52138 18.0375 8.34309 17.8299 8.16972L19.2488 6.7508C19.4447 6.91898 19.6319 7.08984 19.8105 7.26184C21.5479 8.93504 22.5099 10.7505 22.8093 11.3716C22.9047 11.5673 22.9543 11.7822 22.9543 12C22.9543 12.218 22.9046 12.4332 22.809 12.6291C22.5093 13.2496 21.5474 15.065 19.8102 16.7381C18.0604 18.4234 15.4826 20 11.9996 20C10.1221 20 8.50756 19.5419 7.14396 18.8556L8.65224 17.3473Z" fill="#747884"></path>
+                        <line x1="2.46967" y1="20.4697" x2="20.4697" y2="2.46967" stroke="#747884" stroke-width="1.5"></line>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2366 9.64204C13.654 9.08918 12.8666 8.75 12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 12.8666 9.08918 13.654 9.64204 14.2366L11.4125 12.4662C11.3108 12.3382 11.25 12.1762 11.25 12C11.25 11.5858 11.5858 11.25 12 11.25C12.1762 11.25 12.3382 11.3108 12.4662 11.4125L14.2366 9.64204ZM10.9302 15.0698C11.2652 15.1866 11.6252 15.25 12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 11.6252 15.1866 11.2652 15.0698 10.9302L10.9302 15.0698Z" fill="#747884"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>внешний блок вывода групповых ошибок parsley #errorDiv (класс .parsley-errors-list присваивать не нужно, parsley его накинет сам)
+          <div class="parsley-errors-list" id="errorDiv" style="height: auto; opacity: 1; margin-top: 10px">#errorDiv - здесь будет выведена групповая ошибка parsley</div><br><br><br>
+          <div style="margin-right: 40px; padding-right: 40px; border-right: 1px solid #ccc">+tooltip-input('myName','my tooltip text = Lorem ipsum dolor sit amet consectetur adipisicing elit.')(placeholder='myPlaceholder')
+            <div class="base-input__wrapper">
+              <div class="hover-border input-wrapper wide">
+                <div class="hover-content"> 
+                  <div class="input-ui base-input" data-input-parent="">
+                    <input class="form-input" data-input="" name="myName" placeholder="myPlaceholder"/>
+                    <div class="custom-placeholder__service"><span>myPlaceholder</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="base-input__tooltip" data-input-tooltip="">
+                <div class="base-input__tooltip-inner"> 
+                  <div class="base-input__tooltip-icon"> 
+                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="color-fill" d="M14 19C14.5523 19 15 19.4477 15 20C15 20.5523 14.5523 21 14 21C13.4477 21 13 20.5523 13 20C13 19.4477 13.4477 19 14 19Z" fill="#0070B8"></path>
+                      <path class="color-stroke" d="M10.668 10.8386C10.668 9.25311 12.168 8.38039 14.413 8.45457C16.0331 8.5036 17.3213 9.658 17.3346 11.0727C17.413 12.3957 16.6946 13.6585 15.4396 14.4037C14.3729 15 13.8091 16.089 14.0013 17.1818" stroke="#0070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <div class="base-input__tooltip-content">
+                    <div class="base-input__tooltip-text">my tooltip text = Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      <svg class="base-input__tooltip-tail" width="23" height="6" viewbox="0 0 23 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.64974 5.03465C10.8091 5.63953 12.1909 5.63953 13.3503 5.03464L23 0H0L9.64974 5.03465Z" fill="white"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
       </main>
     </div>

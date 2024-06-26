@@ -235,9 +235,8 @@
           <div class="overlay" data-overlay="data-overlay"></div>
           <div class="modal-send" data-modal-wrapper="modal-send"> 
             <div class="modal-send__close" data-modal-close="modal-send"> 
-              <div class="hover-component">
-                <div class="hover-component__gradient"></div>
-                <div class="hover-component__content">
+              <div class="hover-border">
+                <div class="hover-content"> 
                   <div class="modal-factory__svg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
                       <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -267,100 +266,6 @@
               <p class="modal-send__title title-48">Спасибо!</p>
               <p class="modal-send__text text-24">Мы свяжемся с вами в ближайшее время</p>
             </div>
-          </div>
-        </div>
-        <div class="modal-vacansies" data-modal-wrapper="modal-vacansies"> 
-          <div class="modal-vacansies__close" data-modal-close="modal-vacansies"> 
-            <div class="hover-component">
-              <div class="hover-component__gradient"></div>
-              <div class="hover-component__content">
-                <div class="modal-factory__svg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                    <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-vacansies__inner">
-            <p class="modal-vacansies__title title-48">Откликнуться на вакансию</p>
-            <form class="modal-vacansies__form" data-form-vacansies="data-form-vacansies"> 
-              <div class="modal-vacansies__inputs"> 
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="fio" placeholder="ФИО" type="text"/>
-                  <div class="custom-placeholder__service"><span>ФИО</span></div>
-                </div>
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="tel" placeholder="Телефон" type="tel" data-mask-phone="data-mask-phone"/>
-                  <div class="custom-placeholder__service"><span>Телефон</span></div>
-                </div>
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="email" placeholder="E-mail" type="email"/>
-                  <div class="custom-placeholder__service"><span>E-mail</span></div>
-                </div>
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="city" placeholder="Город" type="text"/>
-                  <div class="custom-placeholder__service"><span>Город</span></div>
-                </div>
-                <div class="textarea-ui custom-placeholder" data-input-parent="">
-                  <textarea data-input="" name="" placeholder="Сопроводительное письмо"></textarea>
-                  <div class="custom-placeholder__service"><span>Сопроводительное письмо</span></div>
-                </div>
-              </div>
-              <div class="modal-vacansies__file">
-                <div class="hover-component">
-                  <div class="hover-component__gradient"></div>
-                  <div class="hover-component__content">
-                    <label class="modal-vacansies__file-btn">
-                      <input class="modal-vacansies__file-input" type="file"/>
-                      <div class="modal-vacansies__file-icon"> 
-                        <svg width="32" height="33" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.04688 15.7856L15.2393 6.59322C17.9729 3.85955 22.4051 3.85955 25.1388 6.59322C27.8724 9.32689 27.8724 13.759 25.1388 16.4927L14.5322 27.0993C12.7097 28.9218 9.75494 28.9218 7.93249 27.0993C6.11005 25.2769 6.11005 22.3221 7.93249 20.4997L18.5391 9.89305C19.4503 8.98183 20.9277 8.98183 21.8389 9.89305C22.7501 10.8043 22.7501 12.2817 21.8389 13.1929L12.6465 22.3853" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
-                      <div class="modal-vacansies__file-text text-20 fw-600">Прикрепить файл</div>
-                    </label>
-                  </div>
-                </div>
-                <div class="modal-vacansies__file-filename"> 
-                  <p class="text-20">filename.doc</p>
-                  <div class="modal-vacansies__file-delete">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                      <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-vacansies__bot"> 
-                <div class="modal-vacansies__privacy"> 
-                  <label class="modal-vacansies__privacy-checkbox" for="vacan-check"> 
-                    <input class="modal-vacansies__privacy-input" type="checkbox" name="privacy-checkbox" id="vacan-check" required="required" checked="checked" data-vacansies-checkbox="data-vacansies-checkbox"/>
-                    <div class="modal-vacansies__privacy-check"> 
-                      <div class="modal-vacansies__privacy-mark">
-                        <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4 8.49981L6.82843 11.3282L12.4853 5.67139" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </label>
-                  <p class="modal-vacansies__privacy-text text-16">
-                     Нажимая на кнопку «Отправить», я принимаю <a href="https://html-to-pug.com/" target="blank">условия политики конфиденциальности</a></p>
-                </div>
-                <div class="modal-vacansies__btn"> 
-                  <button class="button button--blue button--hover-gradient">
-                    <div class="button-gradient"></div>
-                    <div class="button__text">Отправить</div>
-                    <div class="button__icon">
-                      <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
         <section class="container top-section">
@@ -474,7 +379,7 @@
                   </div>
                   <label class="buy-map__form-search">
                     <div class="search-input__wrapper">
-                      <div class="hover-border wide form-input wide">
+                      <div class="hover-border input-wrapper wide form-input wide">
                         <div class="hover-content"> 
                           <div class="input-ui search-input form-input form-input wide" data-input-parent="">
                             <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

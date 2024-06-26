@@ -235,9 +235,8 @@
           <div class="overlay" data-overlay="data-overlay"></div>
           <div class="modal-send" data-modal-wrapper="modal-send"> 
             <div class="modal-send__close" data-modal-close="modal-send"> 
-              <div class="hover-component">
-                <div class="hover-component__gradient"></div>
-                <div class="hover-component__content">
+              <div class="hover-border">
+                <div class="hover-content"> 
                   <div class="modal-factory__svg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
                       <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -271,9 +270,8 @@
         </div>
         <div class="modal-vacansies" data-modal-wrapper="modal-vacansies"> 
           <div class="modal-vacansies__close" data-modal-close="modal-vacansies"> 
-            <div class="hover-component">
-              <div class="hover-component__gradient"></div>
-              <div class="hover-component__content">
+            <div class="hover-border">
+              <div class="hover-content"> 
                 <div class="modal-factory__svg">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
                     <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -287,31 +285,65 @@
             <p class="modal-vacansies__title title-48">Откликнуться на вакансию</p>
             <form class="modal-vacansies__form" data-form-vacansies="data-form-vacansies"> 
               <div class="modal-vacansies__inputs"> 
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="fio" placeholder="ФИО" type="text"/>
-                  <div class="custom-placeholder__service"><span>ФИО</span></div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="fio" data-parsley-errors-container="#myIdFio-error-container" placeholder="ФИО" required="required" type="text"/>
+                        <div class="custom-placeholder__service"><span>ФИО</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdFio-error-container"></div>
                 </div>
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="tel" placeholder="Телефон" type="tel" data-mask-phone="data-mask-phone"/>
-                  <div class="custom-placeholder__service"><span>Телефон</span></div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="tel" data-parsley-errors-container="#myIdTel-error-container" placeholder="Телефон" required="required" type="tel" data-mask-phone="data-mask-phone"/>
+                        <div class="custom-placeholder__service"><span>Телефон</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdTel-error-container"></div>
                 </div>
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="email" placeholder="E-mail" type="email"/>
-                  <div class="custom-placeholder__service"><span>E-mail</span></div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="email" data-parsley-errors-container="#myIdEmail-error-container" placeholder="E-mail" required="required" type="email"/>
+                        <div class="custom-placeholder__service"><span>E-mail</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdEmail-error-container"></div>
                 </div>
-                <div class="input-ui custom-placeholder form-input" data-input-parent="">
-                  <input class="form-input" data-input="" required="required" name="city" placeholder="Город" type="text"/>
-                  <div class="custom-placeholder__service"><span>Город</span></div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="city" data-parsley-errors-container="#myIdCity-error-container" placeholder="Город" required="required" type="text"/>
+                        <div class="custom-placeholder__service"><span>Город</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdCity-error-container"></div>
                 </div>
-                <div class="textarea-ui custom-placeholder" data-input-parent="">
-                  <textarea data-input="" name="" placeholder="Сопроводительное письмо"></textarea>
-                  <div class="custom-placeholder__service"><span>Сопроводительное письмо</span></div>
+                <div class="base-textarea__wrapper"> 
+                  <div class="hover-border input-wrapper wide">
+                    <div class="hover-content"> 
+                      <label class="textarea-ui base-textarea" data-input-parent="">
+                        <textarea data-input="" placeholder="Сопроводительное письмо"></textarea>
+                        <div class="custom-placeholder__service"><span>Сопроводительное письмо</span></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div id="vacation-textarea-error-container"></div>
                 </div>
               </div>
               <div class="modal-vacansies__file">
-                <div class="hover-component">
-                  <div class="hover-component__gradient"></div>
-                  <div class="hover-component__content">
+                <div class="hover-border">
+                  <div class="hover-content"> 
                     <label class="modal-vacansies__file-btn">
                       <input class="modal-vacansies__file-input" type="file"/>
                       <div class="modal-vacansies__file-icon"> 
@@ -346,7 +378,7 @@
                     </div>
                   </label>
                   <p class="modal-vacansies__privacy-text text-16">
-                     Нажимая на кнопку «Отправить», я принимаю <a href="https://html-to-pug.com/" target="blank">условия политики конфиденциальности</a></p>
+                     Нажимая на кнопку «Отправить», я&nbsp;принимаю <a href="https://html-to-pug.com/" target="blank">условия политики конфиденциальности</a></p>
                 </div>
                 <div class="modal-vacansies__btn"> 
                   <button class="button button--blue button--hover-gradient">
@@ -906,7 +938,7 @@
                     <div class="next-page__inner">
                       <p class="next-page__title title-32">Производство</p>
                       <div class="next-page__icon">
-                        <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
                           <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -920,7 +952,7 @@
                     <div class="next-page__inner">
                       <p class="next-page__title title-32">Карьера</p>
                       <div class="next-page__icon">
-                        <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
                           <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -934,7 +966,7 @@
                     <div class="next-page__inner">
                       <p class="next-page__title title-32">Наша команда</p>
                       <div class="next-page__icon">
-                        <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
                           <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>

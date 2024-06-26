@@ -231,6 +231,43 @@
         </div>
       </header>
       <main class="articles">
+        <div class="base-components">
+          <div class="overlay" data-overlay="data-overlay"></div>
+          <div class="modal-send" data-modal-wrapper="modal-send"> 
+            <div class="modal-send__close" data-modal-close="modal-send"> 
+              <div class="hover-border">
+                <div class="hover-content"> 
+                  <div class="modal-factory__svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                      <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-send__inner"> 
+              <div class="modal-send__icon"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewbox="0 0 156 156" fill="none">
+                  <circle cx="78" cy="78" r="76" stroke="url(#paint0_linear_1457_3351)" stroke-width="4"></circle>
+                  <path d="M50.6489 80.8545L68.3762 99.2724L107.376 58.7529" stroke="url(#paint1_linear_1457_3351)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <defs>
+                    <lineargradient id="paint0_linear_1457_3351" x1="78" y1="0" x2="78" y2="156" gradientunits="userSpaceOnUse">
+                      <stop stop-color="#0070B8"></stop>
+                      <stop offset="1" stop-color="#0071B8" stop-opacity="0"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint1_linear_1457_3351" x1="68.8827" y1="100.285" x2="49.6359" y2="81.0386" gradientunits="userSpaceOnUse">
+                      <stop stop-color="#0071B8"></stop>
+                      <stop offset="1" stop-color="#0071B8" stop-opacity="0"></stop>
+                    </lineargradient>
+                  </defs>
+                </svg>
+              </div>
+              <p class="modal-send__title title-48">Спасибо!</p>
+              <p class="modal-send__text text-24">Мы свяжемся с вами в ближайшее время</p>
+            </div>
+          </div>
+        </div>
         <section class="top-section container">
           <div class="press-kit__breadcrumbs">
             <div class="breadcrumbs"> 
@@ -250,13 +287,38 @@
           </div>
         </section>
         <section class="articles-filter container">
-          <div class="articles-filter__search"></div>
-          <button class="button button--blue button--hover-gradient button--h-auto">
-            <div class="button-gradient"></div>
-            <div class="button__text">Найти</div>
-          </button>
-          <!--+button-arrow-icon('Актуальны§е вакансии', false).button--blue.button--hover-gradient(href="#section-vacansies" data-slide-link)-->
-          <div class="articles-filter__selects">
+          <!--.articles-filter__search-->
+          <!--+search-button("Найти", true).button--blue.button--hover-gradient.button--h-auto-->
+          <div class="search-block">
+            <form class="search-block__form" action=""> 
+              <div class="search-input__wrapper">
+                <div class="hover-border input-wrapper wide form-input wide">
+                  <div class="hover-content"> 
+                    <div class="input-ui search-input form-input form-input wide" data-input-parent="">
+                      <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#0B1226"></path>
+                      </svg>
+                      <input class="form-input wide" data-input="" required="" name="articles-search" placeholder="Поиск по тегу" maxlength="255" data-parsley-errors-container="#articles-search-error-container" type="text"/>
+                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                        <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div id="articles-search-error-container"></div>
+              </div>
+              <div class="search-button__wrapper">
+                <div class="hover-border wide blue">
+                  <div class="hover-content"> 
+                    <button class="search-button">Найти</button>
+                  </div>
+                </div>
+              </div>
+              <div id="searchFormError"></div>
+            </form>
+          </div>
+          <div class="articles-filter__selects item_span">
             <div class="hover-border">
               <div class="hover-content"> 
                 <div class="select select-wrapper">
@@ -296,210 +358,223 @@
             </div>
           </div>
         </section>
-        <section class="articles-content container">
-          <div class="hover-border">
-            <div class="hover-content"> <a class="article-card" href="#">
-                <div class="article-card__img">
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/articles-img1.webp " alt="articles-img1.png"/>
-                    <source class="lazyload" srcset="images/articles-img1.jpg " alt="articles-img1.png"/>
-                    <source class="lazyload" srcset="images/articles-img1.png " alt="articles-img1.png"/><img class="picture__img lazyload" data-src="images/articles-img1.png" alt="articles-img1.png"/>
-                  </picture>
-                  <div class="article-card__date">18 октября 2023
-                  </div>
-                  <div class="article-card__category">Новости
-                  </div>
-                </div>
-                <div class="article-card-block">
-                  <h5 class="article-card-block__title">Итоги выставки EcwaTech
-                  </h5>
-                  <div class="article-card-block__descr">
-                    <div class="article-card-block__tags">
-                      <div class="article-card-block__tag-item">#выставки</div>
-                    </div>
-                    <div class="article-card-block__btn">
-                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
-                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <div class="hover-border">
-            <div class="hover-content"> <a class="article-card" href="#">
-                <div class="article-card__img">
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/articles-img2.webp " alt="articles-img2.png"/>
-                    <source class="lazyload" srcset="images/articles-img2.jpg " alt="articles-img2.png"/>
-                    <source class="lazyload" srcset="images/articles-img2.png " alt="articles-img2.png"/><img class="picture__img lazyload" data-src="images/articles-img2.png" alt="articles-img2.png"/>
-                  </picture>
-                  <div class="article-card__date">11 февраля 2022
-                  </div>
-                  <div class="article-card__category">Новости
-                  </div>
-                </div>
-                <div class="article-card-block">
-                  <h5 class="article-card-block__title">Кавитация и NPSHr, расчет максимальной высоты подъёма
-                  </h5>
-                  <div class="article-card-block__descr">
-                    <div class="article-card-block__tags">
-                      <div class="article-card-block__tag-item">#расчеты</div>
-                    </div>
-                    <div class="article-card-block__btn">
-                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
-                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <div class="hover-border">
-            <div class="hover-content"> <a class="article-card" href="#">
-                <div class="article-card__img">
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/articles-img3.webp " alt="articles-img3.png"/>
-                    <source class="lazyload" srcset="images/articles-img3.jpg " alt="articles-img3.png"/>
-                    <source class="lazyload" srcset="images/articles-img3.png " alt="articles-img3.png"/><img class="picture__img lazyload" data-src="images/articles-img3.png" alt="articles-img3.png"/>
-                  </picture>
-                  <div class="article-card__date">10 ноября 2023
-                  </div>
-                  <div class="article-card__category">Новости
-                  </div>
-                </div>
-                <div class="article-card-block">
-                  <h5 class="article-card-block__title">Насосы серии NIS вошли в складскую программу CNP
-                  </h5>
-                  <div class="article-card-block__descr">
-                    <div class="article-card-block__tags">
-                      <div class="article-card-block__tag-item">#NIS</div>
-                      <div class="article-card-block__tag-item">#NISO</div>
-                      <div class="article-card-block__tag-item">#склад</div>
-                      <div class="article-card-block__tag-item">#распродажа</div>
-                    </div>
-                    <div class="article-card-block__btn">
-                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
-                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <div class="hover-border">
-            <div class="hover-content"> <a class="article-card" href="#">
-                <div class="article-card__img">
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/articles-img4.webp " alt="articles-img4.png"/>
-                    <source class="lazyload" srcset="images/articles-img4.jpg " alt="articles-img4.png"/>
-                    <source class="lazyload" srcset="images/articles-img4.png " alt="articles-img4.png"/><img class="picture__img lazyload" data-src="images/articles-img4.png" alt="articles-img4.png"/>
-                  </picture>
-                  <div class="article-card__date">18 октября 2023
-                  </div>
-                  <div class="article-card__category">Новости
-                  </div>
-                </div>
-                <div class="article-card-block">
-                  <h5 class="article-card-block__title">Итоги выставки EcwaTech
-                  </h5>
-                  <div class="article-card-block__descr">
-                    <div class="article-card-block__tags">
-                      <div class="article-card-block__tag-item">#выставки</div>
-                    </div>
-                    <div class="article-card-block__btn">
-                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
-                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <div class="hover-border">
-            <div class="hover-content"> <a class="article-card" href="#">
-                <div class="article-card__img">
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/articles-img5.webp " alt="articles-img5.png"/>
-                    <source class="lazyload" srcset="images/articles-img5.jpg " alt="articles-img5.png"/>
-                    <source class="lazyload" srcset="images/articles-img5.png " alt="articles-img5.png"/><img class="picture__img lazyload" data-src="images/articles-img5.png" alt="articles-img5.png"/>
-                  </picture>
-                  <div class="article-card__date">11 февраля 2022
-                  </div>
-                  <div class="article-card__category">Новости
-                  </div>
-                </div>
-                <div class="article-card-block">
-                  <h5 class="article-card-block__title">Кавитация и NPSHr, расчет максимальной высоты подъёма
-                  </h5>
-                  <div class="article-card-block__descr">
-                    <div class="article-card-block__tags">
-                      <div class="article-card-block__tag-item">#расчеты</div>
-                    </div>
-                    <div class="article-card-block__btn">
-                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
-                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <div class="hover-border">
-            <div class="hover-content"> <a class="article-card" href="#">
-                <div class="article-card__img">
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/articles-img3.webp " alt="articles-img6.png"/>
-                    <source class="lazyload" srcset="images/articles-img6.jpg " alt="articles-img6.png"/>
-                    <source class="lazyload" srcset="images/articles-img3.png " alt="articles-img6.png"/><img class="picture__img lazyload" data-src="images/articles-img6.png" alt="articles-img6.png"/>
-                  </picture>
-                  <div class="article-card__date">10 ноября 2023
-                  </div>
-                  <div class="article-card__category">Новости
-                  </div>
-                </div>
-                <div class="article-card-block">
-                  <h5 class="article-card-block__title">Насосы серии NIS вошли в складскую программу CNP
-                  </h5>
-                  <div class="article-card-block__descr">
-                    <div class="article-card-block__tags">
-                      <div class="article-card-block__tag-item">#NIS</div>
-                      <div class="article-card-block__tag-item">#NISO</div>
-                      <div class="article-card-block__tag-item">#склад</div>
-                      <div class="article-card-block__tag-item">#распродажа</div>
-                    </div>
-                    <div class="article-card-block__btn">
-                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="12" fill="#0070B8"></rect>
-                        <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <div class="articles-content__more">  
-            <div class="hover-border catalog-listing__button">
+        <section class="articles-content container"><a class="article-card" href="#">
+            <div class="hover-border">
               <div class="hover-content"> 
-                <button class="catalog-listing__more text-20">Показать еще</button>
+                <div class="article-card__wrapper">
+                  <div class="article-card__img">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/articles-img1.webp " alt="articles-img1.png"/>
+                      <source class="lazyload" srcset="images/articles-img1.jpg " alt="articles-img1.png"/>
+                      <source class="lazyload" srcset="images/articles-img1.png " alt="articles-img1.png"/><img class="picture__img lazyload" data-src="images/articles-img1.png" alt="articles-img1.png"/>
+                    </picture>
+                    <div class="article-card__date">18 октября 2023
+                    </div>
+                    <div class="article-card__category">Новости
+                    </div>
+                  </div>
+                  <div class="article-card-block">
+                    <h5 class="article-card-block__title">Итоги выставки EcwaTech
+                    </h5>
+                    <div class="article-card-block__descr">
+                      <div class="article-card-block__tags">
+                        <div class="article-card-block__tag-item">#выставки</div>
+                      </div>
+                      <div class="article-card-block__btn button--hover-gradient">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div></a><a class="article-card" href="#">
+            <div class="hover-border">
+              <div class="hover-content"> 
+                <div class="article-card__wrapper">
+                  <div class="article-card__img">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/articles-img2.webp " alt="articles-img2.png"/>
+                      <source class="lazyload" srcset="images/articles-img2.jpg " alt="articles-img2.png"/>
+                      <source class="lazyload" srcset="images/articles-img2.png " alt="articles-img2.png"/><img class="picture__img lazyload" data-src="images/articles-img2.png" alt="articles-img2.png"/>
+                    </picture>
+                    <div class="article-card__date">11 февраля 2022
+                    </div>
+                    <div class="article-card__category">Новости
+                    </div>
+                  </div>
+                  <div class="article-card-block">
+                    <h5 class="article-card-block__title">Кавитация и NPSHr, расчет максимальной высоты подъёма
+                    </h5>
+                    <div class="article-card-block__descr">
+                      <div class="article-card-block__tags">
+                        <div class="article-card-block__tag-item">#расчеты</div>
+                      </div>
+                      <div class="article-card-block__btn button--hover-gradient">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="article-card" href="#">
+            <div class="hover-border">
+              <div class="hover-content"> 
+                <div class="article-card__wrapper">
+                  <div class="article-card__img">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/articles-img3.webp " alt="articles-img3.png"/>
+                      <source class="lazyload" srcset="images/articles-img3.jpg " alt="articles-img3.png"/>
+                      <source class="lazyload" srcset="images/articles-img3.png " alt="articles-img3.png"/><img class="picture__img lazyload" data-src="images/articles-img3.png" alt="articles-img3.png"/>
+                    </picture>
+                    <div class="article-card__date">10 ноября 2023
+                    </div>
+                    <div class="article-card__category">Новости
+                    </div>
+                  </div>
+                  <div class="article-card-block">
+                    <h5 class="article-card-block__title">Насосы серии NIS вошли в складскую программу CNP
+                    </h5>
+                    <div class="article-card-block__descr">
+                      <div class="article-card-block__tags">
+                        <div class="article-card-block__tag-item">#NIS</div>
+                        <div class="article-card-block__tag-item">#NISO</div>
+                        <div class="article-card-block__tag-item">#склад</div>
+                        <div class="article-card-block__tag-item">#распродажа</div>
+                      </div>
+                      <div class="article-card-block__btn button--hover-gradient">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="article-card" href="#">
+            <div class="hover-border">
+              <div class="hover-content"> 
+                <div class="article-card__wrapper">
+                  <div class="article-card__img">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/articles-img4.webp " alt="articles-img4.png"/>
+                      <source class="lazyload" srcset="images/articles-img4.jpg " alt="articles-img4.png"/>
+                      <source class="lazyload" srcset="images/articles-img4.png " alt="articles-img4.png"/><img class="picture__img lazyload" data-src="images/articles-img4.png" alt="articles-img4.png"/>
+                    </picture>
+                    <div class="article-card__date">18 октября 2023
+                    </div>
+                    <div class="article-card__category">Новости
+                    </div>
+                  </div>
+                  <div class="article-card-block">
+                    <h5 class="article-card-block__title">Итоги выставки EcwaTech
+                    </h5>
+                    <div class="article-card-block__descr">
+                      <div class="article-card-block__tags">
+                        <div class="article-card-block__tag-item">#выставки</div>
+                      </div>
+                      <div class="article-card-block__btn button--hover-gradient">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="article-card" href="#">
+            <div class="hover-border">
+              <div class="hover-content"> 
+                <div class="article-card__wrapper">
+                  <div class="article-card__img">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/articles-img5.webp " alt="articles-img5.png"/>
+                      <source class="lazyload" srcset="images/articles-img5.jpg " alt="articles-img5.png"/>
+                      <source class="lazyload" srcset="images/articles-img5.png " alt="articles-img5.png"/><img class="picture__img lazyload" data-src="images/articles-img5.png" alt="articles-img5.png"/>
+                    </picture>
+                    <div class="article-card__date">11 февраля 2022
+                    </div>
+                    <div class="article-card__category">Новости
+                    </div>
+                  </div>
+                  <div class="article-card-block">
+                    <h5 class="article-card-block__title">Кавитация и NPSHr, расчет максимальной высоты подъёма
+                    </h5>
+                    <div class="article-card-block__descr">
+                      <div class="article-card-block__tags">
+                        <div class="article-card-block__tag-item">#расчеты</div>
+                      </div>
+                      <div class="article-card-block__btn button--hover-gradient">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a><a class="article-card" href="#">
+            <div class="hover-border">
+              <div class="hover-content"> 
+                <div class="article-card__wrapper">
+                  <div class="article-card__img">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/articles-img3.webp " alt="articles-img6.png"/>
+                      <source class="lazyload" srcset="images/articles-img6.jpg " alt="articles-img6.png"/>
+                      <source class="lazyload" srcset="images/articles-img3.png " alt="articles-img6.png"/><img class="picture__img lazyload" data-src="images/articles-img6.png" alt="articles-img6.png"/>
+                    </picture>
+                    <div class="article-card__date">10 ноября 2023
+                    </div>
+                    <div class="article-card__category">Новости
+                    </div>
+                  </div>
+                  <div class="article-card-block">
+                    <h5 class="article-card-block__title">Насосы серии NIS вошли в складскую программу CNP
+                    </h5>
+                    <div class="article-card-block__descr">
+                      <div class="article-card-block__tags">
+                        <div class="article-card-block__tag-item">#NIS</div>
+                        <div class="article-card-block__tag-item">#NISO</div>
+                        <div class="article-card-block__tag-item">#склад</div>
+                        <div class="article-card-block__tag-item">#распродажа</div>
+                      </div>
+                      <div class="article-card-block__btn button--hover-gradient">
+                        <svg viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.025 14.9417L27.0833 20M27.0833 20L22.025 25.0583M27.0833 20L12.5 20" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></a>
+        </section>
+        <section class="articles-more container"> 
+          <div class="hover-border catalog-listing__button">
+            <div class="hover-content"> 
+              <button class="catalog-listing__more text-20">Показать еще</button>
             </div>
           </div>
         </section>
         <section class="articles-form container">
           <div class="subscribe-form">
-            <div class="subscribe-form__text">Подпишитесь и будьте в курсе последних новостей</div>
+            <div class="subscribe-form__text">Подпишитесь и будьте в курсе последних <br/> новостей</div>
             <form class="subscribe-form-inner" data-form-subscribe="data-form-subscribe">
               <div class="subscribe-form-inner__block">
                 <div class="subscribe-form-inner__input">
-                  <div class="input-ui custom-placeholder form-input form-input-light" data-input-parent="">
-                    <input class="form-input form-input-light" data-input="" required="required" name="email" placeholder="E-mail" type="email"/>
-                    <div class="custom-placeholder__service"><span>E-mail</span></div>
+                  <div class="base-input__wrapper">
+                    <div class="hover-border input-wrapper wide black">
+                      <div class="hover-content"> 
+                        <div class="input-ui base-input black" data-input-parent="">
+                          <input class="form-input black" data-input="" name="email" data-parsley-errors-container="#myIdEmail-error-container" placeholder="E-mail" type="email"/>
+                          <div class="custom-placeholder__service"><span>E-mail</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="myIdEmail-error-container"></div>
                   </div>
                 </div>
                 <div class="subscribe-form-inner__btn"> 
@@ -512,7 +587,7 @@
               <div class="subscribe-form-inner__bot"> 
                 <div class="subscribe-form-inner__privacy"> 
                   <label class="subscribe-form-inner__privacy-checkbox" for="subscribe-check"> 
-                    <input class="subscribe-form-inner__privacy-input" type="checkbox" name="subscribe-checkbox" id="subscribe-check" required="required" checked="checked" data-vacansies-checkbox="data-vacansies-checkbox"/>
+                    <input class="subscribe-form-inner__privacy-input" type="checkbox" name="subscribe-checkbox" id="subscribe-check" required="required" checked="checked" data-subscribe-checkbox="data-subscribe-checkbox"/>
                     <div class="subscribe-form-inner__privacy-check"> 
                       <div class="subscribe-form-inner__privacy-mark">
                         <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -521,8 +596,7 @@
                       </div>
                     </div>
                   </label>
-                  <p class="subscribe-form-inner__privacy-text text-16">
-                     Нажимая на кнопку «Отправить», я принимаю <a href="#" target="blank">условия политики конфиденциальности</a></p>
+                  <p class="subscribe-form-inner__privacy-text">Нажимая на кнопку «Отправить», я принимаю <a href="#" target="blank">условия политики конфиденциальности</a></p>
                 </div>
               </div>
             </form>
