@@ -442,7 +442,8 @@
                 </div>
               </div>
             </div>
-            <div class="projects__tabs"><a class="button_project-tab active" href="#"><span class="button_project-tab__content button__content">
+            <div class="projects__tabs">
+              <div class="button_project-tab active" data-map-tab="list"><span class="button_project-tab__content button__content">
                   <svg class="button_project-tab__svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 22.6665H25.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M6.66675 22.6665H6.66941V22.6692H6.66675V22.6665Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -450,11 +451,12 @@
                     <path d="M6.66675 16H6.66941V16.0027H6.66675V16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M12 9.3335H25.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M6.66675 9.3335H6.66941V9.33616H6.66675V9.3335Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg><span>Список</span></span></a><a class="button_project-tab" href="#"><span class="button_project-tab__content button__content">
+                  </svg><span>Список</span></span></div>
+              <div class="button_project-tab simple" data-map-tab="map"><span class="button_project-tab__content button__content">
                   <svg class="button_project-tab__svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 26.6668C16 26.6668 24 20.9232 24 13.5386C24 11.3625 23.1571 9.27548 21.6569 7.73672C20.1566 6.19796 18.1217 5.3335 16 5.3335C13.8783 5.3335 11.8434 6.19796 10.3431 7.73672C8.84285 9.27548 8 11.3625 8 13.5386C8 20.9232 16 26.6668 16 26.6668Z" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <circle cx="15.9999" cy="13.3332" r="2.66667" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-                  </svg><span>Карта</span></span></a>
+                  </svg><span>Карта</span></span></div>
               <div class="hover-component devices devices">
                 <div class="hover-component__gradient"></div>
                 <div class="hover-component__content">
@@ -469,249 +471,348 @@
               </div>
             </div>
           </div>
-          <div class="search-block">
-            <form class="search-block__form" action=""> 
-              <div class="search-input__wrapper">
-                <div class="hover-border input-wrapper wide form-input wide">
-                  <div class="hover-content"> 
-                    <div class="input-ui search-input form-input form-input wide" data-input-parent="">
-                      <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#0B1226"></path>
-                      </svg>
-                      <input class="form-input wide" data-input="" required="" name="projects-search" placeholder="Введите название" maxlength="255" data-parsley-errors-container="#projects-search-error-container" type="text"/>
-                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                        <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div id="projects-search-error-container"></div>
-              </div>
-              <div class="search-button__wrapper">
-                <div class="hover-border wide blue">
-                  <div class="hover-content"> 
-                    <button class="search-button">Найти</button>
-                  </div>
-                </div>
-              </div>
-              <div id="searchFormError"></div>
-            </form>
-          </div>
         </section>
-        <div class="projects__content"><a class="project-card__wrapper" href="">
-            <div class="hover-border wide">
-              <div class="hover-content"> 
-                <div class="project-card"> 
-                  <div class="project-card__pic"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/card-bg.webp " alt="card-bg.jpg"/>
-                      <source class="lazyload" srcset="images/card-bg.jpg " alt="card-bg.jpg"/>
-                      <source class="lazyload" srcset="images/card-bg.png " alt="card-bg.jpg"/><img class="picture__img lazyload" data-src="images/card-bg.jpg" alt="card-bg.jpg"/>
-                    </picture>
-                    <div class="project-card__object"> 
-                      <div class="project-card__object-name">Агрохолдинг Чурилово</div>
-                      <div class="project-card__object-location">Краснокаменск</div>
+        <section class="projects-wrappers container">
+          <div class="projects-wrappers__container" data-map-content="list">
+            <div class="search-block">
+              <form class="search-block__form" action=""> 
+                <div class="search-input__wrapper">
+                  <div class="hover-border input-wrapper wide form-input wide">
+                    <div class="hover-content"> 
+                      <div class="input-ui search-input form-input form-input wide" data-input-parent="">
+                        <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#0B1226"></path>
+                        </svg>
+                        <input class="form-input wide" data-input="" required="" name="projects-search" placeholder="Введите название" maxlength="255" data-parsley-errors-container="#projects-search-error-container" type="text" data-search-input="data-search-input"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                          <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                  <div class="project-card__desc">
-                    <div class="project-card__title">
-                      <h4 class="title-32">Росатом ППГХО</h4>
+                  <div id="projects-search-error-container"></div>
+                </div>
+                <div class="search-button__wrapper">
+                  <div class="hover-border wide blue">
+                    <div class="hover-content"> 
+                      <button class="search-button">Найти</button>
                     </div>
-                    <div class="button pseudo-button">
-                      <div class="button-gradient desktop"></div>
-                      <div class="button-border"></div>
-                      <div class="button-content">
-                        <div class="button__text">Подробнее</div>
-                        <div class="button__icon"> 
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                  </div>
+                </div>
+                <div id="searchFormError"></div>
+              </form>
+            </div>
+            <div class="projects__content"><a class="project-card__wrapper" href="">
+                <div class="hover-border wide">
+                  <div class="hover-content"> 
+                    <div class="project-card"> 
+                      <div class="project-card__pic"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/card-bg.webp " alt="card-bg.jpg"/>
+                          <source class="lazyload" srcset="images/card-bg.jpg " alt="card-bg.jpg"/>
+                          <source class="lazyload" srcset="images/card-bg.png " alt="card-bg.jpg"/><img class="picture__img lazyload" data-src="images/card-bg.jpg" alt="card-bg.jpg"/>
+                        </picture>
+                        <div class="project-card__object"> 
+                          <div class="project-card__object-name">Агрохолдинг Чурилово</div>
+                          <div class="project-card__object-location">Краснокаменск</div>
+                        </div>
+                      </div>
+                      <div class="project-card__desc">
+                        <div class="project-card__title">
+                          <h4 class="title-32">Росатом ППГХО</h4>
+                        </div>
+                        <div class="button pseudo-button">
+                          <div class="button-gradient desktop"></div>
+                          <div class="button-border"></div>
+                          <div class="button-content">
+                            <div class="button__text">Подробнее</div>
+                            <div class="button__icon"> 
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div></a><a class="project-card__wrapper" href="">
-            <div class="hover-border wide">
-              <div class="hover-content"> 
-                <div class="project-card"> 
-                  <div class="project-card__pic"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/card-bg.webp " alt="card-bg.jpg"/>
-                      <source class="lazyload" srcset="images/card-bg.jpg " alt="card-bg.jpg"/>
-                      <source class="lazyload" srcset="images/card-bg.png " alt="card-bg.jpg"/><img class="picture__img lazyload" data-src="images/card-bg.jpg" alt="card-bg.jpg"/>
-                    </picture>
-                    <div class="project-card__object"> 
-                      <div class="project-card__object-name">Агрохолдинг Чурилово</div>
-                      <div class="project-card__object-location">Краснокаменск</div>
-                    </div>
-                  </div>
-                  <div class="project-card__desc">
-                    <div class="project-card__title">
-                      <h4 class="title-32">Строительство водогрейной котельной и АБК в Ижевске</h4>
-                    </div>
-                    <div class="button pseudo-button">
-                      <div class="button-gradient desktop"></div>
-                      <div class="button-border"></div>
-                      <div class="button-content">
-                        <div class="button__text">Подробнее</div>
-                        <div class="button__icon"> 
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                </div></a><a class="project-card__wrapper" href="">
+                <div class="hover-border wide">
+                  <div class="hover-content"> 
+                    <div class="project-card"> 
+                      <div class="project-card__pic"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/card-bg.webp " alt="card-bg.jpg"/>
+                          <source class="lazyload" srcset="images/card-bg.jpg " alt="card-bg.jpg"/>
+                          <source class="lazyload" srcset="images/card-bg.png " alt="card-bg.jpg"/><img class="picture__img lazyload" data-src="images/card-bg.jpg" alt="card-bg.jpg"/>
+                        </picture>
+                        <div class="project-card__object"> 
+                          <div class="project-card__object-name">Агрохолдинг Чурилово</div>
+                          <div class="project-card__object-location">Краснокаменск</div>
+                        </div>
+                      </div>
+                      <div class="project-card__desc">
+                        <div class="project-card__title">
+                          <h4 class="title-32">Строительство водогрейной котельной и АБК в Ижевске</h4>
+                        </div>
+                        <div class="button pseudo-button">
+                          <div class="button-gradient desktop"></div>
+                          <div class="button-border"></div>
+                          <div class="button-content">
+                            <div class="button__text">Подробнее</div>
+                            <div class="button__icon"> 
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div></a><a class="project-card__wrapper" href="">
-            <div class="hover-border wide">
-              <div class="hover-content"> 
-                <div class="project-card"> 
-                  <div class="project-card__pic"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/project-card-0.webp " alt="project-card-0.jpg"/>
-                      <source class="lazyload" srcset="images/project-card-0.jpg " alt="project-card-0.jpg"/>
-                      <source class="lazyload" srcset="images/project-card-0.png " alt="project-card-0.jpg"/><img class="picture__img lazyload" data-src="images/project-card-0.jpg" alt="project-card-0.jpg"/>
-                    </picture>
-                    <div class="project-card__object"> 
-                      <div class="project-card__object-name">Акционерное общество «ТЕПЛОСЕТЬ»</div>
-                      <div class="project-card__object-location">Фрязино</div>
-                    </div>
-                  </div>
-                  <div class="project-card__desc">
-                    <div class="project-card__title">
-                      <h4 class="title-32">Котельная №15</h4>
-                    </div>
-                    <div class="button pseudo-button">
-                      <div class="button-gradient desktop"></div>
-                      <div class="button-border"></div>
-                      <div class="button-content">
-                        <div class="button__text">Подробнее</div>
-                        <div class="button__icon"> 
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                </div></a><a class="project-card__wrapper" href="">
+                <div class="hover-border wide">
+                  <div class="hover-content"> 
+                    <div class="project-card"> 
+                      <div class="project-card__pic"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/project-card-0.webp " alt="project-card-0.jpg"/>
+                          <source class="lazyload" srcset="images/project-card-0.jpg " alt="project-card-0.jpg"/>
+                          <source class="lazyload" srcset="images/project-card-0.png " alt="project-card-0.jpg"/><img class="picture__img lazyload" data-src="images/project-card-0.jpg" alt="project-card-0.jpg"/>
+                        </picture>
+                        <div class="project-card__object"> 
+                          <div class="project-card__object-name">Акционерное общество «ТЕПЛОСЕТЬ»</div>
+                          <div class="project-card__object-location">Фрязино</div>
+                        </div>
+                      </div>
+                      <div class="project-card__desc">
+                        <div class="project-card__title">
+                          <h4 class="title-32">Котельная №15</h4>
+                        </div>
+                        <div class="button pseudo-button">
+                          <div class="button-gradient desktop"></div>
+                          <div class="button-border"></div>
+                          <div class="button-content">
+                            <div class="button__text">Подробнее</div>
+                            <div class="button__icon"> 
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div></a><a class="project-card__wrapper" href="">
-            <div class="hover-border wide">
-              <div class="hover-content"> 
-                <div class="project-card"> 
-                  <div class="project-card__pic"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/card-bg.webp " alt="card-bg.jpg"/>
-                      <source class="lazyload" srcset="images/card-bg.jpg " alt="card-bg.jpg"/>
-                      <source class="lazyload" srcset="images/card-bg.png " alt="card-bg.jpg"/><img class="picture__img lazyload" data-src="images/card-bg.jpg" alt="card-bg.jpg"/>
-                    </picture>
-                    <div class="project-card__object"> 
-                      <div class="project-card__object-name">Агрохолдинг Чурилово</div>
-                      <div class="project-card__object-location">Краснокаменск</div>
-                    </div>
-                  </div>
-                  <div class="project-card__desc">
-                    <div class="project-card__title">
-                      <h4 class="title-32">Дубровская ТЭЦ</h4>
-                    </div>
-                    <div class="button pseudo-button">
-                      <div class="button-gradient desktop"></div>
-                      <div class="button-border"></div>
-                      <div class="button-content">
-                        <div class="button__text">Подробнее</div>
-                        <div class="button__icon"> 
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                </div></a><a class="project-card__wrapper" href="">
+                <div class="hover-border wide">
+                  <div class="hover-content"> 
+                    <div class="project-card"> 
+                      <div class="project-card__pic"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/card-bg.webp " alt="card-bg.jpg"/>
+                          <source class="lazyload" srcset="images/card-bg.jpg " alt="card-bg.jpg"/>
+                          <source class="lazyload" srcset="images/card-bg.png " alt="card-bg.jpg"/><img class="picture__img lazyload" data-src="images/card-bg.jpg" alt="card-bg.jpg"/>
+                        </picture>
+                        <div class="project-card__object"> 
+                          <div class="project-card__object-name">Агрохолдинг Чурилово</div>
+                          <div class="project-card__object-location">Краснокаменск</div>
+                        </div>
+                      </div>
+                      <div class="project-card__desc">
+                        <div class="project-card__title">
+                          <h4 class="title-32">Дубровская ТЭЦ</h4>
+                        </div>
+                        <div class="button pseudo-button">
+                          <div class="button-gradient desktop"></div>
+                          <div class="button-border"></div>
+                          <div class="button-content">
+                            <div class="button__text">Подробнее</div>
+                            <div class="button__icon"> 
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div></a><a class="project-card__wrapper" href="">
-            <div class="hover-border wide">
-              <div class="hover-content"> 
-                <div class="project-card"> 
-                  <div class="project-card__pic"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/project-card-1.webp " alt="project-card-1.jpg"/>
-                      <source class="lazyload" srcset="images/project-card-1.jpg " alt="project-card-1.jpg"/>
-                      <source class="lazyload" srcset="images/project-card-1.png " alt="project-card-1.jpg"/><img class="picture__img lazyload" data-src="images/project-card-1.jpg" alt="project-card-1.jpg"/>
-                    </picture>
-                    <div class="project-card__object"> 
-                      <div class="project-card__object-name">АО «ПГК»</div>
-                      <div class="project-card__object-location">Омск</div>
-                    </div>
-                  </div>
-                  <div class="project-card__desc">
-                    <div class="project-card__title">
-                      <h4 class="title-32">Реконструкция промывочно-пропарочной станции</h4>
-                    </div>
-                    <div class="button pseudo-button">
-                      <div class="button-gradient desktop"></div>
-                      <div class="button-border"></div>
-                      <div class="button-content">
-                        <div class="button__text">Подробнее</div>
-                        <div class="button__icon"> 
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                </div></a><a class="project-card__wrapper" href="">
+                <div class="hover-border wide">
+                  <div class="hover-content"> 
+                    <div class="project-card"> 
+                      <div class="project-card__pic"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/project-card-1.webp " alt="project-card-1.jpg"/>
+                          <source class="lazyload" srcset="images/project-card-1.jpg " alt="project-card-1.jpg"/>
+                          <source class="lazyload" srcset="images/project-card-1.png " alt="project-card-1.jpg"/><img class="picture__img lazyload" data-src="images/project-card-1.jpg" alt="project-card-1.jpg"/>
+                        </picture>
+                        <div class="project-card__object"> 
+                          <div class="project-card__object-name">АО «ПГК»</div>
+                          <div class="project-card__object-location">Омск</div>
+                        </div>
+                      </div>
+                      <div class="project-card__desc">
+                        <div class="project-card__title">
+                          <h4 class="title-32">Реконструкция промывочно-пропарочной станции</h4>
+                        </div>
+                        <div class="button pseudo-button">
+                          <div class="button-gradient desktop"></div>
+                          <div class="button-border"></div>
+                          <div class="button-content">
+                            <div class="button__text">Подробнее</div>
+                            <div class="button__icon"> 
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div></a><a class="project-card__wrapper" href="">
-            <div class="hover-border wide">
-              <div class="hover-content"> 
-                <div class="project-card"> 
-                  <div class="project-card__pic"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/project-card-2.webp " alt="project-card-2.jpg"/>
-                      <source class="lazyload" srcset="images/project-card-2.jpg " alt="project-card-2.jpg"/>
-                      <source class="lazyload" srcset="images/project-card-2.png " alt="project-card-2.jpg"/><img class="picture__img lazyload" data-src="images/project-card-2.jpg" alt="project-card-2.jpg"/>
-                    </picture>
-                    <div class="project-card__object"> 
-                      <div class="project-card__object-name">Завод КБХА</div>
-                      <div class="project-card__object-location">Воронеж</div>
-                    </div>
-                  </div>
-                  <div class="project-card__desc">
-                    <div class="project-card__title">
-                      <h4 class="title-32">Строительство нового цеха завод КБХА</h4>
-                    </div>
-                    <div class="button pseudo-button">
-                      <div class="button-gradient desktop"></div>
-                      <div class="button-border"></div>
-                      <div class="button-content">
-                        <div class="button__text">Подробнее</div>
-                        <div class="button__icon"> 
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+                </div></a><a class="project-card__wrapper" href="">
+                <div class="hover-border wide">
+                  <div class="hover-content"> 
+                    <div class="project-card"> 
+                      <div class="project-card__pic"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/project-card-2.webp " alt="project-card-2.jpg"/>
+                          <source class="lazyload" srcset="images/project-card-2.jpg " alt="project-card-2.jpg"/>
+                          <source class="lazyload" srcset="images/project-card-2.png " alt="project-card-2.jpg"/><img class="picture__img lazyload" data-src="images/project-card-2.jpg" alt="project-card-2.jpg"/>
+                        </picture>
+                        <div class="project-card__object"> 
+                          <div class="project-card__object-name">Завод КБХА</div>
+                          <div class="project-card__object-location">Воронеж</div>
+                        </div>
+                      </div>
+                      <div class="project-card__desc">
+                        <div class="project-card__title">
+                          <h4 class="title-32">Строительство нового цеха завод КБХА</h4>
+                        </div>
+                        <div class="button pseudo-button">
+                          <div class="button-gradient desktop"></div>
+                          <div class="button-border"></div>
+                          <div class="button-content">
+                            <div class="button__text">Подробнее</div>
+                            <div class="button__icon"> 
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div></a>
+              <div class="media__more">
+                <div class="hover-border catalog-listing__button">
+                  <div class="hover-content"> 
+                    <button class="catalog-listing__more text-20">Показать еще</button>
+                  </div>
                 </div>
-              </div>
-            </div></a>
-          <div class="media__more">
-            <div class="hover-border catalog-listing__button">
-              <div class="hover-content"> 
-                <button class="catalog-listing__more text-20">Показать еще</button>
               </div>
             </div>
           </div>
-        </div>
+          <div class="projects-wrappers__container projects-wrappers__container_map" data-map-content="map">
+            <div class="buy-map__inner">
+              <div class="buy-map__col filters">
+                <form class="buy-map__form desktop"> 
+                  <label class="buy-map__form-search">
+                    <div class="search-input__wrapper">
+                      <div class="hover-border input-wrapper wide form-input wide">
+                        <div class="hover-content"> 
+                          <div class="input-ui search-input form-input form-input wide" data-input-parent="">
+                            <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#0B1226"></path>
+                            </svg>
+                            <input class="form-input wide" data-input="" required="" name="projects-search" placeholder="Введите название или адрес" maxlength="255" data-parsley-errors-container="#projects-search-error-container" type="text" data-search-input="data-search-input"/>
+                            <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                              <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="projects-search-error-container"></div>
+                    </div>
+                  </label>
+                </form>
+                <div class="projects-wrappers__container-block devices"> 
+                  <div class="search-block">
+                    <form class="search-block__form" action=""> 
+                      <div class="search-input__wrapper">
+                        <div class="hover-border input-wrapper wide form-input wide">
+                          <div class="hover-content"> 
+                            <div class="input-ui search-input form-input form-input wide" data-input-parent="">
+                              <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#0B1226"></path>
+                              </svg>
+                              <input class="form-input wide" data-input="" required="" name="projects-search" placeholder="Введите название" maxlength="255" data-parsley-errors-container="#projects-search-error-container" type="text" data-search-input="data-search-input"/>
+                              <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                                <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="projects-search-error-container"></div>
+                      </div>
+                      <div class="search-button__wrapper">
+                        <div class="hover-border wide blue">
+                          <div class="hover-content"> 
+                            <button class="search-button">Найти</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="searchFormError"></div>
+                    </form>
+                  </div>
+                </div>
+                <div class="projects-wrappers__box" data-project-cards>
+                  <div class="buy-map__cards buy-map__cards_projects">
+                    <div class="buy-card buy-card_project" data-placemark="Москва, Лужнецкая наб., 2/4, с. 16" data-store-type="1">
+                      <div class="buy-card__ttl buy-card__ttl_project">ООО «БиоПроект»</div>
+                      <div class="buy-card__text text-20">Агрохолдинг Чурилово</div>
+                      <div class="buy-card__address">Красноярск</div><a class="buy-card__more text-20" href="#">Подробнее</a>
+                    </div>
+                    <div class="buy-card buy-card_project" data-placemark="г. Оренбург, ул. Пролетарская, 247/2, офис 412" data-store-type="1">
+                      <div class="buy-card__ttl buy-card__ttl_project">Строительство водогрейной котельной и АБК в Ижевске</div>
+                      <div class="buy-card__text text-20">ПАО «Т ПЛЮС»</div>
+                      <div class="buy-card__address">Красноярск</div><a class="buy-card__more text-20" href="#">Подробнее</a>
+                    </div>
+                    <div class="buy-card buy-card_project" data-placemark="г. Минск, ул. Тимирязева, 121, корп. 3, оф. 419" data-store-type="1">
+                      <div class="buy-card__ttl buy-card__ttl_project">ООО «ТМ МЕНЕДЖМЕНТ»</div>
+                      <div class="buy-card__text text-20">Акционерное общество «ТЕПЛОСЕТЬ»</div>
+                      <div class="buy-card__address">Красноярск</div><a class="buy-card__more text-20" href="#">Подробнее</a>
+                    </div>
+                    <div class="buy-card buy-card_project" data-placemark="Москва, Лужнецкая наб., 10, с. 16" data-store-type="1">
+                      <div class="buy-card__ttl buy-card__ttl_project">ООО «БиоПроджект»</div>
+                      <div class="buy-card__text text-20">Дубровская ТЭЦ</div>
+                      <div class="buy-card__address">Красноярск</div><a class="buy-card__more text-20" href="#">Подробнее</a>
+                    </div>
+                    <div class="buy-card buy-card_project" data-placemark="г. Оренбург, ул. Пролетарская, 230" data-store-type="1">
+                      <div class="buy-card__ttl buy-card__ttl_project">ООО «Элитанчик»</div>
+                      <div class="buy-card__text text-20">ПАО «Т ПЛЮС»</div>
+                      <div class="buy-card__address">Красноярск</div><a class="buy-card__more text-20" href="#">Подробнее</a>
+                    </div>
+                    <div class="buy-card buy-card_project" data-placemark="г. Минск, ул. Тимирязева, 76" data-store-type="1">
+                      <div class="buy-card__ttl buy-card__ttl_project">ООО «ТМ МЕНЕДЖМЕНТик»</div>
+                      <div class="buy-card__text text-20">Text</div>
+                      <div class="buy-card__address">Красноярск</div><a class="buy-card__more text-20" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buy-map__col content"> 
+                <div class="buy-map__map" id="buy-map" data-map-center="55.796127 49.106414"></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="footer-wrapper">
         <div class="footer-products">
@@ -998,6 +1099,6 @@
         </footer>
       </div>
     </div>
-    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=682f216b-3af8-4745-a945-d681997988c6&amp;lang=ru_RU" type="text/javascript"></script>
   </body>
 </html>
