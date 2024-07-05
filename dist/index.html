@@ -18,6 +18,66 @@
       <div class="modal-block">
       </div>
       <main>
+        <div class="lk-section-diagram">
+          <div class="lk-section-diagram__inner"> 
+            <div class="left"> 
+              <div class="lk-diagram">
+                <div class="lk-diagram__inner">
+                  <div class="lk-diagram__left"> 
+                    <h2 class="title-32">Оборудования отгружено, шт</h2>
+                    <div class="legends"> 
+                      <div class="legends-item">  
+                        <div class="legends-item__value"> 
+                          <p>100</p>
+                        </div>
+                        <div class="legends-item__block"> <span>Группа А1</span>
+                          <p>CDL, CDM/F, CDLF + CDH</p>
+                        </div>
+                      </div>
+                      <div class="legends-item">  
+                        <div class="legends-item__value"> 
+                          <p>100</p>
+                        </div>
+                        <div class="legends-item__block"> <span>Группа А1</span>
+                          <p>CDL, CDM/F, CDLF + CDH</p>
+                        </div>
+                      </div>
+                      <div class="legends-item">  
+                        <div class="legends-item__value"> 
+                          <p>100</p>
+                        </div>
+                        <div class="legends-item__block"> <span>Группа А1</span>
+                          <p>CDL, CDM/F, CDLF + CDH</p>
+                        </div>
+                      </div>
+                      <div class="legends-item">  
+                        <div class="legends-item__value"> 
+                          <p>100</p>
+                        </div>
+                        <div class="legends-item__block"> <span>Группа А1</span>
+                          <p>CDL, CDM/F, CDLF + CDH</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lk-diagram__right">
+                    <canvas id="lk-diagram"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="lk-chart">
+                <div class="lk-chart__inner"> 
+                  <div class="row"> 
+                    <h2 class="title-32">Общая сумма отгрузок, USD</h2><span>2024</span>
+                  </div>
+                  <canvas id="lk-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="nav-page">
           <div class="nav-page__item"><a class="button button--blue" href="ui">
               <div class="button__text">ui</div>
@@ -147,6 +207,22 @@
                 </svg>
               </div></a>
           </div>
+          <div class="nav-page__item"><a class="button button--blue" href="storage-availability">
+              <div class="button__text">Наличие на складе</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="future-deliveries">
+              <div class="button__text">Будущие поставки</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
           <div class="nav-page__item"><a class="button button--blue" href="service-map">
               <div class="button__text">Сервисные центры на карте</div>
               <div class="button__icon">
@@ -197,6 +273,14 @@
           </div>
           <div class="nav-page__item"><a class="button button--blue" href="projects-list-empty">
               <div class="button__text">Проекты - список не найдено</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="project-detail">
+              <div class="button__text">Страница проекта</div>
               <div class="button__icon">
                 <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -291,6 +375,14 @@
                 </svg>
               </div></a>
           </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires">
+              <div class="button__text">Документация - Опросные листы</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
           <div class="nav-page__item"><a class="button button--blue" href="article">
               <div class="button__text">Пресс-центр - Статьи</div>
               <div class="button__icon">
@@ -341,6 +433,102 @@
           </div>
           <div class="nav-page__item"><a class="button button--blue" href="search-2">
               <div class="button__text">Результаты поиска 2 (ничего не найдено)</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="course-history">
+              <div class="button__text">История курса</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="delivery-time">
+              <div class="button__text">Склад и поставки - Срок поставки</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="dimensions">
+              <div class="button__text">Склады и поставки - Габариты</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires">
+              <div class="button__text">Документация - опросный лист 1</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-2">
+              <div class="button__text">Документация - опросный лист 2</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-3">
+              <div class="button__text">Документация - опросный лист 3</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-4">
+              <div class="button__text">Документация - опросный лист 4</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-5">
+              <div class="button__text">Документация - опросный лист 5</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-6">
+              <div class="button__text">Документация - опросный лист 6</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-7">
+              <div class="button__text">Документация - опросный лист 7</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-8">
+              <div class="button__text">Документация - опросный лист 8</div>
+              <div class="button__icon">
+                <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+          </div>
+          <div class="nav-page__item"><a class="button button--blue" href="questionnaires-9">
+              <div class="button__text">Документация - опросный лист 9</div>
               <div class="button__icon">
                 <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
