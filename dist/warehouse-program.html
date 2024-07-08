@@ -504,10 +504,14 @@
                           </svg>
                         </button>
                       </div>
-                      <div class="header__buttons-item" data-header-btn="header-search">
+                      <div class="header__buttons-item header__buttons-item_search" data-header-btn="header-search">
                         <button class="header__button search">
                           <svg class="header__button-svg header__button-svg_search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#747884"></path>
+                          </svg>
+                          <svg class="header__close-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                            <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                         </button>
                       </div>
@@ -694,7 +698,7 @@
                     </div>
                   </div>
                   <div class="header-burger__inner-bot">
-                    <div class="header-burger__footer"> 
+                    <div class="header-burger__footer tablet"> 
                       <div class="header-burger__footer-policy text-16"> <a href="#">Политика конфиденциальности</a></div>
                       <p class="header-burger__footer-copy text-16">© 2015–2024 CNP Russia</p>
                       <div class="header-burger__footer-cm">
@@ -708,6 +712,24 @@
                             <path d="M42.574 0.505371H39.649L37.1683 7.2784L34.6472 0.505371H31.6934L34.3645 7.50051H37.0875L36.1385 10.0938L35.9366 10.4976H38.8731L38.9423 10.3072C39.7356 8.14955 42.1471 1.58133 42.4183 0.89768L42.574 0.505371Z" fill="white"></path>
                             <path d="M29.5615 0.779411L29.4548 0.505371H25.2145L21.7039 10.0938L21.502 10.4976H24.4385L25.0125 8.93704H29.6625L30.2365 10.4976H32.7057H33.173L32.9711 10.0938L29.5615 0.779411ZM27.3346 2.62555C27.6375 3.44189 28.0183 4.47169 28.425 5.57937H28.4221L28.8144 6.64667H25.8548L26.2471 5.57937H26.2442C26.6538 4.47169 27.0346 3.43901 27.3346 2.62555Z" fill="white"></path>
                           </svg></a>
+                      </div>
+                    </div>
+                    <div class="header-burger__footer mobile"> 
+                      <div class="header-burger__footer-policy text-16"> <a href="#">Политика конфиденциальности</a></div>
+                      <div class="header-burger__footer-row">
+                        <p class="header-burger__footer-copy text-16">© 2015–2024 CNP Russia</p>
+                        <div class="header-burger__footer-cm">
+                          <p class="text-14">Сделано в</p><a class="header-burger__footer-logo" href="#" target="blank">
+                            <svg width="92" height="11" viewbox="0 0 92 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.5163 1.65095C12.5163 4.29324 11.9711 6.174 10.8922 7.24418C10.0701 8.06052 9.17882 8.14418 8.83555 8.13841L8.26152 8.16148L6.7038 6.28938C7.22879 5.9115 7.5432 5.28843 7.84608 4.68266C7.94704 4.48362 8.04514 4.28747 8.15764 4.08844L10.0009 0.502887H7.11057L6.0173 2.64902L5.80961 3.06152C5.55288 3.57498 5.16343 4.35381 4.9067 4.35381H2.74325V0.502887H0V10.4951H2.74325V6.64418H3.70096L6.9519 10.4951H10.1278H10.2663C10.4538 10.4951 14.8355 10.4057 15.2336 2.79037H18.297V10.4951H21.0402V0.5H12.5192V1.65095H12.5163Z" fill="white"></path>
+                              <path d="M83.2172 1.65056C83.2172 8.01397 80.7711 8.21013 80.7451 8.21013L80.7451 8.22744L80.7451 10.5005H80.9643C81.1518 10.5005 85.5335 10.4111 85.9316 2.79574H88.9979V10.5005H91.7412V0.505371H83.2201V1.65056H83.2172Z" fill="white"></path>
+                              <path d="M52.8375 0.505371H44.0049V1.65056C44.0049 7.99955 41.3107 8.21013 41.2818 8.21013L40.9414 8.22744L41.4434 10.5005H53.9106V8.21013H52.8404V0.505371H52.8375ZM50.0943 8.21013H45.1991C46.0385 6.88898 46.5202 5.07168 46.6414 2.79574H50.0943V8.21013Z" fill="white"></path>
+                              <path d="M61.6984 6.09283L59.6012 0.505371H55.4272V10.4976H58.1705V4.03323L60.5935 10.4976H62.8002L65.2262 4.03323V10.4976H67.9695V0.505371H63.7955L61.6984 6.09283Z" fill="white"></path>
+                              <path d="M72.484 6.1361V0.505371H69.7407V10.4976H71.3619L76.9926 4.86688V10.4976H79.7359V0.505371H78.1176L72.484 6.1361Z" fill="white"></path>
+                              <path d="M42.574 0.505371H39.649L37.1683 7.2784L34.6472 0.505371H31.6934L34.3645 7.50051H37.0875L36.1385 10.0938L35.9366 10.4976H38.8731L38.9423 10.3072C39.7356 8.14955 42.1471 1.58133 42.4183 0.89768L42.574 0.505371Z" fill="white"></path>
+                              <path d="M29.5615 0.779411L29.4548 0.505371H25.2145L21.7039 10.0938L21.502 10.4976H24.4385L25.0125 8.93704H29.6625L30.2365 10.4976H32.7057H33.173L32.9711 10.0938L29.5615 0.779411ZM27.3346 2.62555C27.6375 3.44189 28.0183 4.47169 28.425 5.57937H28.4221L28.8144 6.64667H25.8548L26.2471 5.57937H26.2442C26.6538 4.47169 27.0346 3.43901 27.3346 2.62555Z" fill="white"></path>
+                            </svg></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -973,7 +995,7 @@
                 </div>
               </div>
             </div>
-            <div class="search-block warehouse-program__search-block">
+            <div class="search-block">
               <form class="search-block__form" action="">
                 <div class="search-input__wrapper">
                   <div class="hover-border input-wrapper wide form-input wide" data-block-border="">
@@ -982,7 +1004,7 @@
                         <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#747884"></path>
                         </svg>
-                        <input class="form-input wide" data-input="" required="" name="projects-search" placeholder="Введите название" maxlength="255" data-parsley-errors-container="#projects-search-error-container" type="text" data-search-input="data-search-input"/>
+                        <input class="form-input wide" data-input="" required="" name="results-search" placeholder="Введите наименованию или артикул" maxlength="255" data-parsley-errors-container="#results-search-error-container" type="text" data-search-input="data-search-input"/>
                         <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
                           <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -990,7 +1012,7 @@
                       </div>
                     </div>
                   </div>
-                  <div id="projects-search-error-container"></div>
+                  <div id="results-search-error-container"></div>
                 </div>
                 <div class="search-button__wrapper wide blue">
                   <div class="hover-border wide blue" data-block-border="">
