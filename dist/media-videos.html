@@ -15,11 +15,12 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="header-overlay" data-header-overlay="data-header-overlay"></div>
       <div class="modal-block">
       </div>
       <header class="header" data-header="">
         <div class="header__inner"> 
-          <div class="container"> 
+          <div class="container-base"> 
             <div class="header__desktop">
               <div class="header-burger" data-header-modal="header-burger">
                 <div class="header-burger__inner">
@@ -55,7 +56,7 @@
                           <div class="header-burger__links-wrapper"><a class="header-burger__links-link" href="#">Сервисные центры</a></div>
                           <div class="header-burger__links-wrapper"><a class="header-burger__links-link" href="#">Гарантия</a></div>
                         </div>
-                        <div class="header-burger__linktitle title-20 fw-600 mt-32">Сотрудничество </div>
+                        <div class="header-burger__linktitle title-20 fw-600 mt-42">Сотрудничество </div>
                         <div class="header-burger__links"> 
                           <div class="header-burger__links-wrapper"><a class="header-burger__links-link" href="#">Дилерам</a></div>
                           <div class="header-burger__links-wrapper"><a class="header-burger__links-link" href="#">Сервисным партнерам</a></div>
@@ -80,23 +81,17 @@
                           <div class="header-burger__media"><a class="media-link" href="#"> 
                               <div class="hover-border" data-block-border="">
                                 <div class="hover-content"> 
-                                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.0718 20C4.87188 20 0.194878 13.994 0 4H4.10743C4.24235 11.3353 7.27038 14.4424 9.66888 15.0831V4H13.5366V10.3263C15.9051 10.0541 18.3933 7.17117 19.2328 4H23.1004C22.4558 7.90791 19.7575 10.7908 17.8387 11.976C19.7575 12.9369 22.8307 15.4515 24 20H19.7425C18.8281 16.957 16.5497 14.6026 13.5366 14.2823V20H13.0718Z" fill="#0B1226"></path>
-                                  </svg>
+                                  <div class="media-link__inner media-link__inner_vk"></div>
                                 </div>
                               </div></a><a class="media-link" href="#"> 
                               <div class="hover-border" data-block-border="">
                                 <div class="hover-content"> 
-                                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M22.0253 5.61879C20.1114 4.07537 15.8582 4 12 4C8.14177 4 3.88861 4.07537 1.97468 5.61879C0.0607595 7.16221 0 10.5063 0 12.4999C0 14.4935 0.0607595 17.8375 1.97468 19.381C3.88861 20.9244 8.14177 21 12 21V20.9997C15.8582 20.9997 20.1114 20.9244 22.0253 19.381C23.9392 17.8375 24 14.4935 24 12.4999C24 10.5063 23.9392 7.16221 22.0253 5.61879ZM15.8026 12.9495L15.8033 12.9506L9.28356 16.628C9.24857 16.6548 9.21041 16.6761 9.16934 16.6926L9.16132 16.6972L9.16083 16.6954C9.10809 16.7155 9.05195 16.7283 8.99265 16.7283C8.71583 16.7283 8.4915 16.4906 8.4915 16.1979V8.78589C8.4915 8.4929 8.71607 8.25547 8.99265 8.25547C9.07066 8.25547 9.14382 8.27604 9.20968 8.30974L9.20992 8.30949L15.8033 12.0502L15.8031 12.0507C15.9452 12.1444 16.0407 12.31 16.0407 12.5001C16.0405 12.6902 15.9447 12.8559 15.8026 12.9495Z" fill="#0B1226"></path>
-                                  </svg>
+                                  <div class="media-link__inner media-link__inner_yt"></div>
                                 </div>
                               </div></a><a class="media-link" href="#"> 
                               <div class="hover-border" data-block-border="">
                                 <div class="hover-content"> 
-                                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.34876 10.8391L15.4534 5.49635C16.747 4.93981 21.134 3.15891 21.134 3.15891C21.134 3.15891 23.1587 2.37976 22.99 4.27197C22.9338 5.05112 22.4838 7.77813 22.0339 10.7277L20.6278 19.4653C20.6278 19.4653 20.5153 20.7453 19.5592 20.9679C18.603 21.1906 17.0282 20.1888 16.747 19.9662C16.522 19.7992 12.5288 17.2948 11.0665 16.0705C10.6728 15.7365 10.2228 15.0687 11.1227 14.2896C13.1475 12.453 15.5659 10.1712 17.0282 8.72423C17.7032 8.05639 18.3781 6.4981 15.5659 8.39031L7.63562 13.6774C7.63562 13.6774 6.73573 14.2339 5.04844 13.733C3.36114 13.2321 1.39263 12.5643 1.39263 12.5643C1.39263 12.5643 0.0427937 11.7295 2.34876 10.8391Z" fill="#0B1226"></path>
-                                  </svg>
+                                  <div class="media-link__inner media-link__inner_tg"></div>
                                 </div>
                               </div></a>
                           </div>
@@ -315,18 +310,66 @@
                       </div>
                     </div>
                     <div class="header-production__col right"> 
-                      <div class="header-production__models"> 
+                      <div class="header-production__models">
                         <div class="header-production__models-content" data-production-models="pump1"> 
-                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a></div>
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump1</a></div>
                         </div>
                         <div class="header-production__models-content" data-production-models="pump2"> 
-                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a></div>
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump2</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump3"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump3</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump4"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump4</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump5"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump5</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump6"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump6</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump7"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump7</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump8"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump8</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump9"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump9</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump10"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump10</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump11"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump11</a></div>
                         </div>
                         <div class="header-production__models-content" data-production-models="pump12"> 
-                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a></div>
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump12</a></div>
                         </div>
                         <div class="header-production__models-content" data-production-models="pump13"> 
-                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a></div>
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump13</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump14"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump14</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump15"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump15</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump16"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump16</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump17"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump17</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump18"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump18</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump19"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump19</a></div>
+                        </div>
+                        <div class="header-production__models-content" data-production-models="pump20"> 
+                          <div class="header-production__models-links"> <a class="header-production__models-link text-20" href="#">NISO, NIS, NISF</a><a class="header-production__models-link text-20" href="#">SZ</a><a class="header-production__models-link text-20" href="#">MS, MSS</a><a class="header-production__models-link text-20" href="#">ZS</a><a class="header-production__models-link text-20" href="#">WLT</a><a class="header-production__models-link text-20" href="#">pump20</a></div>
                         </div>
                       </div>
                     </div>
@@ -344,7 +387,7 @@
                               <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#747884"></path>
                               </svg>
-                              <input class="form-input wide" data-input="" required="" name="projects-search" placeholder="Введите название" maxlength="255" data-parsley-errors-container="#projects-search-error-container" type="text" data-search-input="data-search-input"/>
+                              <input class="form-input wide" data-input="" required="" name="error" placeholder="Введите название" maxlength="255" data-parsley-errors-container="#error-error-container" type="text" data-search-input="data-search-input"/>
                               <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
                                 <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -352,7 +395,7 @@
                             </div>
                           </div>
                         </div>
-                        <div id="projects-search-error-container"></div>
+                        <div id="error-error-container"></div>
                       </div>
                       <div class="search-button__wrapper wide blue">
                         <div class="hover-border wide blue" data-block-border="">
@@ -366,22 +409,21 @@
                   </div>
                 </div>
               </div>
-              <div class="header__top">
+              <div class="header__top container">
                 <div class="header__row"> 
                   <div class="header__col">
-                    <div class="header__top-item">
-                      <div class="header__info"><a class="header__info-col" href="#"> 
+                    <div class="header__top-item"><a class="header__info header__info_usdt" href="#">
+                        <div class="header__info-col"> 
                           <div class="header__info-item">USD</div>
-                          <div class="header__info-item">91 RUB</div></a>
-                        <div class="header__info-col">
-                          <div class="header__text no-pointer">
-                             24.03.2024, 21:00</div>
+                          <div class="header__info-item">91 RUB</div>
                         </div>
-                      </div>
-                    </div>
+                        <div class="header__info-col">
+                          <div class="header__text no-pointer text-16">
+                             24.03.2024, 21:00</div>
+                        </div></a></div>
                     <div class="header__top-item">
                       <div class="header__nav">
-                        <div class="header__nav-item header-drop" data-header-drop="data-header-drop"> <a class="header__text" href="#">
+                        <div class="header__nav-item header-drop" data-header-drop="data-header-drop"> <a class="header__text text-16" href="#">
                              Сотрудничество</a>
                           <div class="header__nav-icon"> 
                             <svg class="header__nav-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +433,7 @@
                           <div class="header-drop__content"><a class="header-drop__content-link text-20" href="#">Дилерам</a><a class="header-drop__content-link text-20" href="#">Сервисным партнерам</a></div>
                         </div>
                         <div class="header__nav-item header-drop" data-header-drop="data-header-drop"> 
-                          <div class="header__text">
+                          <div class="header__text text-16">
                              Пресс-центр</div>
                           <div class="header__nav-icon"> 
                             <svg class="header__nav-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -401,7 +443,7 @@
                           <div class="header-drop__content"><a class="header-drop__content-link text-20" href="#">Новости</a><a class="header-drop__content-link text-20" href="#">Статьи</a><a class="header-drop__content-link text-20" href="#">Публикации в СМИ</a><a class="header-drop__content-link text-20" href="#">Мероприятия</a><a class="header-drop__content-link text-20" href="#">Пресс-кит</a></div>
                         </div>
                         <div class="header__nav-item header-drop" data-header-drop="data-header-drop"> 
-                          <div class="header__text">
+                          <div class="header__text text-16">
                              О компании</div>
                           <div class="header__nav-icon"> 
                             <svg class="header__nav-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -415,8 +457,8 @@
                   </div>
                   <div class="header__col">
                     <div class="header__phones">
-                      <div class="header__phones-item"> <a class="header__text" href="tel:+78003331074">+7 800 333-10-74</a></div>
-                      <div class="header__phones-item"> <a class="header__text" href="tel:+74997033523">+7 499 703-35-23</a></div>
+                      <div class="header__phones-item"> <a class="header__text text-16" href="tel:+78003331074">+7 800 333-10-74</a></div>
+                      <div class="header__phones-item"> <a class="header__text text-16" href="tel:+74997033523">+7 499 703-35-23</a></div>
                     </div>
                     <div class="header__login">
                       <div class="header__login-link header-drop header-drop_right" data-header-drop="data-header-drop"> 
@@ -427,7 +469,7 @@
                             <path d="M11.9138 6.70028C11.6202 6.40812 11.1454 6.4093 10.8532 6.70293C10.561 6.99655 10.5622 7.47142 10.8558 7.76358L11.9138 6.70028ZM13.6375 10.5314C13.9312 10.8236 14.406 10.8224 14.6982 10.5288C14.9904 10.2352 14.9892 9.7603 14.6955 9.46814L13.6375 10.5314ZM14.6955 10.5314C14.9892 10.2393 14.9904 9.76441 14.6982 9.47078C14.406 9.17716 13.9312 9.17598 13.6375 9.46814L14.6955 10.5314ZM10.8558 12.236C10.5622 12.5282 10.561 13.003 10.8532 13.2967C11.1454 13.5903 11.6202 13.5915 11.9138 13.2993L10.8558 12.236ZM14.1667 10.7496C14.5809 10.7496 14.9167 10.4138 14.9167 9.99957C14.9167 9.58535 14.5809 9.24957 14.1667 9.24957V10.7496ZM1.25 9.24957C0.835786 9.24957 0.5 9.58535 0.5 9.99957C0.5 10.4138 0.835786 10.7496 1.25 10.7496V9.24957ZM10.8558 7.76358L13.6375 10.5314L14.6955 9.46814L11.9138 6.70028L10.8558 7.76358ZM13.6375 9.46814L10.8558 12.236L11.9138 13.2993L14.6955 10.5314L13.6375 9.46814ZM14.1667 9.24957H1.25V10.7496H14.1667V9.24957Z" fill="#0B1226"></path>
                           </svg>
                         </div>
-                        <div class="header__text">
+                        <div class="header__text text-16">
                            Личный кабинет</div>
                         <div class="header-drop__content"><a class="header-drop__content-link text-20" href="#">Главная</a><a class="header-drop__content-link text-20" href="#">Профиль</a><a class="header-drop__content-link text-20" href="#">Заказы</a>
                           <div class="header-drop__content-row header-drop__content-link">
@@ -446,7 +488,7 @@
                   </div>
                 </div>
               </div>
-              <div class="header__bot">
+              <div class="header__bot container">
                 <div class="header__row"> 
                   <div class="header__col">
                     <div class="header__logo"><a class="header__logo-link" href="#"> 
@@ -559,7 +601,7 @@
                 </div>
               </div>
             </div>
-            <div class="header__mobile"> 
+            <div class="header__mobile container"> 
               <div class="header__row"> 
                 <div class="header__col">
                   <div class="header__logo"><a class="header__logo-link" href="#"> 
@@ -597,14 +639,12 @@
                       </svg></a>
                   </div>
                 </div>
-                <div class="header__col header__col_activity">
-                  <div class="header-money">
+                <div class="header__col header__col_activity"><a class="header-money" href="#"> 
                     <div class="header-money__currency">USD</div>
-                    <div class="header-money__number">91 RUB</div>
-                  </div>
+                    <div class="header-money__number">91 RUB</div></a>
                   <div class="header__buttons"><a class="header__buttons-item" href="tel:+78005553535">
                       <div class="header__button header__button_search">
-                        <svg class="header__buttons-item_search header__button-svg_phone" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="header__button-svg_phone" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10.5714 2H14M14 2V5.42857M14 2L10 6" stroke="#0B1226" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M6.23615 5.11428C6.55891 6.28049 6.19587 7.49714 5.4004 8.24707C5.24958 8.38926 5.20097 8.61911 5.31946 8.78922C5.57169 9.15131 5.85855 9.49549 6.1802 9.81738C6.50137 10.1388 6.84472 10.4255 7.20595 10.6777C7.3765 10.7967 7.60705 10.7473 7.74902 10.5953C8.49772 9.79343 9.7179 9.42642 10.8873 9.75054C12.4635 10.1875 13.3507 11.7145 12.8688 13.1614C11.4568 17.4014 6.02036 13.1988 4.41081 11.5881C2.76235 9.9384 -1.37558 4.53323 2.8278 3.13128C4.27361 2.64904 5.79956 3.53686 6.23615 5.11428Z" stroke="#0B1226" stroke-width="1.5"></path>
                         </svg>
@@ -747,23 +787,17 @@
                         <div class="header-burger__media"><a class="media-link" href="#"> 
                             <div class="hover-border" data-block-border="">
                               <div class="hover-content"> 
-                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M13.0718 20C4.87188 20 0.194878 13.994 0 4H4.10743C4.24235 11.3353 7.27038 14.4424 9.66888 15.0831V4H13.5366V10.3263C15.9051 10.0541 18.3933 7.17117 19.2328 4H23.1004C22.4558 7.90791 19.7575 10.7908 17.8387 11.976C19.7575 12.9369 22.8307 15.4515 24 20H19.7425C18.8281 16.957 16.5497 14.6026 13.5366 14.2823V20H13.0718Z" fill="#0B1226"></path>
-                                </svg>
+                                <div class="media-link__inner media-link__inner_vk"></div>
                               </div>
                             </div></a><a class="media-link" href="#"> 
                             <div class="hover-border" data-block-border="">
                               <div class="hover-content"> 
-                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M22.0253 5.61879C20.1114 4.07537 15.8582 4 12 4C8.14177 4 3.88861 4.07537 1.97468 5.61879C0.0607595 7.16221 0 10.5063 0 12.4999C0 14.4935 0.0607595 17.8375 1.97468 19.381C3.88861 20.9244 8.14177 21 12 21V20.9997C15.8582 20.9997 20.1114 20.9244 22.0253 19.381C23.9392 17.8375 24 14.4935 24 12.4999C24 10.5063 23.9392 7.16221 22.0253 5.61879ZM15.8026 12.9495L15.8033 12.9506L9.28356 16.628C9.24857 16.6548 9.21041 16.6761 9.16934 16.6926L9.16132 16.6972L9.16083 16.6954C9.10809 16.7155 9.05195 16.7283 8.99265 16.7283C8.71583 16.7283 8.4915 16.4906 8.4915 16.1979V8.78589C8.4915 8.4929 8.71607 8.25547 8.99265 8.25547C9.07066 8.25547 9.14382 8.27604 9.20968 8.30974L9.20992 8.30949L15.8033 12.0502L15.8031 12.0507C15.9452 12.1444 16.0407 12.31 16.0407 12.5001C16.0405 12.6902 15.9447 12.8559 15.8026 12.9495Z" fill="#0B1226"></path>
-                                </svg>
+                                <div class="media-link__inner media-link__inner_yt"></div>
                               </div>
                             </div></a><a class="media-link" href="#"> 
                             <div class="hover-border" data-block-border="">
                               <div class="hover-content"> 
-                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M2.34876 10.8391L15.4534 5.49635C16.747 4.93981 21.134 3.15891 21.134 3.15891C21.134 3.15891 23.1587 2.37976 22.99 4.27197C22.9338 5.05112 22.4838 7.77813 22.0339 10.7277L20.6278 19.4653C20.6278 19.4653 20.5153 20.7453 19.5592 20.9679C18.603 21.1906 17.0282 20.1888 16.747 19.9662C16.522 19.7992 12.5288 17.2948 11.0665 16.0705C10.6728 15.7365 10.2228 15.0687 11.1227 14.2896C13.1475 12.453 15.5659 10.1712 17.0282 8.72423C17.7032 8.05639 18.3781 6.4981 15.5659 8.39031L7.63562 13.6774C7.63562 13.6774 6.73573 14.2339 5.04844 13.733C3.36114 13.2321 1.39263 12.5643 1.39263 12.5643C1.39263 12.5643 0.0427937 11.7295 2.34876 10.8391Z" fill="#0B1226"></path>
-                                </svg>
+                                <div class="media-link__inner media-link__inner_tg"></div>
                               </div>
                             </div></a>
                         </div>
@@ -1054,7 +1088,6 @@
               <p class="modal-send__text text-24">Мы свяжемся с вами в ближайшее время</p>
             </div>
           </div>
-          <div class="header-overlay" data-header-overlay="data-header-overlay"></div>
         </div>
         <div class="modal-video" data-modal-wrapper="modal-video" data-modal-parent="data-modal-parent"> 
           <div class="modal-video__close" data-modal-close="modal-video">
@@ -1469,23 +1502,17 @@
                         <div class="footer__socials"> <a class="media-link" href="#"> 
                             <div class="hover-border" data-block-border="">
                               <div class="hover-content"> 
-                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M13.0718 20C4.87188 20 0.194878 13.994 0 4H4.10743C4.24235 11.3353 7.27038 14.4424 9.66888 15.0831V4H13.5366V10.3263C15.9051 10.0541 18.3933 7.17117 19.2328 4H23.1004C22.4558 7.90791 19.7575 10.7908 17.8387 11.976C19.7575 12.9369 22.8307 15.4515 24 20H19.7425C18.8281 16.957 16.5497 14.6026 13.5366 14.2823V20H13.0718Z" fill="#0B1226"></path>
-                                </svg>
+                                <div class="media-link__inner media-link__inner_vk"></div>
                               </div>
                             </div></a><a class="media-link" href="#"> 
                             <div class="hover-border" data-block-border="">
                               <div class="hover-content"> 
-                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M22.0253 5.61879C20.1114 4.07537 15.8582 4 12 4C8.14177 4 3.88861 4.07537 1.97468 5.61879C0.0607595 7.16221 0 10.5063 0 12.4999C0 14.4935 0.0607595 17.8375 1.97468 19.381C3.88861 20.9244 8.14177 21 12 21V20.9997C15.8582 20.9997 20.1114 20.9244 22.0253 19.381C23.9392 17.8375 24 14.4935 24 12.4999C24 10.5063 23.9392 7.16221 22.0253 5.61879ZM15.8026 12.9495L15.8033 12.9506L9.28356 16.628C9.24857 16.6548 9.21041 16.6761 9.16934 16.6926L9.16132 16.6972L9.16083 16.6954C9.10809 16.7155 9.05195 16.7283 8.99265 16.7283C8.71583 16.7283 8.4915 16.4906 8.4915 16.1979V8.78589C8.4915 8.4929 8.71607 8.25547 8.99265 8.25547C9.07066 8.25547 9.14382 8.27604 9.20968 8.30974L9.20992 8.30949L15.8033 12.0502L15.8031 12.0507C15.9452 12.1444 16.0407 12.31 16.0407 12.5001C16.0405 12.6902 15.9447 12.8559 15.8026 12.9495Z" fill="#0B1226"></path>
-                                </svg>
+                                <div class="media-link__inner media-link__inner_yt"></div>
                               </div>
                             </div></a><a class="media-link" href="#"> 
                             <div class="hover-border" data-block-border="">
                               <div class="hover-content"> 
-                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M2.34876 10.8391L15.4534 5.49635C16.747 4.93981 21.134 3.15891 21.134 3.15891C21.134 3.15891 23.1587 2.37976 22.99 4.27197C22.9338 5.05112 22.4838 7.77813 22.0339 10.7277L20.6278 19.4653C20.6278 19.4653 20.5153 20.7453 19.5592 20.9679C18.603 21.1906 17.0282 20.1888 16.747 19.9662C16.522 19.7992 12.5288 17.2948 11.0665 16.0705C10.6728 15.7365 10.2228 15.0687 11.1227 14.2896C13.1475 12.453 15.5659 10.1712 17.0282 8.72423C17.7032 8.05639 18.3781 6.4981 15.5659 8.39031L7.63562 13.6774C7.63562 13.6774 6.73573 14.2339 5.04844 13.733C3.36114 13.2321 1.39263 12.5643 1.39263 12.5643C1.39263 12.5643 0.0427937 11.7295 2.34876 10.8391Z" fill="#0B1226"></path>
-                                </svg>
+                                <div class="media-link__inner media-link__inner_tg"></div>
                               </div>
                             </div></a>
                         </div>
