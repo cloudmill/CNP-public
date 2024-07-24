@@ -17,6 +17,208 @@
     <div class="wrapper">
       <div class="header-overlay" data-header-overlay="data-header-overlay"></div>
       <div class="modal-block">
+        <div class="modal-authorization" data-modal-wrapper="modal-authorization">
+          <div class="modal-authorization__inner"> 
+            <div class="modal-authorization__close" data-modal-close="modal-authorization"> 
+              <div class="hover-border" data-block-border="">
+                <div class="hover-content"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M7 6.99902L17.0001 16.9991" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.99993 16.9991L17 6.99902" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="modal-authorization__title title-48">Авторизация</p>
+            <form class="modal-authorization__form">
+              <div class="modal-authorization__form-inputs"> 
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="email" data-parsley-errors-container="#modal-auth-email-error-container" placeholder="Логин (e-mail)" type="email" required="required"/>
+                        <div class="custom-placeholder__service"><span>Логин (e-mail)</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modal-auth-email-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" type="password" required="required" name="password" data-parsley-errors-container="#modal-auth-password-error-container" placeholder="Пароль"/>
+                        <div class="custom-placeholder__service"><span>Пароль</span></div>
+                        <div class="base-input__show" data-password-show="">
+                          <div class="base-input__show-inner">
+                            <svg class="toggle show" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11.9996 5C5.69259 5 2.63259 10.683 2.08959 11.808C2.0602 11.8677 2.04492 11.9334 2.04492 12C2.04492 12.0666 2.0602 12.1323 2.08959 12.192C2.63159 13.317 5.69159 19 11.9996 19C18.3076 19 21.3666 13.317 21.9096 12.192C21.939 12.1323 21.9543 12.0666 21.9543 12C21.9543 11.9334 21.939 11.8677 21.9096 11.808C21.3676 10.683 18.3076 5 11.9996 5Z" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#747884" stroke="#747884" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <svg class="toggle hide" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0426 5.83569C16.4599 4.78322 14.4545 4 11.9996 4C8.517 4 5.93926 5.57661 4.18941 7.26184C2.45211 8.93498 1.48993 10.7503 1.19019 11.3709C1.09461 11.5668 1.04492 11.782 1.04492 12C1.04492 12.2176 1.09443 12.4324 1.18967 12.6281C1.48893 13.2488 2.45098 15.0647 4.18866 16.7382C4.66724 17.1991 5.20776 17.6518 5.81179 18.0665L7.255 16.6232C6.62623 16.2261 6.06783 15.7712 5.57602 15.2976C4.26371 14.0338 3.45778 12.6642 3.11211 12.0002C3.45837 11.3357 4.26452 9.96619 5.57677 8.70241C7.06942 7.26488 9.17517 6 11.9996 6C13.8204 6 15.3425 6.5255 16.5943 7.284L18.0426 5.83569ZM8.65224 17.3473C9.63241 17.7506 10.7451 18 11.9996 18C14.8245 18 16.9303 16.7351 18.4228 15.2976C19.7349 14.0339 20.5408 12.6644 20.8871 11.9998C20.5414 11.3358 19.7355 9.96626 18.4232 8.70241C18.2352 8.52138 18.0375 8.34309 17.8299 8.16972L19.2488 6.7508C19.4447 6.91898 19.6319 7.08984 19.8105 7.26184C21.5479 8.93504 22.5099 10.7505 22.8093 11.3716C22.9047 11.5673 22.9543 11.7822 22.9543 12C22.9543 12.218 22.9046 12.4332 22.809 12.6291C22.5093 13.2496 21.5474 15.065 19.8102 16.7381C18.0604 18.4234 15.4826 20 11.9996 20C10.1221 20 8.50756 19.5419 7.14396 18.8556L8.65224 17.3473Z" fill="#747884"></path>
+                              <line x1="2.46967" y1="20.4697" x2="20.4697" y2="2.46967" stroke="#747884" stroke-width="1.5"></line>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2366 9.64204C13.654 9.08918 12.8666 8.75 12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 12.8666 9.08918 13.654 9.64204 14.2366L11.4125 12.4662C11.3108 12.3382 11.25 12.1762 11.25 12C11.25 11.5858 11.5858 11.25 12 11.25C12.1762 11.25 12.3382 11.3108 12.4662 11.4125L14.2366 9.64204ZM10.9302 15.0698C11.2652 15.1866 11.6252 15.25 12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 11.6252 15.1866 11.2652 15.0698 10.9302L10.9302 15.0698Z" fill="#747884"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modal-auth-password-error-container"></div>
+                </div>
+              </div>
+              <button class="modal-authorization__form-btn" type="submit"> 
+                <p class="text-20">Войти</p>
+                <div class="modal-authorization__gradient"></div>
+              </button>
+            </form>
+            <div class="modal-authorization__restore text-20 line-link" data-modal-btn="modal-restore">Восстановить пароль</div>
+            <div class="modal-authorization__registr"><span class="modal-authorization__registr-btn text-20 line-link" data-modal-btn="modal-registration">Зарегистрируйтесь</span><span class="modal-authorization__registr-text">, если у вас еще нет аккаунта</span></div>
+          </div>
+        </div>
+        <div class="modal-authorization modal-restore" data-modal-wrapper="modal-restore">
+          <div class="modal-authorization__inner"> 
+            <div class="modal-authorization__close" data-modal-close="modal-restore"> 
+              <div class="hover-border" data-block-border="">
+                <div class="hover-content"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M7 6.99902L17.0001 16.9991" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.99993 16.9991L17 6.99902" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="modal-authorization__title title-48">Восстановление пароля</p>
+            <p class="modal-restore__description">Если вы являетесь <span>Дилером</span>, пожалуйста, обратитесь к вашему менеджеру для сброса пароля. Если вы <span>Внутренний сотрудник</span>, пожалуйста, обратитесь к коллегам в вашей компании для восстановления пароля.</p>
+            <p class="modal-restore__subtitle title-24">Получить инструкцию восстановления пароля</p>
+            <form class="modal-authorization__form" data-restore-form="data-restore-form">
+              <div class="modal-authorization__form-inputs"> 
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="email" data-parsley-errors-container="#modal-restore-email-error-container" placeholder="Email" type="email" required="required"/>
+                        <div class="custom-placeholder__service"><span>Email</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modal-restore-email-error-container"></div>
+                </div>
+              </div>
+              <button class="modal-authorization__form-btn" type="submit"> 
+                <p class="text-20">Отправить</p>
+                <div class="modal-authorization__gradient"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-authorization modal-restore modal-restore_check" data-modal-wrapper="modal-restore-check">
+          <div class="modal-authorization__inner"> 
+            <div class="modal-authorization__close" data-modal-close="modal-restore-check"> 
+              <div class="hover-border" data-block-border="">
+                <div class="hover-content"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M7 6.99902L17.0001 16.9991" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.99993 16.9991L17 6.99902" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="modal-restore__logo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="157" height="156" viewbox="0 0 157 156" fill="none">
+                <circle cx="78.5" cy="78" r="76" stroke="url(#paint0_linear_680_66813)" stroke-width="4"></circle>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M78.4824 33.6128L79.8094 34.7543L89.5371 43.1222H103.631C106.749 43.1222 109.277 45.65 109.277 48.7684V60.1024L118.17 67.7525L118.866 68.351V69.2687V119.168V121.168H116.866H40.1445H38.1445V119.168V69.2687V68.351L38.8403 67.7525L47.7364 60.1V48.7684C47.7364 45.65 50.2643 43.1222 53.3826 43.1222H67.8035L77.1751 34.7769L78.4824 33.6128ZM73.8183 43.1222H78.5063H78.5069H83.4034L78.528 38.9283L73.8183 43.1222ZM47.7364 65.3763L43.2161 69.2646L47.7364 73.134V65.3763ZM51.7364 76.5581L61.5684 84.9745H95.4419L105.277 76.5557V48.7684C105.277 47.8592 104.54 47.1222 103.631 47.1222H78.5069H78.5063H53.3826C52.4734 47.1222 51.7364 47.8592 51.7364 48.7684V76.5581ZM109.277 73.1316L113.794 69.2646L109.277 65.3787V73.1316ZM90.7691 88.9745H66.2413L72.8508 94.6324H84.1595L90.7691 88.9745ZM86.1992 98.1517L86.6904 97.7312L111.138 117.168H45.8718L70.3197 97.731L70.8111 98.1517L71.3726 98.6324H72.1117H84.8986H85.6377L86.1992 98.1517ZM114.866 115.022L89.7855 95.0818L114.866 73.6127V115.022ZM67.2246 95.0816L42.1445 73.6127V115.022L67.2246 95.0816ZM58.5275 60.0002H98.4865V56.0002H58.5275V60.0002ZM98.4865 69.6579H58.5275V65.6579H98.4865V69.6579ZM58.5275 79.3145H98.4865V75.3145H58.5275V79.3145Z" fill="url(#paint1_linear_680_66813)"></path>
+                <defs>
+                  <lineargradient id="paint0_linear_680_66813" x1="78.5" y1="0" x2="78.5" y2="156" gradientunits="userSpaceOnUse">
+                    <stop stop-color="#0070B8"></stop>
+                    <stop offset="1" stop-color="#0071B8" stop-opacity="0"></stop>
+                  </lineargradient>
+                  <lineargradient id="paint1_linear_680_66813" x1="78.5052" y1="34.9417" x2="78.5052" y2="120.168" gradientunits="userSpaceOnUse">
+                    <stop stop-color="#0070B8"></stop>
+                    <stop offset="1" stop-color="#0071B8" stop-opacity="0"></stop>
+                  </lineargradient>
+                </defs>
+              </svg>
+            </div>
+            <p class="modal-authorization__title title-48 modal-restore__title">Проверьте почту</p>
+            <p class="modal-restore__description">На указанный почтовый адрес отправлено письмо с инструкциями по восстановлению пароля</p>
+            <p class="modal-restore__subtitle title-24">Получить инструкцию восстановления пароля</p>
+            <button class="modal-authorization__form-btn" type="button" data-modal-close="modal-restore-check"> 
+              <p class="text-20">Понятно, спасибо</p>
+              <div class="modal-authorization__gradient"></div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-authorization modal-registration" data-modal-wrapper="modal-registration">
+          <div class="modal-authorization__inner"> 
+            <div class="modal-authorization__close" data-modal-close="modal-registration"> 
+              <div class="hover-border" data-block-border="">
+                <div class="hover-content"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M7 6.99902L17.0001 16.9991" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.99993 16.9991L17 6.99902" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="modal-authorization__title title-48">Регистрация</p>
+            <p class="modal-restore__description"> <span class="line-link" data-modal-btn="modal-authorization">Войдите </span><span>в личный кабинет, если вы Дилер или Внутренний сотрудник</span></p>
+            <form class="modal-authorization__form">
+              <div class="modal-authorization__form-inputs"> 
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="registr-fio" data-parsley-errors-container="#modal-registr-fio-error-container" placeholder="ФИО" type="text" required="required"/>
+                        <div class="custom-placeholder__service"><span>ФИО</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modal-registr-fio-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="registr-city" data-parsley-errors-container="#modal-registr-city-error-container" placeholder="Город" type="text" required="required"/>
+                        <div class="custom-placeholder__service"><span>Город</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modal-registr-city-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="registr-company" data-parsley-errors-container="#modal-registr-company-error-container" placeholder="Название организации" type="text" required="required"/>
+                        <div class="custom-placeholder__service"><span>Название организации</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modal-registr-company-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="registr-job" data-parsley-errors-container="#modal-registr-job-error-container" placeholder="Должность (необязятельно)" type="text"/>
+                        <div class="custom-placeholder__service"><span>Должность (необязятельно)</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modal-registr-job-error-container"></div>
+                </div>
+              </div>
+              <button class="modal-authorization__form-btn" type="submit"> 
+                <p class="text-20">Далее</p>
+                <div class="modal-authorization__gradient"></div>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
       <header class="header header--white" data-header="">
         <div class="header__inner"> 
