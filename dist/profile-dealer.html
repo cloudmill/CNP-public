@@ -6,7 +6,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>service-partners</title>
+    <title>profile-dealer</title>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -1398,58 +1398,127 @@
           </div>
         </div>
       </header>
-      <main class="dealer">
-        <div class="container">
-          <section class="top-section">
-            <div class="dealer__breadcrumbs">
-              <div class="breadcrumbs first-active"> 
-                <ul class="breadcrumbs__list"> 
-                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
-                       Главная</a></li>
-                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#"> Сотрудничество</a></li>
-                  <li class="breadcrumbs__item"> 
-                    <div class="breadcrumbs__text"> Сервисным партнерам</div>
-                  </li>
-                </ul>
+      <main class="profile profile-dealer">
+        <section class="container top-section profile-tabs">
+          <div class="profile-tabs__breadcrumbs">
+            <div class="breadcrumbs"> 
+              <ul class="breadcrumbs__list"> 
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+                     Главная</a></li>
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#"> О компании</a></li>
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#"> Проекты</a></li>
+                <li class="breadcrumbs__item"> 
+                  <div class="breadcrumbs__text"> Строительство нового цеха завод КБХА</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-tabs__row"> 
+            <div class="profile-tabs__items"> 
+              <button class="profile-tabs__btn active" data-profile-tab="main">Главная</button>
+              <button class="profile-tabs__btn" data-profile-tab="profile">Профиль</button>
+              <button class="profile-tabs__btn" data-profile-tab="orders">Заказы</button>
+              <button class="profile-tabs__btn" data-profile-tab="history">История подбора</button>
+              <button class="profile-tabs__btn" data-profile-tab="projects">Проекты</button>
+            </div>
+            <div class="profile-tabs__exit"></div>
+          </div>
+        </section>
+        <section class="profile-content container profile-dealer__content">
+          <div class="profile-content__wrapper">
+            <div class="profile-content__container active" data-profile-container="main">
+              <div class="profile-dealer__diagrams">
+                <div class="profile-dealer__diagrams-container">
+                  <div class="lk-diagram">
+                    <div class="lk-diagram__inner">
+                      <div class="lk-diagram__left"> 
+                        <h2 class="title-32">Оборудования отгружено, шт</h2>
+                        <div class="legends"> 
+                          <div class="legends-item">  
+                            <div class="legends-item__value"> 
+                              <p>100</p>
+                            </div>
+                            <div class="legends-item__block"> <span>Группа А1</span>
+                              <p>CDL, CDM/F, CDLF + CDH</p>
+                            </div>
+                          </div>
+                          <div class="legends-item">  
+                            <div class="legends-item__value"> 
+                              <p>100</p>
+                            </div>
+                            <div class="legends-item__block"> <span>Группа А1</span>
+                              <p>CDL, CDM/F, CDLF + CDH</p>
+                            </div>
+                          </div>
+                          <div class="legends-item">  
+                            <div class="legends-item__value"> 
+                              <p>100</p>
+                            </div>
+                            <div class="legends-item__block"> <span>Группа А1</span>
+                              <p>CDL, CDM/F, CDLF + CDH</p>
+                            </div>
+                          </div>
+                          <div class="legends-item">  
+                            <div class="legends-item__value"> 
+                              <p>100</p>
+                            </div>
+                            <div class="legends-item__block"> <span>Группа А1</span>
+                              <p>CDL, CDM/F, CDLF + CDH</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lk-diagram__right">
+                        <div class="lk-diagram__canvas">
+                          <canvas id="lk-diagram"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-dealer__diagrams-container">
+                  <div class="lk-chart lk-shipment">
+                    <div class="lk-chart__inner"> 
+                      <div class="row"> 
+                        <h2 class="title-32">Общая сумма отгрузок, <br>USD</h2><span>2024</span>
+                      </div>
+                      <div class="lk-shipment__container">
+                        <canvas id="lk-shipment" data-chart-id="lk-shopment"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <h1 class="dealer__head title-90">Сервисным партнерам</h1>
-            <div class="dealer-listing">
-              <div class="dealer-listing__links"> <a class="dealer-listing__links-item active text-32" href="#">Требования к авторизованным сервисным центрам</a><a class="dealer-listing__links-item text-32" href="service-partners-2">Размещение на сайте</a></div>
+            <div class="profile-content__container" data-profile-container="profile">Профиль</div>
+            <div class="profile-content__container" data-profile-container="orders">Заказы</div>
+            <div class="profile-content__container" data-profile-container="history">История подбора</div>
+            <div class="profile-content__container" data-profile-container="projects">Проекты</div>
+          </div>
+          <div class="profile-content__manager">
+            <div class="manager-banner">
+              <div class="manager-banner__bg">
+                <picture class="picture">
+                  <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,UklGRiYKAABXRUJQVlA4IBoKAADwtwCdASr0BkQBPpFIoEylpKoloFgIaUASCWlu4XRaes49+jGXpL19zT+/738F8/WLp69/LaIVoC/uAE+9FY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDGrw0GBaALhjuLw1TniqxoTceKxoPdmKAuGOk8VWNB7sxQFwx0niqxoPdmKAuGOeLqigLhtVBtRLxVY4RL0cx0niegPGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YoC4Y6TxPJvVBcUp9pICXqguJx8VudJ4qq5NIUBcMdJ4qsaD3ZigLhjpPFVjQe7MUBcMdJ4qsaD1WXEvE8vkj+SRjpPAp3l0d3aW9UEyUY2qguJeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YoC4Y6RTQj3q9a5/uzD/Q1Ho54dJ4qffF6y3qguJeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGhBHY06934+rA349Hn63Pp6CLuOBADUbgpR4RkB+QzFtwCTNowyThFjmhIC1VXclY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAjqXh0mfhGjPztPiHgH+eJ2hz55v7mdBSgCWbpAd+9ROqAUtvPAOipNb2tXBEWnakToUb5lMiDEXNnURGIIc7UFxLxVY0HuzFAXDHSeKrGg92YoC4Y6TxVZt5PFWHEHkGHyJZKdTbZjlHIX1yqsXaqCGiWGazjN6fO1kxBGo+yRvfRL1NsxQFwx0niqxoPdmKAuGOk8VWNB7sxQFwx4eF4qszO0tX5Nj//niqzY+jwSZgxTGTglxUkUBcMaatCeR+o66A0+4uDnZcj3ZigLhjpPFVjQe7MUBcMdJ4qsaD3ZigLhjpPFVjQfqhdnYVp2YoD/zQSTIEq5gIHuzD9qrVMY5MLZ0Z+laSD3ZigLhjpPFVjQe7MUBcMdJ4qsaD3ZigLhjpPFVjh6AGLubBZlvUio2cyFTfEz+h7sxOoYroUOBFYHeKxoPdmKAuGOk8VWNB7sxQFwx0niqxoPdmKAuGOk8VYalMcXk8VWIYQeROzX6Kxn9jqJflICgVY0HuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSeKsNSmN3PFVjJupmPWN96DoVxoE9Aqxk7Sor10gyTBTyHbtzTFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSeKrGg92YnVHJ9/b/JuGNMJv8AqEakK2mafBL+qC4W0tufgLVM9Yz2AQ1aK+Zb0VjQe7MUBcMdJ4qsaD3ZigLhjpPFVjQe7MUBcMdJ4rJcL6Wm9FVUAwCyNU86dlrLIGcncaDc7wBgjTgcV0dEAUQkjBeqC4l4qsaD3ZigLhjpPFVjQe7MUBcMdJ4qsaD3OGccsk3ZdFhEPthg+H3qQ/wTIBEHpagtyrYcQ/x01PYmMLIsXPeRGGjqiuDULBLy8YcUs07Qf2cfXuzFAXDHSeKrGg92YoC4Y6TxVY0HuzFAXDHSg4Etow3K6BNsGboAV9yVSYTq7pUazdMM0ldm1fuZWQAJvtCxRXTNbiIC4fkRvd4dvcgWEDDt7aBP92g8N6M0TakftqyGF6dWg9cBuJeU9XHgnFPqfaf7Y++QMaXKHkAadwXPCzJpA0FXwn+77uD/EVol4qsaD3ZigLhjpPFVjQe7MUBcMdJ4qsaD3Z72QQCC+SNNmVEwbqCl9gwJT0VMBQItOwC6GCmPZ10uXwprRuZsJ4ABOOzQpw8h0D/XKbFp8vJgtqQcf03ekz8CiabZgFwx0niqxoPdmKAuGOk8VWNB7sxQFwx0niqxo9N6K4DQe5pMz5Y1PMFNLqFVjKE0PJxQJM77iVKEGO6NLQRUAAP7+8P3Ht0dBFCCrHYPVYgAAAAAAjk7bBAAAAOn5zuquRY4loNT8IAAAqgUJ/jH5BXbgfgAAAAADGeZOAw1jzwN53AAAAAFu5kB2GSwLzeITqb8B1wAAAAAI0gy6lLXgdaDRh5Lt5qZnHlG5lhTgT4AAABq2+CN4ansRbEWSiWLC+1BW3RF7NY70qh2KNyHG132c/wwAAAWAc3duDjaYeolRjBSnh1d9keky/wP++VToZKMUVtLgRuEr+2f4OroSXmeQ6/BD/CiHlCfA79eUnoSHGTDbtB6QZU/PDXKDehXsJaodI1S0WIxaB4kfMuy3vCWiSsU75sL+XPQgAABwZzwxndvyTWRT4N+ZSUjdpPl0El//csAaoVwhYlDlGhJNqUYD7nvFaNLBvNNXLgGEycLMURvYWOZ7eS6YNDe7BI/A/J+idOkG/X6+R3Fw6ew0azRwNxxvfSuF9StLYIn7S4AvIQcInFKIsc9hmzdei/nIhx6jG8HN6evXkuABWO1XQIjgAAQpLCMu9emTTWTwdugcSG3KID3znwLv3dStAaJZtPwk4vZgV2WEJ22CnsjzbQ2IG7e/2A4aG8KwAAAAmUoN+bJGKFTXK8COigbU52KYUjomSQ6tqOqpCOGZwAAABRNa9d8SsJhn9fkBcCpnKC1YLWc8PRt2tc5V850s8gAAACEfIHEGmxNKGxCBcPWW6uwELOLn49iTR0nWjoOyUiAAAAXNUU67ye8PwgnCM4BMoGFLwurcwOyns+b42JoCYd+AAAAAOf0iL12DHp/uwiugErb9RtaOgQAAACodRE3CvDByBo6S9PEiIJIlhu9uqeFf/R/CK+ewQAAAAke2D9pSFbf7f7B2Z9ohPGMIY04h7WTXG83OHwF6/VAZM5roA3XthcHF6MRdzgEFjkQIAAAH+E8RY5qN0OFFDQn+ui2mYLmYRnRHtOYlKfsmAQAwitwzyZUc9hr2TBa1SkYt8ukif85x6VCWTVS/7KcHubmI9enqiZUMAi/gEni3T0QGWdFBgAAB/5CS3dz/o75feTf1SEcTcrQJVcoWOFSQnRsl/KEx+9rm1PXOXCkTYeNggacu1o05llB5LD8D6QUSjKw8nhMqIjB8CGBWflT7ComKgjYXO+i+MNkY8TpsNJTgcCjxZB8cDApo3j+YLb7o6YCSZw5S3rpmMb0BH0tf85cIozdCWXRbe1L3IbzbBGH40pL5WYWZw50ATVRkXlhZcAZTvsBkXKAAIlDb9DEDTTjcDAAALJ3Re9elhJyPZqwmKMGxCmUVZMdnfyUOegQ3wPXgGT20LAwlz2EhtB9O/hLml967msyVnpGJr/y27yCjJVWRFRzO4uAZYVjNHbI57r6snA4sFASqAUDPMP8JHDmeeOQz40vKGOSrF0vMJAAABW84sc2BOg8o7ZFrDZYXJ8AdcUdBwRy8rbVDpkR65Lwi+EP3EnhGELr1pSY8PPQAAAA= " alt="manager-bg.png"/>
+                  <source class="lazyload" srcset="images/manager-bg.jpg " alt="manager-bg.png"/>
+                  <source class="lazyload" srcset="images/manager-bg.png " alt="manager-bg.png"/><img class="picture__img lazyload" data-src="images/manager-bg.png" alt="manager-bg.png"/>
+                </picture>
+              </div>
+              <div class="manager-banner__inner"> 
+                <div class="manager-banner__left"> 
+                  <p class="manager-banner__name title-32">Игорь Давидов</p>
+                  <p class="manager-banner__job">Ваш персональный менеджер</p>
+                </div>
+                <div class="manager-banner__right"> 
+                  <div class="manager-banner__links"> 
+                    <div class="manager-banner__links-item"> <a class="manager-banner__links-link line-link" href="tel:+78003331074">+7 (800) 333-10-74</a></div>
+                    <div class="manager-banner__links-item"> <a class="manager-banner__links-link line-link" href="mailto:cnp@cnprussia.ru">cnp@cnprussia.ru</a></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </section>
-          <section class="info-content">
-            <h5>Выполнение АСЦ гарантийных обязательств</h5><br>
-            <p>Включает в себя рассмотрение претензий Потребителей к качеству и комплектности оборудования в гарантийный или послегарантийный период эксплуатации. По итогам рассмотрения претензий осуществляется их принятие или отклонение, а в случае принятия — ремонт или замена дефектного Устройства на исправное за счет ООО «СиЭнПи Рус».</p><br>
-            <h5>Список продуктов, продаваемых Cnp Aikon на территории РФ, для которых осуществляется гарантийный и послегарантийный ремонт АСЦ:</h5><br>
-            <ul> 
-              <li>Насосное оборудование и двигатели CNP</li>
-              <li>Насосное оборудование и двигатели AIkon</li>
-              <li>Насосное оборудование и двигатели CNP Aikon</li>
-              <li>Арматура Аikon</li>
-              <li>Контроллеры и ПЧ Aikon</li>
-            </ul><br>
-            <h5>Критерии АСЦ («программа Авторизации»). Требования к помещению:</h5><br>
-            <ul> 
-              <li>Отдельный вход с вывеской, на которой должны быть указаны название и график работы</li>
-              <li>Оборудованное отдельное помещение для приема посетителей, приема и выдачи Устройства. Совмещать помещение для ремонта и для работы с посетителями возможно только при наличии перегородки, ограждающей опасную зону</li>
-              <li>Наличие вытяжки</li>
-              <li>Наличие сети 220/380 В 5 кВт и более с защитными устройствами</li>
-              <li>Наличие стенда с поверенными манометрами, датчиками расхода, датчиками давления для проверки насосного оборудования</li>
-              <li>Наличие передвижного подъемного устройства</li>
-              <li>Наличие подъемно-транспортировочного устройства</li>
-              <li>Наличие диагностического оборудования: мегомметра, тестера, амперметра, индикатора дефектов обмоток, виброметра, (оборудование должно быть проверенно согласно графика поверок)</li>
-              <li>Наличие комплекта съёмников и динометрических ключей</li>
-              <li>Наличие точильного, сверлильного, токарного станков приветствуется, но не является обязательным</li>
-              <li>Компьютер с выходом в сеть INTERNET в помещении для приемки посетителей. Вся информация о принимаемой и выдаваемой технике должна заноситься в компьютерную базу данных</li>
-              <li>Информационную доску в приемном помещении с указанием названия, прейскурантом, правилами обслуживания и другими документами согласно законодательству</li>
-              <li>Выделенное и оборудованное помещение для хранения принятых в ремонт и отремонтированных Устройств</li>
-              <li>Оборудованное место для хранения запасных частей</li>
-              <li>Наличие соответствующим образом оборудованных ремонтных помещений, необходимых для исполнения обязательств по договору обслуживания Устройств</li>
-              <li>Наличие набора инструментов и оборудования, позволяющего производить квалифицированный ремонт</li>
-            </ul>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
       <div class="footer-wrapper">
         <div class="footer-products">
