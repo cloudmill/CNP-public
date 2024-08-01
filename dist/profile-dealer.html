@@ -1491,7 +1491,383 @@
               </div>
             </div>
             <div class="profile-content__container" data-profile-container="profile">Профиль</div>
-            <div class="profile-content__container" data-profile-container="orders">Заказы</div>
+            <div class="profile-content__container" data-profile-container="orders"> 
+              <h2 class="profile-content__title title-90">Заказы</h2>
+              <div class="profile-dealer__search"> 
+                <div class="search-block" placeholder="Введите номер счета">
+                  <form class="search-block__form" action="">
+                    <div class="search-input__wrapper">
+                      <div class="hover-border input-wrapper wide form-input wide" data-block-border="">
+                        <div class="hover-content"> 
+                          <div class="input-ui search-input form-input form-input wide" data-input-parent="">
+                            <svg class="search-input__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.9928 15.5786C16.6023 15.1881 15.9692 15.1881 15.5786 15.5787C15.1881 15.9692 15.1881 16.6023 15.5786 16.9929L16.9928 15.5786ZM20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L20.2929 21.7071ZM15.5786 16.9929L20.2929 21.7071L21.7071 20.2929L16.9928 15.5786L15.5786 16.9929ZM10.7143 17.4285C7.00609 17.4285 4 14.4225 4 10.7143H2C2 15.527 5.90153 19.4285 10.7143 19.4285V17.4285ZM17.4286 10.7143C17.4286 14.4225 14.4225 17.4285 10.7143 17.4285V19.4285C15.5271 19.4285 19.4286 15.527 19.4286 10.7143H17.4286ZM10.7143 4C14.4225 4 17.4286 7.00609 17.4286 10.7143H19.4286C19.4286 5.90151 15.5271 2 10.7143 2V4ZM10.7143 2C5.90153 2 2 5.90151 2 10.7143H4C4 7.00609 7.00609 4 10.7143 4V2Z" fill="#747884"></path>
+                            </svg>
+                            <input class="form-input wide" data-input="" required="" name="projects-search" placeholder="Введите название" maxlength="255" data-parsley-errors-container="#projects-search-error-container" type="text" data-search-input=""/>
+                            <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                              <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="projects-search-error-container"></div>
+                    </div>
+                    <div class="search-button__wrapper wide blue">
+                      <div class="hover-border wide blue" data-block-border="">
+                        <div class="hover-content"> 
+                          <button class="search-button">Найти</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="searchFormError"></div>
+                  </form>
+                </div>
+              </div>
+              <div class="profile-dealer__selects"> 
+                <div class="profile-dealer__selects-item organizations"> 
+                  <div class="hover-component" data-block-border="">
+                    <div class="hover-component__gradient"></div>
+                    <div class="hover-component__content">
+                      <div class="select select-wrapper">
+                        <div class="select__button">
+                          <div class="input-ui custom-placeholder" data-input-parent="">
+                            <input data-input="" readonly="readonly" type="text" value="" placeholder="Организация"/>
+                            <div class="custom-placeholder__service"><span>Организация</span></div>
+                          </div>
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="select__list" data-lenis-prevent="true">
+                          <ul>
+                            <li>
+                              <p>Россия</p>
+                            </li>
+                            <li>
+                              <p>Беларусь</p>
+                            </li>
+                            <li>
+                              <p>Казахстан</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-dealer__selects-item sorting"> 
+                  <div class="hover-component" data-block-border="">
+                    <div class="hover-component__gradient"></div>
+                    <div class="hover-component__content">
+                      <div class="select select-wrapper">
+                        <div class="select__button">
+                          <div class="input-ui custom-placeholder" data-input-parent="">
+                            <input data-input="" readonly="readonly" type="text" value="" placeholder="Сортировка"/>
+                            <div class="custom-placeholder__service"><span>Сортировка</span></div>
+                          </div>
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="select__list" data-lenis-prevent="true">
+                          <ul>
+                            <li>
+                              <p>дата по возрастанию</p>
+                            </li>
+                            <li>
+                              <p>дата по убыванию</p>
+                            </li>
+                            <li>
+                              <p>сумма по возрастанию</p>
+                            </li>
+                            <li>
+                              <p>сумма по убыванию</p>
+                            </li>
+                            <li>
+                              <p>% оплаты по возрастанию</p>
+                            </li>
+                            <li>
+                              <p>% оплаты по убыванию</p>
+                            </li>
+                            <li>
+                              <p>% отгрузки по возрастанию</p>
+                            </li>
+                            <li>
+                              <p>% отгрузки по убыванию</p>
+                            </li>
+                            <li>
+                              <p>% долга по возрастанию</p>
+                            </li>
+                            <li>
+                              <p>% долга по убыванию</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-dealer__table">
+                <div class="profile-dealer__table-content">
+                  <div class="custom-table">
+                    <div class="custom-table__tr"> 
+                      <div class="custom-table__th">Номер</div>
+                      <div class="custom-table__th">Дата</div>
+                      <div class="custom-table__th">Сумма</div>
+                      <div class="custom-table__th big-cell">Клиент</div>
+                      <div class="custom-table__th">Состояние</div>
+                      <div class="custom-table__th">% Оплаты</div>
+                      <div class="custom-table__th">% Отгрузки</div>
+                      <div class="custom-table__th">% Долга</div>
+                      <div class="custom-table__th">Валюта</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#8ECCEF"></rect>
+                            <path d="M8.66699 14.4167L12.5562 18.1667L20.3337 10.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Открыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#747884"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.0002C7.50024 10.6607 9.85944 7.78639 13.1348 7.1351C16.4102 6.48382 19.6895 8.23693 20.9673 11.3223C22.2451 14.4077 21.1655 17.966 18.3887 19.8212C15.6119 21.6764 11.9113 21.3117 9.55 18.9502C8.23728 17.6373 7.49987 15.8568 7.5 14.0002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.3448 16.0938C11.0518 16.3867 11.0517 16.8615 11.3446 17.1545C11.6374 17.4474 12.1123 17.4475 12.4052 17.1547L11.3448 16.0938ZM15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47C14.7376 13.1771 14.2627 13.177 13.9698 13.4698L15.0302 14.5307ZM13.9695 13.4701C13.6767 13.7631 13.6769 14.238 13.9699 14.5308C14.2629 14.8236 14.7378 14.8234 15.0305 14.5304L13.9695 13.4701ZM17.6545 11.9044C17.9473 11.6114 17.9471 11.1365 17.6541 10.8437C17.3611 10.551 16.8862 10.5511 16.5935 10.8441L17.6545 11.9044ZM15.0302 13.4698C14.7373 13.177 14.2624 13.1771 13.9696 13.47C13.6767 13.763 13.6768 14.2379 13.9698 14.5307L15.0302 13.4698ZM16.5948 17.1547C16.8877 17.4475 17.3626 17.4474 17.6554 17.1545C17.9483 16.8615 17.9482 16.3867 17.6552 16.0938L16.5948 17.1547ZM13.9696 14.5305C14.2624 14.8234 14.7373 14.8235 15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47L13.9696 14.5305ZM12.4054 10.844C12.1126 10.5511 11.6377 10.551 11.3448 10.8438C11.0518 11.1367 11.0517 11.6115 11.3446 11.9045L12.4054 10.844ZM12.4052 17.1547L15.0302 14.5307L13.9698 13.4698L11.3448 16.0938L12.4052 17.1547ZM15.0305 14.5304L17.6545 11.9044L16.5935 10.8441L13.9695 13.4701L15.0305 14.5304ZM13.9698 14.5307L16.5948 17.1547L17.6552 16.0938L15.0302 13.4698L13.9698 14.5307ZM15.0304 13.47L12.4054 10.844L11.3446 11.9045L13.9696 14.5305L15.0304 13.47Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Закрыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#8ECCEF"></rect>
+                            <path d="M8.66699 14.4167L12.5562 18.1667L20.3337 10.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Открыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#747884"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.0002C7.50024 10.6607 9.85944 7.78639 13.1348 7.1351C16.4102 6.48382 19.6895 8.23693 20.9673 11.3223C22.2451 14.4077 21.1655 17.966 18.3887 19.8212C15.6119 21.6764 11.9113 21.3117 9.55 18.9502C8.23728 17.6373 7.49987 15.8568 7.5 14.0002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.3448 16.0938C11.0518 16.3867 11.0517 16.8615 11.3446 17.1545C11.6374 17.4474 12.1123 17.4475 12.4052 17.1547L11.3448 16.0938ZM15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47C14.7376 13.1771 14.2627 13.177 13.9698 13.4698L15.0302 14.5307ZM13.9695 13.4701C13.6767 13.7631 13.6769 14.238 13.9699 14.5308C14.2629 14.8236 14.7378 14.8234 15.0305 14.5304L13.9695 13.4701ZM17.6545 11.9044C17.9473 11.6114 17.9471 11.1365 17.6541 10.8437C17.3611 10.551 16.8862 10.5511 16.5935 10.8441L17.6545 11.9044ZM15.0302 13.4698C14.7373 13.177 14.2624 13.1771 13.9696 13.47C13.6767 13.763 13.6768 14.2379 13.9698 14.5307L15.0302 13.4698ZM16.5948 17.1547C16.8877 17.4475 17.3626 17.4474 17.6554 17.1545C17.9483 16.8615 17.9482 16.3867 17.6552 16.0938L16.5948 17.1547ZM13.9696 14.5305C14.2624 14.8234 14.7373 14.8235 15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47L13.9696 14.5305ZM12.4054 10.844C12.1126 10.5511 11.6377 10.551 11.3448 10.8438C11.0518 11.1367 11.0517 11.6115 11.3446 11.9045L12.4054 10.844ZM12.4052 17.1547L15.0302 14.5307L13.9698 13.4698L11.3448 16.0938L12.4052 17.1547ZM15.0305 14.5304L17.6545 11.9044L16.5935 10.8441L13.9695 13.4701L15.0305 14.5304ZM13.9698 14.5307L16.5948 17.1547L17.6552 16.0938L15.0302 13.4698L13.9698 14.5307ZM15.0304 13.47L12.4054 10.844L11.3446 11.9045L13.9696 14.5305L15.0304 13.47Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Закрыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#8ECCEF"></rect>
+                            <path d="M8.66699 14.4167L12.5562 18.1667L20.3337 10.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Открыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#747884"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.0002C7.50024 10.6607 9.85944 7.78639 13.1348 7.1351C16.4102 6.48382 19.6895 8.23693 20.9673 11.3223C22.2451 14.4077 21.1655 17.966 18.3887 19.8212C15.6119 21.6764 11.9113 21.3117 9.55 18.9502C8.23728 17.6373 7.49987 15.8568 7.5 14.0002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.3448 16.0938C11.0518 16.3867 11.0517 16.8615 11.3446 17.1545C11.6374 17.4474 12.1123 17.4475 12.4052 17.1547L11.3448 16.0938ZM15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47C14.7376 13.1771 14.2627 13.177 13.9698 13.4698L15.0302 14.5307ZM13.9695 13.4701C13.6767 13.7631 13.6769 14.238 13.9699 14.5308C14.2629 14.8236 14.7378 14.8234 15.0305 14.5304L13.9695 13.4701ZM17.6545 11.9044C17.9473 11.6114 17.9471 11.1365 17.6541 10.8437C17.3611 10.551 16.8862 10.5511 16.5935 10.8441L17.6545 11.9044ZM15.0302 13.4698C14.7373 13.177 14.2624 13.1771 13.9696 13.47C13.6767 13.763 13.6768 14.2379 13.9698 14.5307L15.0302 13.4698ZM16.5948 17.1547C16.8877 17.4475 17.3626 17.4474 17.6554 17.1545C17.9483 16.8615 17.9482 16.3867 17.6552 16.0938L16.5948 17.1547ZM13.9696 14.5305C14.2624 14.8234 14.7373 14.8235 15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47L13.9696 14.5305ZM12.4054 10.844C12.1126 10.5511 11.6377 10.551 11.3448 10.8438C11.0518 11.1367 11.0517 11.6115 11.3446 11.9045L12.4054 10.844ZM12.4052 17.1547L15.0302 14.5307L13.9698 13.4698L11.3448 16.0938L12.4052 17.1547ZM15.0305 14.5304L17.6545 11.9044L16.5935 10.8441L13.9695 13.4701L15.0305 14.5304ZM13.9698 14.5307L16.5948 17.1547L17.6552 16.0938L15.0302 13.4698L13.9698 14.5307ZM15.0304 13.47L12.4054 10.844L11.3446 11.9045L13.9696 14.5305L15.0304 13.47Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Закрыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#8ECCEF"></rect>
+                            <path d="M8.66699 14.4167L12.5562 18.1667L20.3337 10.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Открыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#747884"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.0002C7.50024 10.6607 9.85944 7.78639 13.1348 7.1351C16.4102 6.48382 19.6895 8.23693 20.9673 11.3223C22.2451 14.4077 21.1655 17.966 18.3887 19.8212C15.6119 21.6764 11.9113 21.3117 9.55 18.9502C8.23728 17.6373 7.49987 15.8568 7.5 14.0002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.3448 16.0938C11.0518 16.3867 11.0517 16.8615 11.3446 17.1545C11.6374 17.4474 12.1123 17.4475 12.4052 17.1547L11.3448 16.0938ZM15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47C14.7376 13.1771 14.2627 13.177 13.9698 13.4698L15.0302 14.5307ZM13.9695 13.4701C13.6767 13.7631 13.6769 14.238 13.9699 14.5308C14.2629 14.8236 14.7378 14.8234 15.0305 14.5304L13.9695 13.4701ZM17.6545 11.9044C17.9473 11.6114 17.9471 11.1365 17.6541 10.8437C17.3611 10.551 16.8862 10.5511 16.5935 10.8441L17.6545 11.9044ZM15.0302 13.4698C14.7373 13.177 14.2624 13.1771 13.9696 13.47C13.6767 13.763 13.6768 14.2379 13.9698 14.5307L15.0302 13.4698ZM16.5948 17.1547C16.8877 17.4475 17.3626 17.4474 17.6554 17.1545C17.9483 16.8615 17.9482 16.3867 17.6552 16.0938L16.5948 17.1547ZM13.9696 14.5305C14.2624 14.8234 14.7373 14.8235 15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47L13.9696 14.5305ZM12.4054 10.844C12.1126 10.5511 11.6377 10.551 11.3448 10.8438C11.0518 11.1367 11.0517 11.6115 11.3446 11.9045L12.4054 10.844ZM12.4052 17.1547L15.0302 14.5307L13.9698 13.4698L11.3448 16.0938L12.4052 17.1547ZM15.0305 14.5304L17.6545 11.9044L16.5935 10.8441L13.9695 13.4701L15.0305 14.5304ZM13.9698 14.5307L16.5948 17.1547L17.6552 16.0938L15.0302 13.4698L13.9698 14.5307ZM15.0304 13.47L12.4054 10.844L11.3446 11.9045L13.9696 14.5305L15.0304 13.47Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Закрыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#8ECCEF"></rect>
+                            <path d="M8.66699 14.4167L12.5562 18.1667L20.3337 10.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Открыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#747884"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.0002C7.50024 10.6607 9.85944 7.78639 13.1348 7.1351C16.4102 6.48382 19.6895 8.23693 20.9673 11.3223C22.2451 14.4077 21.1655 17.966 18.3887 19.8212C15.6119 21.6764 11.9113 21.3117 9.55 18.9502C8.23728 17.6373 7.49987 15.8568 7.5 14.0002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.3448 16.0938C11.0518 16.3867 11.0517 16.8615 11.3446 17.1545C11.6374 17.4474 12.1123 17.4475 12.4052 17.1547L11.3448 16.0938ZM15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47C14.7376 13.1771 14.2627 13.177 13.9698 13.4698L15.0302 14.5307ZM13.9695 13.4701C13.6767 13.7631 13.6769 14.238 13.9699 14.5308C14.2629 14.8236 14.7378 14.8234 15.0305 14.5304L13.9695 13.4701ZM17.6545 11.9044C17.9473 11.6114 17.9471 11.1365 17.6541 10.8437C17.3611 10.551 16.8862 10.5511 16.5935 10.8441L17.6545 11.9044ZM15.0302 13.4698C14.7373 13.177 14.2624 13.1771 13.9696 13.47C13.6767 13.763 13.6768 14.2379 13.9698 14.5307L15.0302 13.4698ZM16.5948 17.1547C16.8877 17.4475 17.3626 17.4474 17.6554 17.1545C17.9483 16.8615 17.9482 16.3867 17.6552 16.0938L16.5948 17.1547ZM13.9696 14.5305C14.2624 14.8234 14.7373 14.8235 15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47L13.9696 14.5305ZM12.4054 10.844C12.1126 10.5511 11.6377 10.551 11.3448 10.8438C11.0518 11.1367 11.0517 11.6115 11.3446 11.9045L12.4054 10.844ZM12.4052 17.1547L15.0302 14.5307L13.9698 13.4698L11.3448 16.0938L12.4052 17.1547ZM15.0305 14.5304L17.6545 11.9044L16.5935 10.8441L13.9695 13.4701L15.0305 14.5304ZM13.9698 14.5307L16.5948 17.1547L17.6552 16.0938L15.0302 13.4698L13.9698 14.5307ZM15.0304 13.47L12.4054 10.844L11.3446 11.9045L13.9696 14.5305L15.0304 13.47Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Закрыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#8ECCEF"></rect>
+                            <path d="M8.66699 14.4167L12.5562 18.1667L20.3337 10.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Открыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                    <div class="custom-table__tr">
+                      <div class="custom-table__td">СП00-027037</div>
+                      <div class="custom-table__td">29.02.2024</div>
+                      <div class="custom-table__td">816,92</div>
+                      <div class="custom-table__td big-cell">БАЙМАРТ (ИП...)</div>
+                      <div class="custom-table__td custom-table__td_row"> 
+                        <div class="custom-table__td-icon"> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewbox="0 0 29 28" fill="none">
+                            <rect x="0.5" width="28" height="28" rx="8" fill="#747884"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.0002C7.50024 10.6607 9.85944 7.78639 13.1348 7.1351C16.4102 6.48382 19.6895 8.23693 20.9673 11.3223C22.2451 14.4077 21.1655 17.966 18.3887 19.8212C15.6119 21.6764 11.9113 21.3117 9.55 18.9502C8.23728 17.6373 7.49987 15.8568 7.5 14.0002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.3448 16.0938C11.0518 16.3867 11.0517 16.8615 11.3446 17.1545C11.6374 17.4474 12.1123 17.4475 12.4052 17.1547L11.3448 16.0938ZM15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47C14.7376 13.1771 14.2627 13.177 13.9698 13.4698L15.0302 14.5307ZM13.9695 13.4701C13.6767 13.7631 13.6769 14.238 13.9699 14.5308C14.2629 14.8236 14.7378 14.8234 15.0305 14.5304L13.9695 13.4701ZM17.6545 11.9044C17.9473 11.6114 17.9471 11.1365 17.6541 10.8437C17.3611 10.551 16.8862 10.5511 16.5935 10.8441L17.6545 11.9044ZM15.0302 13.4698C14.7373 13.177 14.2624 13.1771 13.9696 13.47C13.6767 13.763 13.6768 14.2379 13.9698 14.5307L15.0302 13.4698ZM16.5948 17.1547C16.8877 17.4475 17.3626 17.4474 17.6554 17.1545C17.9483 16.8615 17.9482 16.3867 17.6552 16.0938L16.5948 17.1547ZM13.9696 14.5305C14.2624 14.8234 14.7373 14.8235 15.0302 14.5307C15.3232 14.2379 15.3233 13.763 15.0304 13.47L13.9696 14.5305ZM12.4054 10.844C12.1126 10.5511 11.6377 10.551 11.3448 10.8438C11.0518 11.1367 11.0517 11.6115 11.3446 11.9045L12.4054 10.844ZM12.4052 17.1547L15.0302 14.5307L13.9698 13.4698L11.3448 16.0938L12.4052 17.1547ZM15.0305 14.5304L17.6545 11.9044L16.5935 10.8441L13.9695 13.4701L15.0305 14.5304ZM13.9698 14.5307L16.5948 17.1547L17.6552 16.0938L15.0302 13.4698L13.9698 14.5307ZM15.0304 13.47L12.4054 10.844L11.3446 11.9045L13.9696 14.5305L15.0304 13.47Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="custom-table__td-text">Закрыт</div>
+                      </div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">100</div>
+                      <div class="custom-table__td">0</div>
+                      <div class="custom-table__td">USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-dealer__table-btn">
+                  <div class="hover-border" data-block-border="">
+                    <div class="hover-content"> 
+                      <button class="catalog-listing__more text-20">Показать еще</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="profile-content__container" data-profile-container="history">История подбора</div>
             <div class="profile-content__container" data-profile-container="projects">Проекты</div>
           </div>
