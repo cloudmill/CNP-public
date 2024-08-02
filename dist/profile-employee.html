@@ -6,7 +6,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>questionnaires-6</title>
+    <title>profile-employee</title>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -1398,13 +1398,14 @@
           </div>
         </div>
       </header>
-      <main class="promo-materials">
+      <main class="profile profile-employee">
         <div class="base-components">
           <div class="overlay" data-overlay="data-overlay"></div>
-          <div class="modal-send" data-modal-wrapper="modal-send"> 
-            <div class="modal-send__close" data-modal-close="modal-send"> 
-              <div class="hover-border" data-block-border="">
-                <div class="hover-content"> 
+          <div class="modal-send modal-send_w780 modal-send_no-send-btn" data-modal-wrapper="modal-send-profile-employee"> 
+            <div class="modal-send__close" data-modal-close="modal-send-profile-employee"> 
+              <div class="hover-component" data-block-border="">
+                <div class="hover-component__gradient"></div>
+                <div class="hover-component__content">
                   <div class="modal-factory__svg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
                       <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1431,603 +1432,482 @@
                   </defs>
                 </svg>
               </div>
-              <p class="modal-send__title title-48">Спасибо!</p>
-              <p class="modal-send__text text-24">Мы свяжемся с вами в ближайшее время</p>
+              <p class="modal-send__title title-48">Изменения сохранены</p>
+              <div class="modal-send__btn">
+                <div class="hover-border blue" data-block-border="">
+                  <div class="hover-content"> 
+                    <button class="standart-button text-20" data-modal-close="modal-send-profile-employee">Понятно, спасибо</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container">
-          <section class="top-section">
-            <div class="garantee__breadcrumbs">
-              <div class="breadcrumbs"> 
-                <ul class="breadcrumbs__list"> 
-                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
-                       Главная</a></li>
-                  <li class="breadcrumbs__item"> 
-                    <div class="breadcrumbs__text"> Документация</div>
-                  </li>
-                </ul>
+        <div class="modal-employee" data-modal-wrapper="modal-profile-employee"> 
+          <div class="modal-employee__close" data-modal-close="modal-profile-employee"> 
+            <div class="hover-border" data-block-border="">
+              <div class="hover-content"> 
+                <div class="modal-factory__svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M7 6.99902L17.0001 16.9991" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.99993 16.9991L17 6.99902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
               </div>
             </div>
-            <h1 class="garantee__head title-90">Документация</h1>
-            <div class="garantee-listing">
-              <div class="garantee-listing__links"> <a class="garantee-listing__links-item text-32" href="promo-materials">Промо-материалы</a><a class="garantee-listing__links-item text-32" href="archive">Архив</a><a class="garantee-listing__links-item text-32 active" href="#">Опросные листы</a><a class="garantee-listing__links-item text-32" href="service-documents">Сервисные документы</a><a class="garantee-listing__links-item text-32" href="dealer-documents">Дилерские документы</a><a class="garantee-listing__links-item text-32" href="cad-library">CAD библиотека</a></div>
+          </div>
+          <div class="modal-employee__inner">
+            <p class="modal-employee__title title-48">Изменить данные</p>
+            <form class="modal-employee__form" data-form-profile-employee="data-form-profile-employee"> 
+              <div class="modal-employee__inputs"> 
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="fio" data-parsley-errors-container="#myIdFio-error-container" placeholder="ФИО" required="required" type="text" value="Татьяна Сергеева"/>
+                        <div class="custom-placeholder__service"><span>ФИО</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdFio-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="email" data-parsley-errors-container="#myIdEmail-error-container" placeholder="Email" required="required" type="email" value="optkofe@kdk.ru"/>
+                        <div class="custom-placeholder__service"><span>Email</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdEmail-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="tel" data-parsley-errors-container="#myIdTel-error-container" placeholder="Телефон" required="required" type="tel" data-mask-phone="data-mask-phone" value="+7 (911) 286-25-63"/>
+                        <div class="custom-placeholder__service"><span>Телефон</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdTel-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="company" data-parsley-errors-container="#myIdCompany-error-container" placeholder="Название организации" required="required" type="text" value="ООО «Инструменты»"/>
+                        <div class="custom-placeholder__service"><span>Название организации</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdCompany-error-container"></div>
+                </div>
+                <div class="base-input__wrapper">
+                  <div class="hover-border input-wrapper wide" data-block-border="">
+                    <div class="hover-content"> 
+                      <div class="input-ui base-input" data-input-parent="">
+                        <input class="form-input" data-input="" name="city" data-parsley-errors-container="#myIdCity-error-container" placeholder="Город" required="required" type="text" value="Санкт-Петербург"/>
+                        <div class="custom-placeholder__service"><span>Город</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="myIdCity-error-container"></div>
+                </div>
+              </div>
+              <div class="modal-employee__btn">
+                <div class="hover-border blue" data-block-border="">
+                  <div class="hover-content"> 
+                    <button class="standart-button text-20" type="submit">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <section class="container top-section profile-tabs">
+          <div class="profile-tabs__breadcrumbs">
+            <div class="breadcrumbs"> 
+              <ul class="breadcrumbs__list"> 
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+                     Главная</a></li>
+                <li class="breadcrumbs__item"> 
+                  <div class="breadcrumbs__text"> Мой профиль</div>
+                </li>
+              </ul>
             </div>
-          </section>
-          <section class="documentation-content">
-            <div class="questionnaires__content">
-              <div class="questionnaires">
-                <div class="questionnaires__header">
-                  <p class="text-24">Здесь вы можете заполнить и отправить нам опросные листы для подбора нестандартного оборудования: насосных станций и насосов CNP и Aikon.</p>
-                  <div class="questionnaires-card devices wide">
-                    <div class="questionnaires-card__bg"> 
-                      <picture class="picture desktop">
-                        <source class="lazyload" type="image/webp" srcset="webp/questionnaires-card.webp " alt="questionnaires-card.jpg"/>
-                        <source class="lazyload" srcset="images/questionnaires-card.jpg " alt="questionnaires-card.jpg"/>
-                        <source class="lazyload" srcset="images/questionnaires-card.png " alt="questionnaires-card.jpg"/><img class="picture__img lazyload" data-src="images/questionnaires-card.jpg" alt="questionnaires-card.jpg"/>
-                      </picture>
-                      <picture class="picture tablet-m">
-                        <source class="lazyload" type="image/webp" srcset="webp/questionnaires-card-tablet.webp " alt="questionnaires-card-tablet.jpg"/>
-                        <source class="lazyload" srcset="images/questionnaires-card-tablet.jpg " alt="questionnaires-card-tablet.jpg"/>
-                        <source class="lazyload" srcset="images/questionnaires-card-tablet.png " alt="questionnaires-card-tablet.jpg"/><img class="picture__img lazyload" data-src="images/questionnaires-card-tablet.jpg" alt="questionnaires-card-tablet.jpg"/>
-                      </picture>
-                      <picture class="picture mobile-s">
-                        <source class="lazyload" type="image/webp" srcset="webp/questionnaires-card-mob.webp " alt="questionnaires-card-mob.jpg"/>
-                        <source class="lazyload" srcset="images/questionnaires-card-mob.jpg " alt="questionnaires-card-mob.jpg"/>
-                        <source class="lazyload" srcset="images/questionnaires-card-mob.png " alt="questionnaires-card-mob.jpg"/><img class="picture__img lazyload" data-src="images/questionnaires-card-mob.jpg" alt="questionnaires-card-mob.jpg"/>
-                      </picture>
+          </div>
+          <div class="profile-tabs__row"> 
+            <div class="profile-tabs__items"> 
+              <button class="profile-tabs__btn active" data-profile-tab="profile">Профиль</button>
+              <button class="profile-tabs__btn" data-profile-tab="history">История подбора</button>
+            </div>
+            <div class="profile-tabs__exit">
+              <div class="hover-border" data-block-border="">
+                <div class="hover-content"> <a class="icon-button icon-button_gradient" href="#">
+                    <div class="icon-button__svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M11.8666 10.0803C12.28 5.28031 14.7466 3.32031 20.1466 3.32031H20.32C26.28 3.32031 28.6666 5.70698 28.6666 11.667V20.3603C28.6666 26.3203 26.28 28.707 20.32 28.707H20.1466C14.7866 28.707 12.32 26.7736 11.88 22.0536" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M20 16H4.82666" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.79998 11.5332L3.33331 15.9999L7.79998 20.4665" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
                     </div>
-                    <h3 class="title-32 questionnaires-card__title">Опросный лист в PDF</h3>
-                    <p class="text-20 questionnaires-card__subtitle">Вы также можете заполнить опросный лист офлайн и отправить нам PDF-файл.</p>
-                    <div class="questionnaires-card__document">
-                      <div class="hover-border wide" data-block-border="">
-                        <div class="hover-content"> 
-                          <div class="card-file"><a class="card-file__docs-item" href="#" download="download"> 
-                              <div class="card-file__docs-left"> 
-                                <div class="card-file__docs-title title-20"> Скачать опросный лист
-                                </div>
-                                <p class="card-file__docs-size devices"> 1,55 МБ
-                                </p>
-                              </div>
-                              <div class="card-file__docs-right">
-                                <div class="card-file__docs-size desktop"> 1,55 МБ
-                                </div>
-                                <div class="card-file__arrow">
-                                  <div class="hover-border" data-block-border="">
-                                    <div class="hover-content"> 
-                                      <div class="card-file__docs-icon">
-                                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M6 21.0005H18" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                          <path d="M12 3.00049L12 17.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                          <path d="M17 12.0005L12 17.0005L7 12.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div></a></div>
-                        </div>
-                      </div>
-                    </div>
-                    <h4 class="title-20 questionnaires-card__contact-us">Отправьте заполненный опросный лист на один из электронных адресов</h4>
-                    <div class="questionnaires-card__links"> <a class="line-link" href="mailto:cnp@cnprussia.ru">cnp@cnprussia.ru </a><a class="line-link" href="mailto:aikon@aikonrussia.ru">aikon@aikonrussia.ru</a></div>
+                    <div class="icon-button__button text-20">Выход</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="profile-content container profile-employee__content">
+          <div class="profile-content__wrapper">
+            <div class="profile-content__container active" data-profile-container="profile">
+              <h2 class="profile-employee__title title-90">Профиль
+                <div class="profile-employee__wrapper">
+                  <div class="profile-field">
+                    <p class="profile-field__name text-20">ФИО</p>
+                    <p class="profile-field__data text-20">Татьяна Сергеева</p>
+                  </div>
+                  <div class="profile-field">
+                    <p class="profile-field__name text-20">Email</p>
+                    <p class="profile-field__data text-20">optkofe@kdk.ru</p>
+                  </div>
+                  <div class="profile-field">
+                    <p class="profile-field__name text-20">Телефон</p>
+                    <p class="profile-field__data text-20">+7 (911) 286-25-63</p>
+                  </div>
+                  <div class="profile-field">
+                    <p class="profile-field__name text-20">Название организации</p>
+                    <p class="profile-field__data text-20">ООО «Инструменты»</p>
+                  </div>
+                  <div class="profile-field">
+                    <p class="profile-field__name text-20">Город</p>
+                    <p class="profile-field__data text-20">Санкт-Петербург</p>
                   </div>
                 </div>
-                <div class="questionnaires__select"> 
-                  <h3 class="title-32">Выберите оборудование</h3>
-                  <div class="hover-component hover-select hover-select" data-block-border="">
-                    <div class="hover-component__gradient"></div>
-                    <div class="hover-component__content"> 
-                      <div class="select select-wrapper select_no-placeholder">
-                        <div class="select__button">
-                          <div class="input-ui custom-placeholder" data-input-parent="">
-                            <input data-input="" readonly="readonly" type="text" value="Канализационная станция"/>
-                          </div>
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 5.66675L8 11.6667L14 5.66675" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                        <div class="select__list" data-lenis-prevent="true">
-                          <ul>
-                            <li>
-                              <p>Насосные агрегаты</p>
-                            </li>
-                            <li>
-                              <p>Канализационные и дренажные насосы</p>
-                            </li>
-                            <li>
-                              <p>Консольные насосы</p>
-                            </li>
-                            <li>
-                              <p>Скважинные насосы</p>
-                            </li>
-                            <li>
-                              <p>Установки повышения давления Aikon PBS</p>
-                            </li>
-                            <li>
-                              <p>Полупогружные насосы</p>
-                            </li>
-                            <li>
-                              <p>Установки пожаротушения Aikon PFFS</p>
-                            </li>
-                            <li>
-                              <p>Канализационная станция</p>
-                            </li>
-                            <li>
-                              <p>Подбор погружных мешалок</p>
-                            </li>
-                            <li>
-                              <p>Дозировочное оборудование</p>
-                            </li>
-                            <li>
-                              <p>Шкафы управления (КНС, УПД)</p>
-                            </li>
-                            <li>
-                              <p>Пожарные шкафы управления Aikon</p>
-                            </li>
-                          </ul>
-                        </div>
+              </h2>
+              <div class="profile-employee__btn">
+                <div class="hover-border" data-block-border="">
+                  <div class="hover-content"> 
+                    <button class="icon-button icon-button_gradient" data-modal-btn="modal-profile-employee">
+                      <div class="icon-button__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
+                          <path d="M8.82856 4.21064C9.08761 3.88742 9.03559 3.4154 8.71238 3.15636C8.38916 2.89731 7.91715 2.94933 7.6581 3.27255L8.82856 4.21064ZM1.36455 12.3243L1.93258 12.8141C1.93844 12.8073 1.94417 12.8004 1.94978 12.7934L1.36455 12.3243ZM1.16511 12.8118L0.416569 12.763L0.415915 12.7771L1.16511 12.8118ZM1.00183 16.3375L0.252634 16.3028C0.250909 16.3401 0.251964 16.3774 0.255789 16.4145L1.00183 16.3375ZM1.9197 17.1388L1.94422 17.8884C1.99424 17.8867 2.04397 17.8801 2.09266 17.8686L1.9197 17.1388ZM5.41857 16.3095L5.59156 17.0394L5.6032 17.0365L5.41857 16.3095ZM5.8676 16.025L6.4462 16.5023L6.4527 16.4942L5.8676 16.025ZM13.4971 7.70967C13.7562 7.38652 13.7043 6.91449 13.3812 6.65536C13.0581 6.39622 12.586 6.44812 12.3269 6.77126L13.4971 7.70967ZM7.66201 3.27244C7.40286 3.59557 7.45472 4.0676 7.77785 4.32675C8.10097 4.58591 8.57301 4.53405 8.83216 4.21092L7.66201 3.27244ZM10.0992 1.43242L10.6842 1.90167C10.6941 1.88938 10.7036 1.87678 10.7126 1.86389L10.0992 1.43242ZM11.999 1.05921L12.4789 0.482771C12.455 0.46289 12.4299 0.444513 12.4037 0.427745L11.999 1.05921ZM14.608 3.23084L15.1389 2.701C15.1226 2.6847 15.1056 2.66915 15.0878 2.6544L14.608 3.23084ZM15.001 4.18823L15.751 4.19235V4.19235L15.001 4.18823ZM14.5975 5.14123L14.0726 4.60559C14.0513 4.62642 14.0313 4.64851 14.0127 4.67172L14.5975 5.14123ZM12.3274 6.77104C12.0681 7.09405 12.1197 7.56611 12.4427 7.82541C12.7657 8.08472 13.2378 8.03307 13.4971 7.71006L12.3274 6.77104ZM8.98881 3.63044C8.92742 3.2208 8.54558 2.93849 8.13594 2.99987C7.7263 3.06126 7.44398 3.4431 7.50537 3.85274L8.98881 3.63044ZM13.0132 7.98364C13.4237 7.92787 13.7112 7.54993 13.6554 7.13949C13.5997 6.72904 13.2217 6.44152 12.8113 6.49729L13.0132 7.98364ZM7.6581 3.27255L0.779315 11.8553L1.94978 12.7934L8.82856 4.21064L7.6581 3.27255ZM0.796516 11.8346C0.572375 12.0946 0.43904 12.4205 0.416702 12.763L1.91352 12.8606C1.91464 12.8435 1.92133 12.8271 1.93258 12.8141L0.796516 11.8346ZM0.415915 12.7771L0.252634 16.3028L1.75103 16.3722L1.91431 12.8465L0.415915 12.7771ZM0.255789 16.4145C0.344327 17.2729 1.08173 17.9166 1.94422 17.8884L1.89518 16.3892C1.81993 16.3916 1.7556 16.3355 1.74787 16.2606L0.255789 16.4145ZM2.09266 17.8686L5.59153 17.0393L5.24562 15.5798L1.74674 16.409L2.09266 17.8686ZM5.6032 17.0365C5.93381 16.9525 6.22908 16.7654 6.44615 16.5022L5.28905 15.5477C5.27486 15.5649 5.25556 15.5771 5.23395 15.5826L5.6032 17.0365ZM6.4527 16.4942L13.4971 7.70967L12.3269 6.77126L5.28249 15.5558L6.4527 16.4942ZM8.83216 4.21092L10.6842 1.90167L9.51408 0.963182L7.66201 3.27244L8.83216 4.21092ZM10.7126 1.86389C10.9127 1.57936 11.3015 1.50299 11.5944 1.69068L12.4037 0.427745C11.4345 -0.193372 10.148 0.0593494 9.48569 1.00096L10.7126 1.86389ZM11.5192 1.63565L14.1282 3.80729L15.0878 2.6544L12.4789 0.482771L11.5192 1.63565ZM14.0772 3.76069C14.1893 3.87299 14.2519 4.02543 14.251 4.18411L15.751 4.19235C15.7541 3.63348 15.5337 3.09656 15.1389 2.701L14.0772 3.76069ZM14.251 4.1841C14.2501 4.34278 14.1859 4.49452 14.0726 4.60559L15.1225 5.67687C15.5217 5.28568 15.7479 4.75121 15.751 4.19235L14.251 4.1841ZM14.0127 4.67172L12.3274 6.77104L13.4971 7.71006L15.1824 5.61074L14.0127 4.67172ZM7.50537 3.85274C7.90271 6.50425 10.3565 8.34461 13.0132 7.98364L12.8113 6.49729C10.9675 6.74781 9.26456 5.47059 8.98881 3.63044L7.50537 3.85274Z" fill="#0B1226"></path>
+                        </svg>
                       </div>
-                    </div>
+                      <div class="icon-button__button text-20">редактировать данные</div>
+                    </button>
                   </div>
                 </div>
-                <form class="questionnaires-form" id="questionnaires-form" action="">
-                  <div class="questionnaires-form__header">
-                    <h2 class="title-48 questionnaires-form__title">Канализационная станция</h2>
-                    <p class="text-24 questionnaires-form__desc">Опросный лист</p>
+              </div>
+            </div>
+            <div class="profile-content__container" data-profile-container="history">
+              <h2 class="profile-content__title title-90">История подбора</h2>
+              <div class="profile-content__table profile-content__table_history"> 
+                <div class="history-table desktop">
+                  <div class="history-table__tr"> 
+                    <div class="history-table__th img"> </div>
+                    <div class="history-table__th">Серия</div>
+                    <div class="history-table__th">Модель</div>
+                    <div class="history-table__th">Расход, м3/ч</div>
+                    <div class="history-table__th">Напор, м</div>
+                    <div class="history-table__th">КПД, %</div>
+                    <div class="history-table__th">NPSHr, м</div>
+                    <div class="history-table__th">Мощность на валу, кВт</div>
                   </div>
-                  <div class="questionnaires-form__section" data-form-section=""> 
-                    <h3 class="title-32 questionnaires-form__subtitle">Информация о проекте</h3>
-                    <div class="clear-btn" data-clear-inputs-btn="">
-                      <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg><span class="title-20">Очистить все</span>
+                  <div class="history-table__tr">
+                    <div class="history-table__td img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                      </picture>
                     </div>
-                    <div class="questionnaires-form__inputs">
-                      <div class="questionnaires-form__info">
-                        <div class="base-input__wrapper name">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input name" data-input="" name="name" data-parsley-errors-container="#nameInputId-error-container" placeholder="ФИО *" type="name" required=""/>
-                                <div class="custom-placeholder__service"><span>ФИО *</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="nameInputId-error-container"></div>
-                        </div>
-                        <div class="base-input__wrapper company">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input company" data-input="" name="company" data-parsley-errors-container="#companyInputId-error-container" placeholder="Название организации *" required=""/>
-                                <div class="custom-placeholder__service"><span>Название организации *</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="companyInputId-error-container"></div>
-                        </div>
-                        <div class="base-input__wrapper email">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input email" data-input="" name="email" data-parsley-errors-container="#emailInputId-error-container" placeholder="Email *" type="email" required=""/>
-                                <div class="custom-placeholder__service"><span>Email *</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="emailInputId-error-container"></div>
-                        </div>
-                        <div class="base-input__wrapper address">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input address" data-input="" name="address" data-parsley-errors-container="#addressInputId-error-container" placeholder="Адрес организации *" required=""/>
-                                <div class="custom-placeholder__service"><span>Адрес организации *</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="addressInputId-error-container"></div>
-                        </div>
-                        <div class="base-input__wrapper phone">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input phone" data-input="" name="phone" data-parsley-errors-container="#phoneInputId-error-container" placeholder="Телефон *" data-mask-phone="data-mask-phone" required=""/>
-                                <div class="custom-placeholder__service"><span>Телефон *</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="phoneInputId-error-container"></div>
-                        </div>
-                        <div class="base-input__wrapper object">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input object" data-input="" name="object" data-parsley-errors-container="#objectInputId-error-container" placeholder="Название объекта *" required=""/>
-                                <div class="custom-placeholder__service"><span>Название объекта *</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="objectInputId-error-container"></div>
-                        </div>
-                        <div class="base-input__wrapper job">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input job" data-input="" name="job" data-parsley-errors-container="#jobInputId-error-container" placeholder="Должность *" required=""/>
-                                <div class="custom-placeholder__service"><span>Должность *</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="jobInputId-error-container"></div>
-                        </div>
-                        <div class="base-input__wrapper objectAddress">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input objectAddress" data-input="" name="objectAddress" data-parsley-errors-container="#objectAddressInputId-error-container" placeholder="Адрес объекта"/>
-                                <div class="custom-placeholder__service"><span>Адрес объекта</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="objectAddressInputId-error-container"></div>
-                        </div>
-                      </div>
+                    <div class="history-table__td"> <a class="line-link">SJ</a></div>
+                    <div class="history-table__td"> 
+                      <div class="line-link">SJ12-3</div>
                     </div>
+                    <div class="history-table__td">13,7</div>
+                    <div class="history-table__td">13,5</div>
+                    <div class="history-table__td">58,1</div>
+                    <div class="history-table__td">12,9</div>
+                    <div class="history-table__td">0,90</div>
                   </div>
-                  <div class="questionnaires-form__section" data-form-section="">
-                    <div class="questionnaires-form__parameters">
-                      <h3 class="title-32 questionnaires-form__subtitle">Параметры для подбора насоса</h3>
-                      <div class="clear-btn" data-clear-inputs-btn="">
-                        <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg><span class="title-20">Очистить все</span>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Общее количество насосов</h4>
-                        <div class="questionnaires-form__checkboxes">
-                          <div class="radio-group">
-                            <label class="radio-btn">
-                              <input name="count" type="radio" value="1" data-parsley-multiple="type"/>
-                              <div class="radio-btn__button"></div><span class="text-24">1</span>
-                            </label>
-                            <label class="radio-btn">
-                              <input name="count" type="radio" value="2" data-parsley-multiple="type"/>
-                              <div class="radio-btn__button"></div><span class="text-24">2</span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Наименование среды</h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="" data-parsley-errors-container="" placeholder="Введите значение"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Температура жидкости, °C</h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="temperature" data-parsley-errors-container="#temperature-error-container" placeholder="Введите значение" minlength="1" maxlength="10" data-fractional="" type="fractional"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="temperature-error-container"></div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">
-                           Плотность, кг/м<sup>3</sup></h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="density" data-parsley-errors-container="#density-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="density-error-container"></div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Концентрация и размер механических примесей</h4>
-                        <div class="questionnaires-form__info questionnaires-form__info_tablet-columns">
-                          <div class="questionnaires-form__parameter">
-                            <p class="text-20 questionnaires-form__parameter-subtitle">%</p>
-                            <div class="base-input__wrapper">
-                              <div class="hover-border input-wrapper wide" data-block-border="">
-                                <div class="hover-content"> 
-                                  <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="impurities-concentration" data-parsley-errors-container="#impurities-concentration-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                    <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div id="impurities-concentration-error-container"></div>
-                            </div>
-                          </div>
-                          <div class="questionnaires-form__parameter">
-                            <p class="text-20 questionnaires-form__parameter-subtitle">мм</p>
-                            <div class="base-input__wrapper">
-                              <div class="hover-border input-wrapper wide" data-block-border="">
-                                <div class="hover-content"> 
-                                  <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="impurities-size" data-parsley-errors-container="#impurities-size-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                    <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div id="impurities-size-error-container"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter" data-check-enable-wrapper="">
-                        <div class="checkbox">
-                          <label class="container">
-                            <input type="checkbox" data-check-enable=""/><span class="checkmark">
-                              <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 8.49981L6.82843 11.3282L12.4853 5.67139" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                              </svg></span>
-                            <p class="text-24">Наличие нефтепродуктов, мг/л</p>
-                          </label>
-                        </div>
-                        <div class="disabled" data-check-enable-input="">
-                          <div class="base-input__wrapper">
-                            <div class="hover-border input-wrapper wide" data-block-border="">
-                              <div class="hover-content"> 
-                                <div class="input-ui base-input" data-input-parent="">
-                                  <input class="form-input" data-input="" name="oil-concentration" data-parsley-errors-container="#oil-concentration-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                  <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div id="oil-concentration-error-container"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Водородный показатель (pH)</h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="ph" data-parsley-errors-container="#ph-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="ph-error-container"></div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Напряжение 3х380В</h4>
-                      </div>
+                  <div class="history-table__tr">
+                    <div class="history-table__td img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                      </picture>
                     </div>
-                  </div>
-                  <div class="questionnaires-form__section" data-form-section="">
-                    <div class="questionnaires-form__parameters">
-                      <h3 class="title-32 questionnaires-form__subtitle">Параметры на 1 насос</h3>
-                      <div class="clear-btn" data-clear-inputs-btn="">
-                        <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg><span class="title-20">Очистить все</span>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Требуемый напор на выходе, м.в.с.</h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="required-pressure" data-parsley-errors-container="#required-pressure-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="required-pressure-error-container"></div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Максимальный секундный расход, л/c</h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="consumption-sec" data-parsley-errors-container="#consumption-sec-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="consumption-sec-error-container"></div>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Максимальный часовой расход, м<sup>3</sup>/ч</h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="consumption-hour" data-parsley-errors-container="#consumption-hour-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="consumption-hour-error-container"></div>
-                        </div>
-                      </div>
+                    <div class="history-table__td"> <a class="line-link">SJ</a></div>
+                    <div class="history-table__td"> 
+                      <div class="line-link">SJ12-3</div>
                     </div>
+                    <div class="history-table__td">13,7</div>
+                    <div class="history-table__td">13,5</div>
+                    <div class="history-table__td">58,1</div>
+                    <div class="history-table__td">12,9</div>
+                    <div class="history-table__td">0,90</div>
                   </div>
-                  <div class="questionnaires-form__section" data-form-section="">
-                    <div class="questionnaires-form__parameters">
-                      <h3 class="title-32 questionnaires-form__subtitle">Материальное исполнение</h3>
-                      <div class="clear-btn" data-clear-inputs-btn="">
-                        <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg><span class="title-20">Очистить все</span>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <div class="checkbox">
-                          <label class="container">
-                            <input type="checkbox"/><span class="checkmark">
-                              <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 8.49981L6.82843 11.3282L12.4853 5.67139" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                              </svg></span>
-                            <p class="text-24">Корпус из нержавеющей стали</p>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="questionnaires-form__parameter">
-                        <h4 class="title-24">Объём бака насосной станции, л</h4>
-                        <div class="base-input__wrapper">
-                          <div class="hover-border input-wrapper wide" data-block-border="">
-                            <div class="hover-content"> 
-                              <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="tank-volume" data-parsley-errors-container="#tank-volume-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
-                                <div class="custom-placeholder__service"><span>Введите значение</span></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="tank-volume-error-container"></div>
-                        </div>
-                      </div>
+                  <div class="history-table__tr">
+                    <div class="history-table__td img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                      </picture>
                     </div>
+                    <div class="history-table__td"> <a class="line-link">SJ</a></div>
+                    <div class="history-table__td"> 
+                      <div class="line-link">SJ12-3</div>
+                    </div>
+                    <div class="history-table__td">13,7</div>
+                    <div class="history-table__td">13,5</div>
+                    <div class="history-table__td">58,1</div>
+                    <div class="history-table__td">12,9</div>
+                    <div class="history-table__td">0,90</div>
                   </div>
-                  <div class="questionnaires-form__section" data-form-section="">
-                    <div class="questionnaires-form__parameters">
-                      <h3 class="title-32 questionnaires-form__subtitle">Материальное исполнение</h3>
-                      <div class="questionnaires-form__parameter">
-                        <div class="questionnaires-form__img">
+                  <div class="history-table__tr">
+                    <div class="history-table__td img"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                        <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                      </picture>
+                    </div>
+                    <div class="history-table__td"> <a class="line-link">SJ</a></div>
+                    <div class="history-table__td"> 
+                      <div class="line-link">SJ12-3</div>
+                    </div>
+                    <div class="history-table__td">13,7</div>
+                    <div class="history-table__td">13,5</div>
+                    <div class="history-table__td">58,1</div>
+                    <div class="history-table__td">12,9</div>
+                    <div class="history-table__td">0,90</div>
+                  </div>
+                </div>
+                <div class="history-table devices">
+                  <div class="history-table__items">
+                    <div class="history-table__item">
+                      <div class="history-table__item-left"> 
+                        <div class="history-table__item-img"> 
                           <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/questionnaires-view-img.webp " alt="questionnaires-view-img.webp"/>
-                            <source class="lazyload" srcset="images/questionnaires-view-img.jpg " alt="questionnaires-view-img.webp"/>
-                            <source class="lazyload" srcset="images/questionnaires-view-img.png " alt="questionnaires-view-img.webp"/><img class="picture__img lazyload" data-src="images/questionnaires-view-img.webp" alt="questionnaires-view-img.webp"/>
+                            <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
                           </picture>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="questionnaires-form__section" data-form-section=""> 
-                    <div class="questionnaires-form__parameters">
-                      <h3 class="title-32 questionnaires-form__subtitle">Дополнительная информация</h3>
-                      <div class="clear-btn" data-clear-inputs-btn="">
-                        <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.61008 5.08039C10.4801 4.82039 11.4401 4.65039 12.5001 4.65039C17.2901 4.65039 21.1701 8.53039 21.1701 13.3204C21.1701 18.1104 17.2901 21.9904 12.5001 21.9904C7.71008 21.9904 3.83008 18.1104 3.83008 13.3204C3.83008 11.5404 4.37008 9.88039 5.29008 8.50039" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32L11.2591 2" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M8.36914 5.32031L11.7391 7.78031" stroke="#747884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg><span class="title-20">Очистить все</span>
-                      </div>
-                      <div class="base-textarea__wrapper"> 
-                        <div class="hover-border input-wrapper wide" data-block-border="">
-                          <div class="hover-content"> 
-                            <label class="textarea-ui base-textarea wide" data-input-parent="">
-                              <textarea class="textarea-input" data-input="" data-parsley-errors-container="" placeholder="Комментарий"></textarea>
-                              <div class="custom-placeholder__service"><span>Комментарий</span></div>
-                            </label>
+                        <div class="history-table__item-block mobile"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
                           </div>
                         </div>
                       </div>
-                      <div class="questionnaires-form__privacy"> 
-                        <div class="checkbox">
-                          <label class="container">
-                            <input type="checkbox" name="subscribe-checkbox" id="subscribe-check" required="required" checked="checked" data-subscribe-checkbox="data-subscribe-checkbox"/><span class="checkmark">
-                              <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 8.49981L6.82843 11.3282L12.4853 5.67139" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                              </svg></span>
-                            <p class="subscribe-form-inner__privacy-text">Нажимая на кнопку «Отправить», я принимаю <a href="#" target="blank">условия политики конфиденциальности</a></p>
-                          </label>
+                      <div class="history-table__item-right"> 
+                        <div class="history-table__item-block tablet"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
+                          </div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Расход, м3/ч</div>
+                          <div class="history-table__item-text">13,7</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Напор, м</div>
+                          <div class="history-table__item-text">13,5</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">КПД, %</div>
+                          <div class="history-table__item-text">58,1</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">NPSHr, м</div>
+                          <div class="history-table__item-text">12,9</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Мощность на валу, кВт</div>
+                          <div class="history-table__item-text">0,90</div>
                         </div>
                       </div>
-                      <button class="button button--blue button--hover-gradient wide" type="submit" form="questionnaires-form">
-                        <div class="button-gradient"></div>
-                        <div class="button__text">Отправить</div>
-                        <div class="button__icon">
-                          <svg class="button__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.025 4.94168L17.0833 10M17.0833 10L12.025 15.0583M17.0833 10L2.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                      </button>
                     </div>
-                  </div>
-                </form>
-              </div>
-              <div class="questionnaires__card-box desktop">
-                <div class="questionnaires-card wide">
-                  <div class="questionnaires-card__bg"> 
-                    <picture class="picture desktop">
-                      <source class="lazyload" type="image/webp" srcset="webp/questionnaires-card.webp " alt="questionnaires-card.jpg"/>
-                      <source class="lazyload" srcset="images/questionnaires-card.jpg " alt="questionnaires-card.jpg"/>
-                      <source class="lazyload" srcset="images/questionnaires-card.png " alt="questionnaires-card.jpg"/><img class="picture__img lazyload" data-src="images/questionnaires-card.jpg" alt="questionnaires-card.jpg"/>
-                    </picture>
-                    <picture class="picture tablet-m">
-                      <source class="lazyload" type="image/webp" srcset="webp/questionnaires-card-tablet.webp " alt="questionnaires-card-tablet.jpg"/>
-                      <source class="lazyload" srcset="images/questionnaires-card-tablet.jpg " alt="questionnaires-card-tablet.jpg"/>
-                      <source class="lazyload" srcset="images/questionnaires-card-tablet.png " alt="questionnaires-card-tablet.jpg"/><img class="picture__img lazyload" data-src="images/questionnaires-card-tablet.jpg" alt="questionnaires-card-tablet.jpg"/>
-                    </picture>
-                    <picture class="picture mobile-s">
-                      <source class="lazyload" type="image/webp" srcset="webp/questionnaires-card-mob.webp " alt="questionnaires-card-mob.jpg"/>
-                      <source class="lazyload" srcset="images/questionnaires-card-mob.jpg " alt="questionnaires-card-mob.jpg"/>
-                      <source class="lazyload" srcset="images/questionnaires-card-mob.png " alt="questionnaires-card-mob.jpg"/><img class="picture__img lazyload" data-src="images/questionnaires-card-mob.jpg" alt="questionnaires-card-mob.jpg"/>
-                    </picture>
-                  </div>
-                  <h3 class="title-32 questionnaires-card__title">Опросный лист в PDF</h3>
-                  <p class="text-20 questionnaires-card__subtitle">Вы также можете заполнить опросный лист офлайн и отправить нам PDF-файл.</p>
-                  <div class="questionnaires-card__document">
-                    <div class="hover-border wide" data-block-border="">
-                      <div class="hover-content"> 
-                        <div class="card-file"><a class="card-file__docs-item" href="#" download="download"> 
-                            <div class="card-file__docs-left"> 
-                              <div class="card-file__docs-title title-20"> Скачать опросный лист
-                              </div>
-                              <p class="card-file__docs-size devices"> 1,55 МБ
-                              </p>
-                            </div>
-                            <div class="card-file__docs-right">
-                              <div class="card-file__docs-size desktop"> 1,55 МБ
-                              </div>
-                              <div class="card-file__arrow">
-                                <div class="hover-border" data-block-border="">
-                                  <div class="hover-content"> 
-                                    <div class="card-file__docs-icon">
-                                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 21.0005H18" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M12 3.00049L12 17.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M17 12.0005L12 17.0005L7 12.0005" stroke="#0B1226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div></a></div>
+                    <div class="history-table__item">
+                      <div class="history-table__item-left"> 
+                        <div class="history-table__item-img"> 
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                          </picture>
+                        </div>
+                        <div class="history-table__item-block mobile"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="history-table__item-right"> 
+                        <div class="history-table__item-block tablet"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
+                          </div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Расход, м3/ч</div>
+                          <div class="history-table__item-text">13,7</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Напор, м</div>
+                          <div class="history-table__item-text">13,5</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">КПД, %</div>
+                          <div class="history-table__item-text">58,1</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">NPSHr, м</div>
+                          <div class="history-table__item-text">12,9</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Мощность на валу, кВт</div>
+                          <div class="history-table__item-text">0,90</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history-table__item">
+                      <div class="history-table__item-left"> 
+                        <div class="history-table__item-img"> 
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                          </picture>
+                        </div>
+                        <div class="history-table__item-block mobile"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="history-table__item-right"> 
+                        <div class="history-table__item-block tablet"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
+                          </div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Расход, м3/ч</div>
+                          <div class="history-table__item-text">13,7</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Напор, м</div>
+                          <div class="history-table__item-text">13,5</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">КПД, %</div>
+                          <div class="history-table__item-text">58,1</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">NPSHr, м</div>
+                          <div class="history-table__item-text">12,9</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Мощность на валу, кВт</div>
+                          <div class="history-table__item-text">0,90</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history-table__item">
+                      <div class="history-table__item-left"> 
+                        <div class="history-table__item-img"> 
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/product-detail-img1.webp " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.jpg " alt="product-detail-img1.png"/>
+                            <source class="lazyload" srcset="images/product-detail-img1.png " alt="product-detail-img1.png"/><img class="picture__img lazyload" data-src="images/product-detail-img1.png" alt="product-detail-img1.png"/>
+                          </picture>
+                        </div>
+                        <div class="history-table__item-block mobile"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="history-table__item-right"> 
+                        <div class="history-table__item-block tablet"> 
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Модель</div>
+                            <div class="history-table__item-text line-link">SJ12-3</div>
+                          </div>
+                          <div class="history-table__item-col"> 
+                            <div class="history-table__item-title">Серия</div>
+                            <div class="history-table__item-text line-link">SJ</div>
+                          </div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Расход, м3/ч</div>
+                          <div class="history-table__item-text">13,7</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Напор, м</div>
+                          <div class="history-table__item-text">13,5</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">КПД, %</div>
+                          <div class="history-table__item-text">58,1</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">NPSHr, м</div>
+                          <div class="history-table__item-text">12,9</div>
+                        </div>
+                        <div class="history-table__item-col"> 
+                          <div class="history-table__item-title">Мощность на валу, кВт</div>
+                          <div class="history-table__item-text">0,90</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <h4 class="title-20 questionnaires-card__contact-us">Отправьте заполненный опросный лист на один из электронных адресов</h4>
-                  <div class="questionnaires-card__links"> <a class="line-link" href="mailto:cnp@cnprussia.ru">cnp@cnprussia.ru </a><a class="line-link" href="mailto:aikon@aikonrussia.ru">aikon@aikonrussia.ru</a></div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
       <div class="footer-wrapper">
         <div class="footer-products">
