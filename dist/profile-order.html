@@ -1752,99 +1752,89 @@
         <section class="profile-order__table container">
           <h5 class="profile-order__subtitle title-32 top-border">Состав заказа</h5>
           <div class="profile-order__wrapper">
-            <div class="table-container">
-              <div class="table-wrapper">
-                <div class="table order-table__table">
-                  <div class="table-scroll">
-                    <div class="table__head">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>№ п/п</th>
-                            <th>Артикул</th>
-                            <th>Наименование</th>
-                            <th>Действия</th>
-                            <th>Склад</th>
-                            <th>Количество</th>
-                            <th>Цена со скидкой</th>
-                            <th>Внутренний код товара</th>
-                            <th>Единица измерения</th>
-                            <th>Ставка НДС</th>
-                            <th>Сумма НДС</th>
-                            <th>Номер партии</th>
-                            <th>Доп. информация НДС</th>
-                          </tr>
-                        </thead>
-                      </table>
-                    </div>
-                    <div class="table__body">
-                      <table>
-                        <tbody>
-                          <tr>
-                            <td class="table__content">1</td>
-                            <td class="table__content">TD32-6(I)/2SWSCJ</td>
-                            <td class="table__content">Насос TD32-6(I)/2, 0.25 кВт, 3х220В/х380В, 50 Гц, нерж, 10 бар</td>
-                            <td class="table__content"><button data-modal-btn="modal-tracking-order">Производство</button></td>
-                            <td class="table__content">СИЭНПИ (склад Есипово)</td>
-                            <td class="table__content">2</td>
-                            <td class="table__content">431,69</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                          </tr>
-                          <tr>
-                            <td class="table__content">2</td>
-                            <td class="table__content">TD8-50LSWSC</td>
-                            <td class="table__content">Насос TDL8-50LSWSC, 1.5 кВт, 3х220/3х330В, 50 Гц...</td>
-                            <td class="table__content"><button data-modal-btn="modal-tracking-order">На складе Есипово</button></td>
-                            <td class="table__content">СИЭНПИ (склад Есипово)</td>
-                            <td class="table__content">2</td>
-                            <td class="table__content">431,63</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                          </tr>
-                          <tr>
-                            <td class="table__content">3</td>
-                            <td class="table__content">CDM8-50LSWSC</td>
-                            <td class="table__content">Насос CDM8-50LSWSC, 1.5 кВт, 3х220/3х330В, 50 Гц...</td>
-                            <td class="table__content"><button data-modal-btn="modal-tracking-order">Транспортировка КНР-РФ (корабль)</button></td>
-                            <td class="table__content">СИЭНПИ (склад Екатеринбург)</td>
-                            <td class="table__content">1</td>
-                            <td class="table__content">391,63</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                          </tr>
-                          <tr>
-                            <td class="table__content">4</td>
-                            <td class="table__content">CHL8-50LSWSC</td>
-                            <td class="table__content">Насос CHL8-50LSWSC, 2.2 кВт, 3х220/3х330В, 50 Гц...</td>
-                            <td class="table__content"><button data-modal-btn="modal-tracking-order">На складе Есипово</button></td>
-                            <td class="table__content">СИЭНПИ (склад Есипово)</td>
-                            <td class="table__content">3</td>
-                            <td class="table__content">391,27</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                            <td class="table__content">18-04-3417</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
+            <div class="universal-box">
+              <div class="universal-table order-table__universal-table">
+                <table class="universal-table__wrapper">
+                  <thead class="universal-table__head">
+                    <tr>
+                      <th>№ п/п</th>
+                      <th>Артикул</th>
+                      <th>Наименование</th>
+                      <th>Действия</th>
+                      <th>Склад</th>
+                      <th>Количество</th>
+                      <th>Цена со скидкой</th>
+                      <th>Внутренний код товара</th>
+                      <th>Единица измерения</th>
+                      <th>Ставка НДС</th>
+                      <th>Сумма НДС</th>
+                      <th>Номер партии</th>
+                      <th>Доп. информация НДС</th>
+                    </tr>
+                  </thead>
+                  <tbody class="universal-table__body">
+                    <tr>
+                      <td class="table__content">1</td>
+                      <td class="table__content">TD32-6(I)/2SWSCJ</td>
+                      <td class="table__content">Насос TD32-6(I)/2, 0.25 кВт, 3х220В/х380В, 50 Гц, нерж, 10 бар</td>
+                      <td class="table__content"><button data-modal-btn="modal-tracking-order">Производство</button></td>
+                      <td class="table__content">СИЭНПИ (склад Есипово)</td>
+                      <td class="table__content">2</td>
+                      <td class="table__content">431,69</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                    </tr>
+                    <tr>
+                      <td class="table__content">2</td>
+                      <td class="table__content">TD8-50LSWSC</td>
+                      <td class="table__content">Насос TDL8-50LSWSC, 1.5 кВт, 3х220/3х330В, 50 Гц...</td>
+                      <td class="table__content"><button data-modal-btn="modal-tracking-order">На складе Есипово</button></td>
+                      <td class="table__content">СИЭНПИ (склад Есипово)</td>
+                      <td class="table__content">2</td>
+                      <td class="table__content">431,63</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                    </tr>
+                    <tr>
+                      <td class="table__content">3</td>
+                      <td class="table__content">CDM8-50LSWSC</td>
+                      <td class="table__content">Насос CDM8-50LSWSC, 1.5 кВт, 3х220/3х330В, 50 Гц...</td>
+                      <td class="table__content"><button data-modal-btn="modal-tracking-order">Транспортировка КНР-РФ (корабль)</button></td>
+                      <td class="table__content">СИЭНПИ (склад Екатеринбург)</td>
+                      <td class="table__content">1</td>
+                      <td class="table__content">391,63</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                    </tr>
+                    <tr>
+                      <td class="table__content">4</td>
+                      <td class="table__content">CHL8-50LSWSC</td>
+                      <td class="table__content">Насос CHL8-50LSWSC, 2.2 кВт, 3х220/3х330В, 50 Гц...</td>
+                      <td class="table__content"><button data-modal-btn="modal-tracking-order">На складе Есипово</button></td>
+                      <td class="table__content">СИЭНПИ (склад Есипово)</td>
+                      <td class="table__content">3</td>
+                      <td class="table__content">391,27</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                      <td class="table__content">18-04-3417</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <div class="profile-order__btns">
