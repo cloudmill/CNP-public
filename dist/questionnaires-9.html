@@ -70,7 +70,7 @@
                 </div>
               </div>
               <p class="modal-registration__error" data-auth-error="data-auth-error"></p>
-              <button class="modal-authorization__form-btn" type="submit"> <span class="modal-authorization__form-btn-text text-20 fw-600">Войти</span><span class="modal-authorization__gradient"></span></button>
+              <button class="modal-authorization__form-btn" type="submit"> <span class="modal-authorization__form-btn-inner"><span class="text-20 fw-600">Войти</span></span><span class="modal-authorization__gradient"></span></button>
             </form>
             <div class="modal-authorization__restore text-20 line-link" data-modal-btn="modal-restore">Восстановить пароль</div>
             <div class="modal-authorization__registr"><span class="modal-authorization__registr-btn text-20 line-link" data-modal-btn="modal-registration">Зарегистрируйтесь</span><span class="modal-authorization__registr-text">,<br class="devices"> если у вас еще нет аккаунта</span></div>
@@ -739,11 +739,7 @@
                         <div id="error-error-container"></div>
                       </div>
                       <div class="search-button__wrapper wide blue">
-                        <div class="hover-border wide blue" data-block-border="">
-                          <div class="hover-content"> 
-                            <button class="search-button">Найти</button>
-                          </div>
-                        </div>
+                        <button class="search-button">Найти</button>
                       </div>
                     </form>
                   </div>
@@ -1030,11 +1026,7 @@
                         <div id="projects-search-error-container"></div>
                       </div>
                       <div class="search-button__wrapper wide blue">
-                        <div class="hover-border wide blue" data-block-border="">
-                          <div class="hover-content"> 
-                            <button class="search-button">Найти</button>
-                          </div>
-                        </div>
+                        <button class="search-button">Найти</button>
                       </div>
                     </form>
                   </div>
@@ -1709,7 +1701,7 @@
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="main-pump-power" data-parsley-errors-container="#main-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="main-pump-power" data-parsley-errors-container="#main-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1763,7 +1755,7 @@
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="second-pump-power" data-parsley-errors-container="#second-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="second-pump-power" data-parsley-errors-container="#second-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1820,7 +1812,7 @@
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="third-pump-power" data-parsley-errors-container="#third-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="third-pump-power" data-parsley-errors-container="#third-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1877,7 +1869,7 @@
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="fourth-pump-power" data-parsley-errors-container="#fourth-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="fourth-pump-power" data-parsley-errors-container="#fourth-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1931,7 +1923,7 @@
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="fifth-pump-power" data-parsley-errors-container="#fifth-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="fifth-pump-power" data-parsley-errors-container="#fifth-pump-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -2015,12 +2007,13 @@
                       <div class="questionnaires-form__parameter">
                         <h4 class="title-24">Ограничения по габаритам</h4>
                         <div class="questionnaires-form__dimensions">
-                          <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">Высота</span>
+                          <div class="questionnaires-form__parameter">
+                            <p class="text-20 questionnaires-form__parameter-subtitle">Высота</p>
                             <div class="base-input__wrapper">
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="height" data-parsley-errors-container="#height-error-container" placeholder="Значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="height" data-parsley-errors-container="#height-error-container" placeholder="Значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Значение</span></div>
                                   </div>
                                 </div>
@@ -2028,12 +2021,13 @@
                               <div id="height-error-container"></div>
                             </div>
                           </div>
-                          <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">Ширина</span>
+                          <div class="questionnaires-form__parameter">
+                            <p class="text-20 questionnaires-form__parameter-subtitle">Ширина</p>
                             <div class="base-input__wrapper">
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="width" data-parsley-errors-container="#width-error-container" placeholder="Значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="width" data-parsley-errors-container="#width-error-container" placeholder="Значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Значение</span></div>
                                   </div>
                                 </div>
@@ -2041,12 +2035,13 @@
                               <div id="width-error-container"></div>
                             </div>
                           </div>
-                          <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">Длина</span>
+                          <div class="questionnaires-form__parameter">
+                            <p class="text-20 questionnaires-form__parameter-subtitle">Длина</p>
                             <div class="base-input__wrapper">
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="depth" data-parsley-errors-container="#depth-error-container" placeholder="Значение" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="depth" data-parsley-errors-container="#depth-error-container" placeholder="Значение" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Значение</span></div>
                                   </div>
                                 </div>
@@ -2186,12 +2181,13 @@
                             <input name="valveVoltage1" type="radio" value="380В" data-parsley-multiple="type"/><span class="radio-btn__button"><span class="radio-btn__inner"></span></span><span class="text-24">380В</span>
                           </label>
                           <div class="questionnaires-form__info questionnaires-form__info_tablet-columns">
-                            <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">кВт</span>
+                            <div class="questionnaires-form__parameter">
+                              <p class="text-20 questionnaires-form__parameter-subtitle">кВт</p>
                               <div class="base-input__wrapper">
                                 <div class="hover-border input-wrapper wide" data-block-border="">
                                   <div class="hover-content"> 
                                     <div class="input-ui base-input" data-input-parent="">
-                                      <input class="form-input" data-input="" name="valve1-power" data-parsley-errors-container="#valve1-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                      <input class="form-input" data-input="" name="valve1-power" data-parsley-errors-container="#valve1-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                       <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                     </div>
                                   </div>
@@ -2199,12 +2195,13 @@
                                 <div id="valve1-power-error-container"></div>
                               </div>
                             </div>
-                            <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">А</span>
+                            <div class="questionnaires-form__parameter">
+                              <p class="text-20 questionnaires-form__parameter-subtitle">А</p>
                               <div class="base-input__wrapper">
                                 <div class="hover-border input-wrapper wide" data-block-border="">
                                   <div class="hover-content"> 
                                     <div class="input-ui base-input" data-input-parent="">
-                                      <input class="form-input" data-input="" name="valve1-amperage" data-parsley-errors-container="#valve1-amperage-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                      <input class="form-input" data-input="" name="valve1-amperage" data-parsley-errors-container="#valve1-amperage-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                       <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                     </div>
                                   </div>
@@ -2245,12 +2242,13 @@
                             <input name="valveVoltage2" type="radio" value="380В" data-parsley-multiple="type"/><span class="radio-btn__button"><span class="radio-btn__inner"></span></span><span class="text-24">380В</span>
                           </label>
                           <div class="questionnaires-form__info questionnaires-form__info_tablet-columns">
-                            <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">кВт</span>
+                            <div class="questionnaires-form__parameter">
+                              <p class="text-20 questionnaires-form__parameter-subtitle">кВт</p>
                               <div class="base-input__wrapper">
                                 <div class="hover-border input-wrapper wide" data-block-border="">
                                   <div class="hover-content"> 
                                     <div class="input-ui base-input" data-input-parent="">
-                                      <input class="form-input" data-input="" name="valve2-power" data-parsley-errors-container="#valve2-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                      <input class="form-input" data-input="" name="valve2-power" data-parsley-errors-container="#valve2-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                       <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                     </div>
                                   </div>
@@ -2258,12 +2256,13 @@
                                 <div id="valve2-power-error-container"></div>
                               </div>
                             </div>
-                            <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">А</span>
+                            <div class="questionnaires-form__parameter">
+                              <p class="text-20 questionnaires-form__parameter-subtitle">А</p>
                               <div class="base-input__wrapper">
                                 <div class="hover-border input-wrapper wide" data-block-border="">
                                   <div class="hover-content"> 
                                     <div class="input-ui base-input" data-input-parent="">
-                                      <input class="form-input" data-input="" name="valve2-amperage" data-parsley-errors-container="#valve2-amperage-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                      <input class="form-input" data-input="" name="valve2-amperage" data-parsley-errors-container="#valve2-amperage-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                       <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                     </div>
                                   </div>
@@ -2304,12 +2303,13 @@
                             <input name="valveVoltage3" type="radio" value="380В" data-parsley-multiple="type"/><span class="radio-btn__button"><span class="radio-btn__inner"></span></span><span class="text-24">380В</span>
                           </label>
                           <div class="questionnaires-form__info questionnaires-form__info_tablet-columns">
-                            <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">кВт</span>
+                            <div class="questionnaires-form__parameter">
+                              <p class="text-20 questionnaires-form__parameter-subtitle">кВт</p>
                               <div class="base-input__wrapper">
                                 <div class="hover-border input-wrapper wide" data-block-border="">
                                   <div class="hover-content"> 
                                     <div class="input-ui base-input" data-input-parent="">
-                                      <input class="form-input" data-input="" name="valve3-power" data-parsley-errors-container="#valve3-power-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                      <input class="form-input" data-input="" name="valve3-power" data-parsley-errors-container="#valve3-power-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                       <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                     </div>
                                   </div>
@@ -2317,12 +2317,13 @@
                                 <div id="valve3-power-error-container"></div>
                               </div>
                             </div>
-                            <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">А</span>
+                            <div class="questionnaires-form__parameter">
+                              <p class="text-20 questionnaires-form__parameter-subtitle">А</p>
                               <div class="base-input__wrapper">
                                 <div class="hover-border input-wrapper wide" data-block-border="">
                                   <div class="hover-content"> 
                                     <div class="input-ui base-input" data-input-parent="">
-                                      <input class="form-input" data-input="" name="valve3-amperage" data-parsley-errors-container="#valve3-amperage-error-container" placeholder="Введите значение" data-fractional="" type="fractional"/>
+                                      <input class="form-input" data-input="" name="valve3-amperage" data-parsley-errors-container="#valve3-amperage-error-container" placeholder="Введите значение" data-fractional="" type="text"/>
                                       <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                     </div>
                                   </div>
@@ -2371,7 +2372,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="manual-valve-count" data-parsley-errors-container="#manual-valve-count-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-integer="" type="integer"/>
+                                <input class="form-input" data-input="" name="manual-valve-count" data-parsley-errors-container="#manual-valve-count-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-integer="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>

@@ -70,7 +70,7 @@
                 </div>
               </div>
               <p class="modal-registration__error" data-auth-error="data-auth-error"></p>
-              <button class="modal-authorization__form-btn" type="submit"> <span class="modal-authorization__form-btn-text text-20 fw-600">Войти</span><span class="modal-authorization__gradient"></span></button>
+              <button class="modal-authorization__form-btn" type="submit"> <span class="modal-authorization__form-btn-inner"><span class="text-20 fw-600">Войти</span></span><span class="modal-authorization__gradient"></span></button>
             </form>
             <div class="modal-authorization__restore text-20 line-link" data-modal-btn="modal-restore">Восстановить пароль</div>
             <div class="modal-authorization__registr"><span class="modal-authorization__registr-btn text-20 line-link" data-modal-btn="modal-registration">Зарегистрируйтесь</span><span class="modal-authorization__registr-text">,<br class="devices"> если у вас еще нет аккаунта</span></div>
@@ -739,11 +739,7 @@
                         <div id="error-error-container"></div>
                       </div>
                       <div class="search-button__wrapper wide blue">
-                        <div class="hover-border wide blue" data-block-border="">
-                          <div class="hover-content"> 
-                            <button class="search-button">Найти</button>
-                          </div>
-                        </div>
+                        <button class="search-button">Найти</button>
                       </div>
                     </form>
                   </div>
@@ -1030,11 +1026,7 @@
                         <div id="projects-search-error-container"></div>
                       </div>
                       <div class="search-button__wrapper wide blue">
-                        <div class="hover-border wide blue" data-block-border="">
-                          <div class="hover-content"> 
-                            <button class="search-button">Найти</button>
-                          </div>
-                        </div>
+                        <button class="search-button">Найти</button>
                       </div>
                     </form>
                   </div>
@@ -1676,7 +1668,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="pumpCount" data-parsley-errors-container="#pumpCount-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-integer="" type="integer"/>
+                                <input class="form-input" data-input="" name="pumpCount" data-parsley-errors-container="#pumpCount-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-integer="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>
@@ -1701,12 +1693,13 @@
                       <div class="questionnaires-form__parameter">
                         <h4 class="title-24">Температура жидкости, °C</h4>
                         <div class="questionnaires-form__info questionnaires-form__info_tablet-columns">
-                          <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">Нормальная</span>
+                          <div class="questionnaires-form__parameter">
+                            <p class="text-20 questionnaires-form__parameter-subtitle">Нормальная</p>
                             <div class="base-input__wrapper">
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="temperature-normal" data-parsley-errors-container="#temperature-normal-error-container" placeholder="Введите значение" minlength="1" maxlength="10" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="temperature-normal" data-parsley-errors-container="#temperature-normal-error-container" placeholder="Введите значение" minlength="1" maxlength="10" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1714,12 +1707,13 @@
                               <div id="temperature-normal-error-container"></div>
                             </div>
                           </div>
-                          <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">Кратковременная</span>
+                          <div class="questionnaires-form__parameter">
+                            <p class="text-20 questionnaires-form__parameter-subtitle">Кратковременная</p>
                             <div class="base-input__wrapper">
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="temperature-peak" data-parsley-errors-container="#temperature-peak-error-container" placeholder="Введите значение" minlength="1" maxlength="10" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="temperature-peak" data-parsley-errors-container="#temperature-peak-error-container" placeholder="Введите значение" minlength="1" maxlength="10" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1736,7 +1730,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="density" data-parsley-errors-container="#density-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
+                                <input class="form-input" data-input="" name="density" data-parsley-errors-container="#density-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>
@@ -1751,7 +1745,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="viscosity" data-parsley-errors-container="#viscosity-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
+                                <input class="form-input" data-input="" name="viscosity" data-parsley-errors-container="#viscosity-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>
@@ -1762,12 +1756,13 @@
                       <div class="questionnaires-form__parameter">
                         <h4 class="title-24">Концентрация и размер механических примесей</h4>
                         <div class="questionnaires-form__info questionnaires-form__info_tablet-columns">
-                          <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">%</span>
+                          <div class="questionnaires-form__parameter">
+                            <p class="text-20 questionnaires-form__parameter-subtitle">%</p>
                             <div class="base-input__wrapper">
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="impurities-concentration" data-parsley-errors-container="#impurities-concentration-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="impurities-concentration" data-parsley-errors-container="#impurities-concentration-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1775,12 +1770,13 @@
                               <div id="impurities-concentration-error-container"></div>
                             </div>
                           </div>
-                          <div class="questionnaires-form__parameter"><span class="text-20 questionnaires-form__parameter-subtitle">мм</span>
+                          <div class="questionnaires-form__parameter">
+                            <p class="text-20 questionnaires-form__parameter-subtitle">мм</p>
                             <div class="base-input__wrapper">
                               <div class="hover-border input-wrapper wide" data-block-border="">
                                 <div class="hover-content"> 
                                   <div class="input-ui base-input" data-input-parent="">
-                                    <input class="form-input" data-input="" name="impurities-size" data-parsley-errors-container="#impurities-size-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
+                                    <input class="form-input" data-input="" name="impurities-size" data-parsley-errors-container="#impurities-size-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="text"/>
                                     <div class="custom-placeholder__service"><span>Введите значение</span></div>
                                   </div>
                                 </div>
@@ -1797,7 +1793,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="required-consumption" data-parsley-errors-container="#required-consumption-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="fractional"/>
+                                <input class="form-input" data-input="" name="required-consumption" data-parsley-errors-container="#required-consumption-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="0" data-fractional="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>
@@ -1811,7 +1807,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="existing-pressure" data-parsley-errors-container="#existing-pressure-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-fractional="" type="fractional"/>
+                                <input class="form-input" data-input="" name="existing-pressure" data-parsley-errors-container="#existing-pressure-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-fractional="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>
@@ -1825,7 +1821,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="max-pressure" data-parsley-errors-container="#max-pressure-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-fractional="" type="fractional"/>
+                                <input class="form-input" data-input="" name="max-pressure" data-parsley-errors-container="#max-pressure-error-container" placeholder="Введите значение" minlength="1" maxlength="10" min="1" data-fractional="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>
@@ -1839,7 +1835,7 @@
                           <div class="hover-border input-wrapper wide" data-block-border="">
                             <div class="hover-content"> 
                               <div class="input-ui base-input" data-input-parent="">
-                                <input class="form-input" data-input="" name="depth" data-parsley-errors-container="#depth-error-container" placeholder="Введите значение" minlength="1" maxlength="10" data-fractional="" type="fractional"/>
+                                <input class="form-input" data-input="" name="depth" data-parsley-errors-container="#depth-error-container" placeholder="Введите значение" minlength="1" maxlength="10" data-fractional="" type="text"/>
                                 <div class="custom-placeholder__service"><span>Введите значение</span></div>
                               </div>
                             </div>
