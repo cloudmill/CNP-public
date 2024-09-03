@@ -72,8 +72,8 @@
               <p class="modal-registration__error" data-auth-error="data-auth-error"></p>
               <button class="modal-authorization__form-btn" type="submit"> <span class="modal-authorization__form-btn-inner"><span class="text-20 fw-600">Войти</span></span><span class="modal-authorization__gradient"></span></button>
             </form>
-            <div class="modal-authorization__restore text-20 line-link" data-modal-btn="modal-restore">Восстановить пароль</div>
-            <div class="modal-authorization__registr"><span class="modal-authorization__registr-btn text-20 line-link" data-modal-btn="modal-registration">Зарегистрируйтесь</span><span class="modal-authorization__registr-text">,<br class="devices"> если у вас еще нет аккаунта</span></div>
+            <div class="modal-authorization__restore text-20" data-modal-btn="modal-restore">Восстановить пароль</div>
+            <div class="modal-authorization__registr"><span class="modal-authorization__registr-btn text-20" data-modal-btn="modal-registration">Зарегистрируйтесь</span><span class="modal-authorization__registr-text">,<br class="devices"> если у вас еще нет аккаунта</span></div>
           </div>
         </div>
         <div class="modal-authorization modal-restore" data-modal-wrapper="modal-restore">
@@ -143,30 +143,30 @@
           </div>
         </div>
         <div class="modal-authorization modal-registration" data-modal-wrapper="modal-registration">
-          <div class="modal-authorization__close modal-registration__close" data-modal-close="modal-registration">
-            <div class="hover-border" data-block-border="">
-              <div class="hover-content"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
-                  <path d="M7 6.99902L17.0001 16.9991" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M6.99993 16.9991L17 6.99902" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="modal-registration__back" data-register-back="data-register-back">
-            <div class="back-button">
+          <div class="modal-authorization__inner modal-registration__inner"> 
+            <div class="modal-authorization__close modal-registration__close" data-modal-close="modal-registration"> 
               <div class="hover-border" data-block-border="">
                 <div class="hover-content"> 
-                  <div class="back-button__inner">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
-                      <path d="M7.97501 4.94168L2.91667 10M2.91667 10L7.975 15.0583M2.91667 10L17.5 10" stroke="#0B1226" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M7 6.99902L17.0001 16.9991" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.99993 16.9991L17 6.99902" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="modal-registration__back" data-register-back="data-register-back">
+              <div class="back-button">
+                <div class="hover-border" data-block-border="">
+                  <div class="hover-content"> 
+                    <div class="back-button__inner">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.97501 4.94168L2.91667 10M2.91667 10L7.975 15.0583M2.91667 10L17.5 10" stroke="#0B1226" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="modal-authorization__inner modal-registration__inner">
             <h4 class="modal-authorization__title title-48">Регистрация</h4>
             <p class="modal-restore__description"><span class="line-link" data-modal-btn="modal-authorization">Войдите </span>в личный кабинет, если вы Дилер или Внутренний сотрудник</p>
             <form class="modal-authorization__form modal-registration__form active" data-registration-step="1">
